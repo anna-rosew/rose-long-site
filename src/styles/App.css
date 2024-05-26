@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Jomolhari&family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  background-color: #f6ece1;
+}
+
+h1 {
+  font-family: "Jomolhari", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48px;
+}
+
+h2 {
+  font-family: "Jomolhari", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+}
+
+h3 {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+h3 .subtitle {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  opacity: 70%;
+  text-transform: uppercase;
+}
