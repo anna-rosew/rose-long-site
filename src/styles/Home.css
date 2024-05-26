@@ -1,0 +1,4 @@
+.hero-img {
+  height: 500px;
+  border-radius: var(--image-border-radius);
+}
