@@ -7,6 +7,8 @@ import Contact from "./pages/Contact";
 import NotPage from "./pages/NotPage";
 import Header from "./components/Header";
 import Socials from "./components/Socials";
+import Approach from "./pages/Approach";
+import Groups from "./pages/Groups";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
         <Route path="/work" element={<Work />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/approach" element={<Approach />} />
+        <Route path="/groups" element={<Groups />} />
         <Route path="*" element={<NotPage />} />
       </Routes>
     </div>

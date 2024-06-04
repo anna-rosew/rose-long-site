@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../styles/Work.css";
 import "../styles/App.css";
 import MyApproach from "../styles/imgs/permanent/my-approach.png";
@@ -25,34 +26,37 @@ export default function Work() {
       <div className="work-cards">
         <div className="grid grid-3-columns">
           <div className="my-approach">
-            <h2>My Approach</h2>
-            <h3 className="subtitle">YOUR SUBTITLE/DESCRIPTION HERE</h3>
-            <img
-              src={MyApproach}
-              class="img-responsive"
-              href="/Approach"
-              alt="My Approach - art by Lynn Hanford-Day"
-            ></img>
+            <Link to="/approach" className="card-links">
+              <h2>My Approach</h2>
+              <h3 className="subtitle">YOUR SUBTITLE/DESCRIPTION HERE</h3>
+              <img
+                src={MyApproach}
+                className="img-responsive img-hover"
+                alt="My Approach - art by Lynn Hanford-Day"
+              />
+            </Link>
           </div>
           <div className="groups">
-            <h2>Groups</h2>
-            <h3 className="subtitle">CLASSES | WORKSHOPS | RETREATS</h3>
-            <img
-              src={Groups}
-              class="img-responsive"
-              href="/Groups"
-              alt="Group - art by Lynn Hanford-Day"
-            ></img>
+            <Link to="/groups" className="card-links">
+              <h2>Groups</h2>
+              <h3 className="subtitle">CLASSES | WORKSHOPS | RETREATS</h3>
+              <img
+                src={Groups}
+                className="img-responsive img-hover"
+                alt="Group - art by Lynn Hanford-Day"
+              />
+            </Link>
           </div>
-          <div className="One-On-Ones">
-            <h2>One-On-Ones</h2>
-            <h3 className="subtitle">COACHING AND GUIDANCE</h3>
-            <img
-              src={OneOnOnes}
-              class="img-responsive"
-              href="/OneToOne"
-              alt="One-On-Ones - art by Lynn Hanford-Day"
-            ></img>
+          <div className="one-on-ones">
+            <Link to="/onetoone" className="card-links">
+              <h2>One-On-Ones</h2>
+              <h3 className="subtitle">COACHING AND GUIDANCE</h3>
+              <img
+                src={OneOnOnes}
+                className="img-responsive img-hover"
+                alt="One-On-Ones - art by Lynn Hanford-Day"
+              />
+            </Link>
           </div>
         </div>
       </div>
