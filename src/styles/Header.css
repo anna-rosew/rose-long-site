@@ -53,3 +53,20 @@
   width: 100%;
   height: 100%;
 }
+
+.button-with-hover {
+  display: inline-block;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none; /* Remove underline from link */
+  position: fixed; /* Fix the position */
+  bottom: 20px; /* Distance from the bottom */
+  right: 20px; /* Distance from the right */
+}
+
+.button-with-hover img {
+  width: 100px; /* Adjust size as needed */
+  height: 100px; /* Adjust size as needed */
+}

@@ -13,6 +13,7 @@ function App() {
     <div className="App">
       <Header />
       <Socials />
+
       <Routes>
         <Route index element={<Home />} />
         <Route path="/home" element={<Home />} />
