@@ -78,6 +78,14 @@ button:hover {
   cursor: pointer;
 }
 
+.icon-hover {
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.icon-hover:hover {
+  transform: scale(1.1);
+}
+
 @media (min-width: 320px) {
   #header-desktop {
     display: none;

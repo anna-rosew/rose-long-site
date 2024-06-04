@@ -10,7 +10,7 @@ const Socials = () => {
         href="https://www.instagram.com/lifechangesrose/?hl=en"
         target="_blank"
         rel="noopener noreferrer"
-        className="social-icon"
+        className="social-icon icon-hover"
       >
         <img src={InstaIcon} alt="Instagram" />
       </a>
@@ -18,7 +18,7 @@ const Socials = () => {
         href="https://www.roselong-lifechanges.com/"
         target="_blank"
         rel="noopener noreferrer"
-        className="social-icon"
+        className="social-icon icon-hover"
       >
         <img src={VimeoIcon} alt="Vimeo" />
       </a>

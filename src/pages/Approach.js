@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import TestimonialCarousel from "../components/TestimonialCarousel";
 import "../styles/App.css";
 import "../styles/Approach.css";
@@ -63,6 +64,11 @@ export default function Approach() {
           communities.   I recognise that ultimately all paths lead to the same
           destination, <strong>all rivers flow to the sea.</strong>
         </p>
+        <Link to="/approach" className="card-links">
+          <button className="journey-link icon-hover">
+            Start Your Journey
+          </button>
+        </Link>
       </div>
       <TestimonialCarousel />
     </div>

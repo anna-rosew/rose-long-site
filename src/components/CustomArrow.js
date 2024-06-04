@@ -1,6 +1,6 @@
 import React from "react";
-import nextArrow from "./nextArrow.svg"; // Adjust the path as necessary
-import prevArrow from "./prevArrow.svg"; // Adjust the path as necessary
+import nextArrow from "../styles/imgs/icons/arrow-next.svg"; // Adjust the path as necessary
+import prevArrow from "../styles/imgs/icons/arrow-prev.svg"; // Adjust the path as necessary
 
 const CustomArrow = ({ className, style, onClick, direction }) => {
   const arrowSrc = direction === "next" ? nextArrow : prevArrow;
