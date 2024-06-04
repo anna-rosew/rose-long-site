@@ -1,4 +1,14 @@
+.Home {
+  text-align: center;
+}
+
+.Home h1 {
+  margin: 0;
+}
+
 .hero-img {
   height: 500px;
   border-radius: var(--image-border-radius);
+  display: block;
+  margin: 10px auto;
 }

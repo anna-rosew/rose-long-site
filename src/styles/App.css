@@ -8,7 +8,7 @@ h1 {
   font-family: "Jomolhari", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 48px;
+  font-size: 38px;
 }
 
 h2 {
@@ -34,4 +34,13 @@ h3 .subtitle {
   font-style: normal;
   opacity: 70%;
   text-transform: uppercase;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 20px;
+}
+
+.grid-5-columns {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
