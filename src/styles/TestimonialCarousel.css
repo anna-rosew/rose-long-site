@@ -1,3 +1,35 @@
-.TestimonialCarousel {
-  height: 200px;
+.carousel-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.testimonial-slide {
+  text-align: center;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-text {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.testimonial-name {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.testimonial-location {
+  font-size: 0.9em;
+  color: #777;
+}
+
+/* Additional styling for arrows can be added here if needed */
+.slick-prev:before,
+.slick-next:before {
+  display: none; /* Hide default arrows */
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import ReactPlayer from "react-player";
 import TestimonialCarousel from "../components/TestimonialCarousel";
 import "../styles/App.css";
 import "../styles/Approach.css";
@@ -13,13 +12,15 @@ export default function Approach() {
       <h1>My Approach</h1>
 
       <div className="player-wrapper">
-        <ReactPlayer
-          url="https://vimeo.com/924464292"
-          playing={false}
-          controls
-          className="react-player"
-          width="100%"
-        />
+        <iframe
+          src="https://player.vimeo.com/video/950778932?h=f30e222061"
+          width="960"
+          height="540"
+          frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowfullscreen
+          title="vimeo player"
+        ></iframe>
       </div>
 
       <div className="approach-text">
