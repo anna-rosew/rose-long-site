@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/Work.css";
 import "../styles/App.css";
 import MyApproach from "../styles/imgs/permanent/my-approach.png";
-import Groups from "../styles/imgs/permanent/groups.png";
+import Groups from "../styles/imgs/permanent/groups.png"; //replace this image
 import OneOnOnes from "../styles/imgs/permanent/one-on-one.png";
 
 export default function Work() {
