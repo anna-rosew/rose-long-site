@@ -6,6 +6,10 @@
   margin: 0;
 }
 
+.Home h2 {
+  margin: 10px;
+}
+
 .hero-img {
   height: 500px;
   border-radius: var(--image-border-radius);
