@@ -1,7 +1,9 @@
 import React from "react";
-import "../styles/App.css";
 import "../styles/Work.css";
-import "../styles/imgs/"
+import "../styles/App.css";
+import MyApproach from "../styles/imgs/permanent/my-approach.png";
+import Groups from "../styles/imgs/permanent/groups.png";
+import OneOnOnes from "../styles/imgs/permanent/one-on-one.png";
 
 export default function Work() {
   return (
@@ -27,8 +29,29 @@ export default function Work() {
             <h3 className="subtitle">YOUR SUBTITLE/DESCRIPTION HERE</h3>
             <img
               src={MyApproach}
+              class="img-responsive"
               href="/Approach"
               alt="My Approach - art by Lynn Hanford-Day"
+            ></img>
+          </div>
+          <div className="groups">
+            <h2>Groups</h2>
+            <h3 className="subtitle">CLASSES | WORKSHOPS | RETREATS</h3>
+            <img
+              src={Groups}
+              class="img-responsive"
+              href="/Groups"
+              alt="Group - art by Lynn Hanford-Day"
+            ></img>
+          </div>
+          <div className="One-On-Ones">
+            <h2>One-On-Ones</h2>
+            <h3 className="subtitle">COACHING AND GUIDANCE</h3>
+            <img
+              src={OneOnOnes}
+              class="img-responsive"
+              href="/OneToOne"
+              alt="One-On-Ones - art by Lynn Hanford-Day"
             ></img>
           </div>
         </div>

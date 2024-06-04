@@ -1,4 +1,22 @@
 .Work-Page {
   text-align: center;
-  margin: 20px 30px 20px 150px;
+  margin: 0px 30px 20px 150px;
+}
+
+.Work-Page h1 {
+  margin-top: 0px;
+}
+
+.work-cards {
+  margin: 0px 100px;
+}
+
+.work-cards img {
+  display: block;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.work-cards img:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }

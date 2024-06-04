@@ -27,7 +27,7 @@ h3 {
   font-size: 20px;
 }
 
-h3 .subtitle {
+.subtitle {
   font-family: "Jost", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -55,8 +55,17 @@ button:hover {
   grid-gap: 20px;
 }
 
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .grid-5-columns {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.img-responsive {
+  max-width: 100%;
+  border-radius: var(--image-border-radius);
 }
 
 @media (min-width: 320px) {
