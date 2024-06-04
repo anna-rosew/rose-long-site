@@ -52,6 +52,11 @@
 .social-icon img {
   width: 100%;
   height: 100%;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
 }
 
 .button-with-hover {
@@ -69,4 +74,10 @@
 .button-with-hover img {
   width: 100px; /* Adjust size as needed */
   height: 100px; /* Adjust size as needed */
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Add transition for smooth hover effect */
+}
+
+.button-with-hover:hover img {
+  transform: scale(1.1); /* Optional: Add a slight scaling effect */
+  /* Optional: Change opacity for additional effect */
 }

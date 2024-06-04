@@ -22,7 +22,7 @@ export default function Header() {
   };
   return (
     <div className="header">
-      <div className="grid grid-5-columns">
+      <div className="grid grid-5-columns ">
         <div className="logo">
           <a href="/" className="site-logo">
             <img src={Logo} alt="Rose Long Logo" className="site-logo" />
@@ -49,6 +49,7 @@ export default function Header() {
           </Link>
         </div>
       </div>
+
       <GetInTouch link="/contact" />
     </div>
   );
