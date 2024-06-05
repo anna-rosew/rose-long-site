@@ -86,10 +86,7 @@ button:hover {
   transform: scale(1.1);
 }
 
-@media (min-width: 320px) {
-  #header-desktop {
-    display: none;
-  }
+@media (maxs-width: 320px) {
   h1 {
     font-size: 28px;
   }

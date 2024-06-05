@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import "../styles/Home.css";
 import HeroImg from "../styles/imgs/permanent/hero-image.jpg";
 import HoverImg from "../styles/imgs/permanent/hero-img2.png";
@@ -22,7 +23,7 @@ export default function Home() {
         />
         {isHovered && (
           <div className="button-overlay">
-            <StartButton link="/work" />
+            <StartButton />
           </div>
         )}
       </div>

@@ -64,7 +64,7 @@ export default function Approach() {
           communities.   I recognise that ultimately all paths lead to the same
           destination, <strong>all rivers flow to the sea.</strong>
         </p>
-        <Link to="/approach" className="card-links">
+        <Link to="/work" className="card-links">
           <button className="journey-link icon-hover">
             Start Your Journey
           </button>
