@@ -5,7 +5,7 @@ import "../styles/Groups.css";
 import Online from "../styles/imgs/permanent/online-groups.png";
 import InPerson from "../styles/imgs/permanent/in-person-groups.png";
 import Retreats from "../styles/imgs/permanent/retreats.png";
-import MorningBreathe from "../styles/imgs/permanent"
+import MorningBreathe from "../styles/imgs/permanent/morning-breathe.png";
 
 export default function Groups() {
   return (
@@ -52,7 +52,7 @@ export default function Groups() {
         <h2>Online Groups</h2>
         <div className="grid grid-4-columns">
           <div className="yoga class">
-            <img src={MorningBreathe} alt="Good Morning Breathe">
+            <img src={MorningBreathe} alt="Good Morning Breathe"></img>
           </div>
         </div>
       </div>
