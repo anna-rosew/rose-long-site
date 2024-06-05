@@ -101,6 +101,13 @@ button:hover {
   h3 {
     font-size: 15px;
   }
+  .grid-3-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-5-columns {
+    grid-template-columns: 1fr;
+  }
 }
 
 /*@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */
