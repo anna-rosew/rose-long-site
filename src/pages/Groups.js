@@ -5,6 +5,7 @@ import "../styles/Groups.css";
 import Online from "../styles/imgs/permanent/online-groups.png";
 import InPerson from "../styles/imgs/permanent/in-person-groups.png";
 import Retreats from "../styles/imgs/permanent/retreats.png";
+import MorningBreathe from "../styles/imgs/permanent"
 
 export default function Groups() {
   return (
@@ -45,6 +46,14 @@ export default function Groups() {
               alt="Retreats & Workshops - art by Lynn Hanford-Day"
             />
           </Link>
+        </div>
+      </div>
+      <div className="online-groups">
+        <h2>Online Groups</h2>
+        <div className="grid grid-4-columns">
+          <div className="yoga class">
+            <img src={MorningBreathe} alt="Good Morning Breathe">
+          </div>
         </div>
       </div>
     </div>

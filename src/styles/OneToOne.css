@@ -1,0 +1,52 @@
+.OneToOne-Page {
+  text-align: center;
+  margin: 10px 200px 50px 150px;
+}
+
+.OneToOne-Page h2 {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.OneToOne-Page h1 {
+  margin-left: 130px;
+  margin-top: 0px;
+  font-size: 48px;
+}
+
+.player-wrapper {
+  display: inline-block;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 70vh;
+  margin-left: 100px;
+}
+
+iframe {
+  border: none;
+  border-radius: 45px; /* Optional: Remove default border */
+}
+
+.one-to-one-text {
+  display: block;
+  margin: 30px auto;
+}
+
+.OneToOne-Page {
+  margin-top: 40px;
+  text-align: left;
+}
+
+.OneToOne-Page button {
+  margin-top: 50px;
+  margin-bottom: 200px;
+}
+
+.what-to-expect {
+  text-align: center;
+}
+
+.what-to-expect img {
+  width: 180px;
+  margin: 0 auto;
+}

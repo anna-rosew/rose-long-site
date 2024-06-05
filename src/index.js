@@ -15,6 +15,5 @@ root.render(
 );
 
 //Make responsive hamburger nav bar
-//My Approach - descrtiption on hover
-
+//Make everything responsive
 reportWebVitals();

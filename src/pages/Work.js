@@ -4,7 +4,7 @@ import "../styles/Work.css";
 import "../styles/App.css";
 import MyApproach from "../styles/imgs/permanent/my-approach.png";
 import Groups from "../styles/imgs/permanent/groups.png";
-import OneOnOnes from "../styles/imgs/permanent/one-on-one.png";
+import OneToOnes from "../styles/imgs/permanent/one-on-one.png";
 import OverlaySVG from "../styles/imgs/icons/sunshine_white.svg";
 
 export default function Work() {
@@ -86,13 +86,13 @@ export default function Work() {
           </div>
           <div className="card">
             <Link to="/onetoone" className="card-link">
-              <h2>One-On-Ones</h2>
+              <h2>One-To-Ones</h2>
               <h3 className="subtitle">COACHING AND GUIDANCE</h3>
               <div className="image-container">
                 <img
-                  src={OneOnOnes}
+                  src={OneToOnes}
                   className="img-responsive img-hover"
-                  alt="One-On-Ones - art by Lynn Hanford-Day"
+                  alt="One-To-Ones - art by Lynn Hanford-Day"
                 />
                 <div className="overlay">
                   <p>

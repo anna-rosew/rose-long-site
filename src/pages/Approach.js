@@ -65,7 +65,7 @@ export default function Approach() {
           destination, <strong>all rivers flow to the sea.</strong>
         </p>
         <Link to="/work" className="card-links">
-          <button className="journey-link icon-hover">
+          <button className="journey-link button-hover">
             Start Your Journey
           </button>
         </Link>

@@ -9,6 +9,7 @@ import Header from "./components/Header";
 import Socials from "./components/Socials";
 import Approach from "./pages/Approach";
 import Groups from "./pages/Groups";
+import OneToOne from "./pages/OneToOne";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/approach" element={<Approach />} />
         <Route path="/groups" element={<Groups />} />
+        <Route path="/onetoone" element={<OneToOne />} />
         <Route path="*" element={<NotPage />} />
       </Routes>
     </div>

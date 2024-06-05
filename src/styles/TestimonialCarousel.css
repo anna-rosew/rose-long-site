@@ -5,13 +5,19 @@
 }
 
 .testimonial-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 10px; /* Reduce padding */
+  padding: 20px; /* Reduce padding */
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: relative;
   min-height: 250px;
   color: #862b0d;
+  box-sizing: border-box; /* Ensures padding and border are included in the width and height */
+  margin: 0 10px; /* Adds spacing between slides */
+  overflow: hidden; /* Prevents content from spilling over */
 }
 
 .testimonial-text {
