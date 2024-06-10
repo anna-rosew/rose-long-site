@@ -4,12 +4,12 @@ import "../styles/Work.css";
 import "../styles/App.css";
 import MyApproach from "../styles/imgs/permanent/my-approach.png";
 import Groups from "../styles/imgs/permanent/groups.png";
-import OneToOnes from "../styles/imgs/permanent/one-on-one.png";
+import OneToOnes from "../styles/imgs/permanent/one-to-one.png";
 import OverlaySVG from "../styles/imgs/icons/sunshine_white.svg";
 
 export default function Work() {
   return (
-    <div className="Work-Page">
+    <div className="container Work-Page">
       <div className="intro">
         <h1>Work With Me.</h1>
         <p>
@@ -18,9 +18,7 @@ export default function Work() {
           ways. You may be emotionally overwhelmed and reactive, you may be
           experiencing restlessness and mental agitation, low energy and
           depression or physical symptoms. All these states indicate it’s time
-          for you turn your focus inwards and listen.
-        </p>{" "}
-        <p>
+          for you turn your focus inwards and listen.{" "}
           <strong>Life is leading you on a journey of self-discovery.</strong>
         </p>
       </div>
@@ -29,7 +27,7 @@ export default function Work() {
           <div className="card">
             <Link to="/approach" className="card-link">
               <h2>My Approach</h2>
-              <h3 className="subtitle">YOUR SUBTITLE/DESCRIPTION HERE</h3>
+              <h3 className="subtitle">FIND YOUR FLOW</h3>
               <div className="image-container">
                 <img
                   src={MyApproach}
@@ -58,7 +56,7 @@ export default function Work() {
           <div className="card">
             <Link to="/groups" className="card-link">
               <h2>Groups</h2>
-              <h3 className="subtitle">CLASSES | WORKSHOPS | RETREATS</h3>
+              <h3 className="subtitle">CLASSES - WORKSHOPS - RETREATS</h3>
               <div className="image-container">
                 <img
                   src={Groups}
@@ -87,7 +85,7 @@ export default function Work() {
           <div className="card">
             <Link to="/onetoone" className="card-link">
               <h2>One-To-Ones</h2>
-              <h3 className="subtitle">COACHING AND GUIDANCE</h3>
+              <h3 className="subtitle">COACHING & GUIDANCE</h3>
               <div className="image-container">
                 <img
                   src={OneToOnes}

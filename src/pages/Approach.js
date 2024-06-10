@@ -11,7 +11,6 @@ export default function Approach() {
   return (
     <div className="Approach-Page">
       <h1>My Approach</h1>
-
       <div className="player-wrapper">
         <iframe
           src="https://player.vimeo.com/video/950778932?h=f30e222061"
@@ -22,8 +21,15 @@ export default function Approach() {
           allowfullscreen
           title="vimeo player"
         ></iframe>
+      </div>{" "}
+      <div className="call-to-action">
+        {" "}
+        <Link to="/work" className="card-links">
+          <button className="journey-link button-hover">
+            Start Your Journey
+          </button>
+        </Link>
       </div>
-
       <div className="approach-text">
         <p>
           Most of us learn to live from our minds; focusing on our thoughts as
@@ -64,11 +70,6 @@ export default function Approach() {
           communities.   I recognise that ultimately all paths lead to the same
           destination, <strong>all rivers flow to the sea.</strong>
         </p>
-        <Link to="/work" className="card-links">
-          <button className="journey-link button-hover">
-            Start Your Journey
-          </button>
-        </Link>
       </div>
       <TestimonialCarousel />
     </div>

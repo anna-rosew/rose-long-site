@@ -5,17 +5,21 @@ import Work from "./pages/Work";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import NotPage from "./pages/NotPage";
-import Header from "./components/Header";
-import Socials from "./components/Socials";
 import Approach from "./pages/Approach";
 import Groups from "./pages/Groups";
 import OneToOne from "./pages/OneToOne";
+import Header from "./components/Nav/Header";
+import NavBar from "./components/Nav/NavBar";
+import Socials from "./components/Socials";
+import GetInTouch from "./components/GetInTouch";
 
 function App() {
   return (
     <div className="App">
       <Header />
+      <NavBar />
       <Socials />
+      <GetInTouch link="/contact" />
       <Routes>
         <Route index element={<Home />} />
         <Route path="/home" element={<Home />} />

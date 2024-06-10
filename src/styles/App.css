@@ -8,14 +8,14 @@ h1 {
   font-family: "Jomolhari", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 38px;
+  font-size: 30px;
 }
 
 h2 {
   font-family: "Jomolhari", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 h3 {
@@ -41,7 +41,7 @@ p {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 25px;
   letter-spacing: 0.3px;
 }
@@ -50,6 +50,9 @@ button:hover {
   cursor: pointer;
 }
 
+.container {
+  margin-top: 150px;
+}
 .grid {
   display: grid;
   grid-gap: 20px;
@@ -61,6 +64,10 @@ button:hover {
 
 .grid-5-columns {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid-6-columns {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .img-responsive {
@@ -104,9 +111,10 @@ button:hover {
 
 .button-hover:hover {
   color: white;
-  background-color: #356d65;
-  border: 2px solid #356d65;
+  background-color: #2b578e;
+  border: 2px solid #2b578e;
 }
+
 @media (maxs-width: 320px) {
   h1 {
     font-size: 28px;

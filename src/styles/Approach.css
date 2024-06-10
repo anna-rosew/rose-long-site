@@ -1,6 +1,7 @@
 .Approach-Page {
   display: block;
-  margin: 10px 200px 50px 150px;
+  margin: 0px 50px 20px 150px;
+  text-align: left;
 }
 
 .Approach-Page h1 {
@@ -16,14 +17,15 @@
 
 iframe {
   border: none;
-  border-radius: 45px; /* Optional: Remove default border */
+  border-radius: 45px;
+  margin: 0 auto; /* Optional: Remove default border */
 }
+
 .approach-text {
   margin: 30px auto;
   margin-left: 110px;
 }
 
-.Approach-Page {
-  margin-top: 40px;
-  text-align: left;
+.call-to-action {
+  margin-top: 10px;
 }

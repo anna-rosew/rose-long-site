@@ -1,6 +1,6 @@
 .Work-Page {
   text-align: center;
-  margin: 0px 30px 20px 150px;
+  margin: 0px 50px 20px 150px;
 }
 
 .Work-Page h1 {
@@ -47,8 +47,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgba(208, 113, 49, 0.8);
-
+  background: rgb(43, 87, 142, 0.8);
   border-radius: var(--image-border-radius);
   color: white;
   opacity: 0;

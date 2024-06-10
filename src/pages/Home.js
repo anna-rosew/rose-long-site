@@ -1,15 +1,16 @@
 import React, { useState } from "react";
-
 import "../styles/Home.css";
 import HeroImg from "../styles/imgs/permanent/hero-image.jpg";
 import HoverImg from "../styles/imgs/permanent/hero-img2.png";
 import StartButton from "../components/StartButton";
 
+//Try the same image but black and white
+
 export default function Home() {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div className="Home">
+    <div className="container Home">
       <h1>Rose Long</h1>
       <div
         className="hero-image-container"
