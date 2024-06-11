@@ -1,18 +1,31 @@
 import React from "react";
 import styled from "styled-components";
 import Burger from "./Burger";
+import "../../styles/NavBar.css";
 import Logo from "../../styles/imgs/icons/logo.svg";
 
 const Nav = styled.nav`
-  width: 100%;
-  height: 55px;
-  border-bottom: 2px solid #f1f1f1;
+  width: 1100px;
+  height: 150px;
   padding: 0 20px;
   display: flex;
   justify-content: space-between;
 
-  .logo {
-    padding: 15px 0;
+  .site-logo {
+    height: 120px;
+    color: black;
+  }
+
+  @media (max-width: 768px) {
+    width: 100px;
+    height: 120px;
+
+    .site-logo {
+      position: fixed;
+      top: 15px;
+      left: 130px;
+      z-index: 20;
+    }
   }
 `;
 
@@ -21,7 +34,9 @@ export default function NavBar() {
     <div className="NavBar">
       <Nav>
         <div className="logo">
-          <img src={Logo} alt="Logo" />
+          <a href="/" className="site-logo">
+            <img src={Logo} alt="Rose Long Logo" className="site-logo" />
+          </a>
         </div>
         <Burger />
       </Nav>

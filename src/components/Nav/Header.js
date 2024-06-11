@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "../styles/Header.css";
-import Logo from "../styles/imgs/icons/logo.svg";
+import Logo from "../../styles/imgs/icons/logo.svg";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);

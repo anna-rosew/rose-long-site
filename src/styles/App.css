@@ -25,6 +25,7 @@ h3 {
   font-style: normal;
   text-transform: uppercase;
   font-size: 20px;
+  color: black;
 }
 
 .subtitle {
@@ -50,9 +51,6 @@ button:hover {
   cursor: pointer;
 }
 
-.container {
-  margin-top: 150px;
-}
 .grid {
   display: grid;
   grid-gap: 20px;
@@ -115,7 +113,7 @@ button:hover {
   border: 2px solid #2b578e;
 }
 
-@media (maxs-width: 320px) {
+@media (max-width: 320px) {
   h1 {
     font-size: 28px;
   }

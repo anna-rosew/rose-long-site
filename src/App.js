@@ -8,7 +8,8 @@ import NotPage from "./pages/NotPage";
 import Approach from "./pages/Approach";
 import Groups from "./pages/Groups";
 import OneToOne from "./pages/OneToOne";
-import Header from "./components/Nav/Header";
+import Membership from "./pages/MembershipLanding";
+
 import NavBar from "./components/Nav/NavBar";
 import Socials from "./components/Socials";
 import GetInTouch from "./components/GetInTouch";
@@ -16,7 +17,6 @@ import GetInTouch from "./components/GetInTouch";
 function App() {
   return (
     <div className="App">
-      <Header />
       <NavBar />
       <Socials />
       <GetInTouch link="/contact" />
@@ -29,6 +29,7 @@ function App() {
         <Route path="/approach" element={<Approach />} />
         <Route path="/groups" element={<Groups />} />
         <Route path="/onetoone" element={<OneToOne />} />
+        <Route path="/membership" element={<Membership />} />
         <Route path="*" element={<NotPage />} />
       </Routes>
     </div>

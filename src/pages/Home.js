@@ -4,8 +4,6 @@ import HeroImg from "../styles/imgs/permanent/hero-image.jpg";
 import HoverImg from "../styles/imgs/permanent/hero-img2.png";
 import StartButton from "../components/StartButton";
 
-//Try the same image but black and white
-
 export default function Home() {
   const [isHovered, setIsHovered] = useState(false);
 
