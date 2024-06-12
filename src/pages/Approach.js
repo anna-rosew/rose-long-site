@@ -9,16 +9,14 @@ import "../styles/Approach.css";
 
 export default function Approach() {
   return (
-    <div className="Approach-Page">
+    <div className="container Approach-Page">
       <h1>My Approach</h1>
       <div className="player-wrapper">
         <iframe
           src="https://player.vimeo.com/video/950778932?h=f30e222061"
-          width="960"
-          height="540"
-          frameborder="0"
+          frameBorder="0"
           allow="autoplay; fullscreen; picture-in-picture"
-          allowfullscreen
+          allowFullScreen
           title="vimeo player"
         ></iframe>
       </div>{" "}

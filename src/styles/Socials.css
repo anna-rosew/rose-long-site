@@ -20,25 +20,21 @@
   height: 100%;
 }
 
-.button-with-hover {
-  display: inline-block;
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  text-decoration: none; /* Remove underline from link */
-  position: fixed; /* Fix the position */
-  bottom: 20px; /* Distance from the bottom */
-  right: 20px; /* Distance from the right */
-}
+@media (max-width: 768px) {
+  .social-icons-container {
+    position: absolute;
+    top: 50px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 10px;
+  }
 
-.button-with-hover img {
-  width: 100px; /* Adjust size as needed */
-  height: 100px; /* Adjust size as needed */
-  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Add transition for smooth hover effect */
-}
-
-.button-with-hover:hover img {
-  transform: scale(1.1); /* Optional: Add a slight scaling effect */
-  /* Optional: Change opacity for additional effect */
+  .social-icon {
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
+  
 }

@@ -4,6 +4,7 @@
 
 .Home h1 {
   margin: 0;
+  font-size: 35px;
 }
 
 .Home h2 {
@@ -11,20 +12,18 @@
 }
 
 .hero-image-container {
-  position: relative;
-  display: inline-block;
-}
-
-.hero-img {
+  background-image: url("./imgs/permanent/hero-image.jpg");
+  background-size: cover;
+  background-position: center;
   height: 500px;
-  border-radius: var(--image-border-radius);
-  display: block;
-  margin: 10px auto;
-  transition: opacity 0.5s ease-in-out; /* Add transition for smooth fade */
+  margin: 10px 320px;
+  border-radius: 23px;
+  transition: opacity 0.5s ease, transform 1s ease-in-out;
 }
 
-.hero-img:hover {
-  opacity: 0.7; /* Slight opacity change on hover for smooth transition */
+.hero-image-container:hover {
+  background-image: url("./imgs/permanent/hero-img2.png");
+  opacity: 0.7;
 }
 
 .button-overlay {
@@ -39,7 +38,6 @@
   height: 100%; /* Ensures the button is centered in the image */
   pointer-events: none;
   opacity: 0; /* Initially hide the button overlay */
-  transition: opacity 0.5s ease-in-out; /* Add transition for smooth fade */
 }
 
 .hero-image-container:hover .button-overlay {
@@ -62,4 +60,50 @@
   color: white;
   background-color: transparent;
   border: 2px solid white;
+}
+
+.journey-container {
+  height: 200px;
+  background-image: url("./imgs/icons/mobile-journey.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-bottom: 20px;
+}
+
+.courage {
+  background-color: #356d65;
+}
+
+.clarity {
+  background-color: #b9ca9d;
+}
+
+.presence {
+  background-color: #f8e0a4;
+}
+
+.journey-container img {
+  width: 250px;
+}
+
+.mobile-home-container h3 {
+  margin-top: 70px;
+}
+
+img.logo-mobile {
+  height: 70px;
+}
+
+@media (max-width: 768px) {
+  .hero-image-container {
+    height: 370px;
+    margin: 20px auto;
+  }
+
+  .start-journey-button {
+    font-size: 20px;
+    color: black;
+    border: 2px solid black;
+  }
 }

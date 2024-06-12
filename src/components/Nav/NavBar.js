@@ -10,6 +10,7 @@ const Nav = styled.nav`
   padding: 0 20px;
   display: flex;
   justify-content: space-between;
+  align-items: center; /* Ensure vertical alignment */
 
   .site-logo {
     height: 120px;
@@ -17,14 +18,14 @@ const Nav = styled.nav`
   }
 
   @media (max-width: 768px) {
-    width: 100px;
-    height: 120px;
+    padding: 0px;
+    width: 100%; /* Full width of the viewport */
+
+    height: 100px;
+    justify-content: center; /* Center content horizontally */
 
     .site-logo {
-      position: fixed;
-      top: 15px;
-      left: 130px;
-      z-index: 20;
+      height: 100px; /* Adjust height as needed */
     }
   }
 `;

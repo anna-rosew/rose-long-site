@@ -1,5 +1,4 @@
 import React from "react";
-
 import "../styles/Socials.css";
 import InstaIcon from "../styles/imgs/icons/insta_icon.svg";
 import VimeoIcon from "../styles/imgs/icons/vimeo_icon.svg";

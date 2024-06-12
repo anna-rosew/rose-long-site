@@ -12,14 +12,14 @@ import Membership from "./pages/MembershipLanding";
 
 import NavBar from "./components/Nav/NavBar";
 import Socials from "./components/Socials";
-import GetInTouch from "./components/GetInTouch";
+
 
 function App() {
   return (
     <div className="App">
       <NavBar />
       <Socials />
-      <GetInTouch link="/contact" />
+
       <Routes>
         <Route index element={<Home />} />
         <Route path="/home" element={<Home />} />

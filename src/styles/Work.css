@@ -1,10 +1,5 @@
-.Work-Page {
-  text-align: center;
-  margin: 0px 50px 20px 150px;
-}
-
 .Work-Page h1 {
-  margin-top: 0px;
+  margin-top: 10px;
 }
 
 .intro p {
@@ -27,6 +22,7 @@
 .image-container {
   position: relative;
   overflow: hidden;
+  z-index: 100;
 }
 
 .image-container img {
@@ -47,7 +43,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgb(43, 87, 142, 0.8);
+  background: rgb(53, 109, 101, 0.8);
   border-radius: var(--image-border-radius);
   color: white;
   opacity: 0;
@@ -59,11 +55,20 @@
 }
 
 .overlay p {
-  margin: 0; /* Remove default margin */
+  margin: 0; /* Remove default margin .Work-Page {
+  text-align: center;
+  margin: 0px 50px 20px 150px;
+}*/
   padding: 15px;
 }
 
 .overlay-svg {
   margin: 0;
   width: 100px;
+}
+
+@media (max-width: 768px) {
+  .work-cards {
+    margin: 0px 20px;
+  }
 }

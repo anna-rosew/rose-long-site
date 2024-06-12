@@ -14,19 +14,6 @@
   font-size: 48px;
 }
 
-.player-wrapper {
-  display: inline-block;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  height: 70vh;
-  margin-left: 100px;
-}
-
-iframe {
-  border: none;
-  border-radius: 45px; /* Optional: Remove default border */
-}
-
 .one-to-one-text {
   display: block;
   margin: 30px auto;
@@ -50,3 +37,5 @@ iframe {
   width: 180px;
   margin: 0 auto;
 }
+
+

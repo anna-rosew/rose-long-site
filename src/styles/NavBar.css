@@ -31,10 +31,8 @@
   .site-logo {
     text-align: center;
   }
-  .hero-img {
-    width: 100vw;
-    height: 300px;
-  }
 
-  
+  .menu-link {
+    color: white;
+  }
 }

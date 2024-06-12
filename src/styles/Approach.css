@@ -1,24 +1,9 @@
 .Approach-Page {
-  display: block;
-  margin: 0px 50px 20px 150px;
   text-align: left;
 }
 
 .Approach-Page h1 {
   text-align: center;
-}
-
-.player-wrapper {
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  height: 70vh;
-}
-
-iframe {
-  border: none;
-  border-radius: 45px;
-  margin: 0 auto; /* Optional: Remove default border */
 }
 
 .approach-text {
@@ -28,4 +13,10 @@ iframe {
 
 .call-to-action {
   margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .work-cards {
+    margin: 0px 20px;
+  }
 }

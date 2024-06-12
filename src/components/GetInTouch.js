@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import defaultSvg from "../styles/imgs/icons/get-in-touch.svg";
 import hoverSvg from "../styles/imgs/icons/get-in-touch-hover.svg";
-import "../styles/imgs/icons/get-in-touch.svg"; // Import the CSS file
+import "../styles/imgs/icons/get-in-touch.svg";
+import "../styles/Get-In-Touch.css";
 
 const GetInTouch = ({ link }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -9,7 +10,7 @@ const GetInTouch = ({ link }) => {
   return (
     <a
       href={link}
-      className="button-with-hover"
+      className="get-in-touch-btn"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >

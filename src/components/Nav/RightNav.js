@@ -15,20 +15,20 @@ const Ul = styled.ul`
 
   @media (max-width: 768px) {
     flex-flow: column nowrap;
-    color: black;
-    background-color: #0d2538;
+    color: white;
+    background-color: #356d65;
     position: fixed;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
     top: 0;
     right: 0;
-    height: 100vh;
-    width: 100vw;
+    height: 60vh;
+    width: 70vw;
     margin: 0;
-    padding-top: 3.5rem;
+    padding-top: 5rem;
     transition: transform 0.3s ease-in-out;
 
     li {
-      color: black;
+      color: white;
     }
   }
 `;

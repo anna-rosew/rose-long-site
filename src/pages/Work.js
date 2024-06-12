@@ -9,7 +9,7 @@ import OverlaySVG from "../styles/imgs/icons/sunshine_white.svg";
 
 export default function Work() {
   return (
-    <div className="container Work-Page">
+    <div className=" container Work-Page">
       <div className="intro">
         <h1>Work With Me.</h1>
         <p>
