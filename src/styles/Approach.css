@@ -1,18 +1,10 @@
-.Approach-Page {
-  text-align: left;
-}
-
-.Approach-Page h1 {
-  text-align: center;
+.call-to-action {
+  margin-top: 10px;
 }
 
 .approach-text {
-  margin: 30px auto;
-  margin-left: 110px;
-}
-
-.call-to-action {
-  margin-top: 10px;
+  padding: 20px;
+  text-align: left;
 }
 
 @media (max-width: 768px) {

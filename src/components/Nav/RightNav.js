@@ -18,11 +18,12 @@ const Ul = styled.ul`
     color: white;
     background-color: #356d65;
     position: fixed;
+    z-index: 1000;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
     top: 0;
     right: 0;
-    height: 60vh;
-    width: 70vw;
+    height: 100vh;
+    width: 100vw;
     margin: 0;
     padding-top: 5rem;
     transition: transform 0.3s ease-in-out;

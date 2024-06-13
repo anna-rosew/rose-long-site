@@ -16,7 +16,7 @@
   background-size: cover;
   background-position: center;
   height: 500px;
-  margin: 10px 320px;
+  margin: 10px 200px;
   border-radius: 23px;
   transition: opacity 0.5s ease, transform 1s ease-in-out;
 }
@@ -29,7 +29,7 @@
 .button-overlay {
   position: absolute;
   top: 85%;
-  left: 50%;
+  left: 780px;
   transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
@@ -105,5 +105,10 @@ img.logo-mobile {
     font-size: 20px;
     color: black;
     border: 2px solid black;
+  }
+
+  .hero-image-container:hover {
+    background-image: url("./imgs/permanent/hero-image.jpg");
+    opacity: 1;
   }
 }
