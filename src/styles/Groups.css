@@ -67,3 +67,86 @@
 .overlay-svg {
   height: 100px;
 }
+
+.overlay-svg2 {
+  height: 20px;
+}
+
+.online-groups {
+  margin-top: 20px;
+  margin-top: 20px;
+}
+
+.online-groups h2 {
+  margin-left: 20px;
+}
+
+.section-heading {
+  text-align: left;
+}
+
+.card-link {
+  text-decoration: none;
+  color: black;
+}
+
+.retreat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.retreat-img-container {
+  position: relative;
+  width: 621px; /* Adjusted to 621px */
+  height: 430px;
+}
+
+.retreat-image {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  display: block;
+  border-radius: 127px;
+}
+
+.retreat-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 201, 95, 0.8);
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 127px;
+}
+
+.retreat-img-container:hover .retreat-overlay {
+  opacity: 1;
+}
+
+.retreat-overlay h3,
+.retreat-overlay h2,
+.retreat-overlay p,
+.retreat-overlay span {
+  margin: 5px 0;
+}
+
+.retreat-overlay span {
+  display: flex;
+  align-items: center;
+}
+
+.retreat-overlay span img {
+  margin-right: 5px;
+}

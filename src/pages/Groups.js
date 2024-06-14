@@ -10,6 +10,8 @@ import EveningChill from "../styles/imgs/permanent/evening-chillout.png";
 import Lunar from "../styles/imgs/permanent/lunar-cycles.png";
 import Kundalini from "../styles/imgs/permanent/kundali-magic.png";
 import OverlaySVG from "../styles/imgs/icons/sunshine.svg";
+import Retreat from "../styles/imgs/photos/retreat.png";
+import Location from "../styles/imgs/icons/";
 
 export default function Groups() {
   return (
@@ -24,7 +26,7 @@ export default function Groups() {
             <h3 className="subtitle">YOGA | COMMUNITY</h3>
             <img
               src={Online}
-              className="img-responsive img-hover"
+              className="img-responsive"
               alt="Online Groups - art by Lynn Hanford-Day"
             />
           </Link>
@@ -35,7 +37,7 @@ export default function Groups() {
             <h3 className="subtitle">CLASSES | WORKSHOPS | RETREATS</h3>
             <img
               src={InPerson}
-              className="img-responsive img-hover"
+              className="img-responsive"
               alt="In-Person Classes & Groups - art by Lynn Hanford-Day"
             />
           </Link>
@@ -46,21 +48,21 @@ export default function Groups() {
             <h3 className="subtitle">JOURNEYS | GROWTH | EXPLORATION</h3>
             <img
               src={Retreats}
-              className="img-responsive img-hover"
+              className="img-responsive"
               alt="Retreats & Workshops - art by Lynn Hanford-Day"
             />
           </Link>
         </div>
       </div>
       <div className="online-groups">
-        <h2>Online Groups</h2>
+        <h2 className="section-heading">Online Groups:</h2>
         <div className="grid grid-4-columns">
           <div className="yoga-class">
             <Link to="/approach" className="card-link">
               <div className="yoga-image-container">
                 <img
                   src={MorningBreathe}
-                  className="yoga-image img-hover"
+                  className="yoga-image"
                   alt="My Approach - art by Lynn Hanford-Day"
                 />
                 <div className="overlay">
@@ -89,7 +91,7 @@ export default function Groups() {
               <div className="yoga-image-container">
                 <img
                   src={EveningChill}
-                  className="yoga-image img-hover"
+                  className="yoga-image"
                   alt="Evening Chill-Out"
                 />
                 <div className="overlay">
@@ -116,11 +118,7 @@ export default function Groups() {
           <div className="yoga-class">
             <Link to="/approach" className="card-link">
               <div className="yoga-image-container">
-                <img
-                  src={Lunar}
-                  className="yoga-image img-hover"
-                  alt="Lunar Cycle"
-                />
+                <img src={Lunar} className="yoga-image " alt="Lunar Cycle" />
                 <div className="overlay">
                   <p>
                     With each New Moon, we set intentions; during the Full Moon,
@@ -146,7 +144,7 @@ export default function Groups() {
               <div className="yoga-image-container">
                 <img
                   src={Kundalini}
-                  className="yoga-image img-hover"
+                  className="yoga-image"
                   alt="Kundalini Magic"
                 />
                 <div className="overlay">
@@ -168,6 +166,34 @@ export default function Groups() {
               <p className="class-details">
                 PRICE: Drop-In - £10 / Monthly Kundalini Bundle
               </p>
+            </Link>
+          </div>
+        </div>
+      </div>
+      <div className="retreats">
+        <div className="grid grid-2-columns">
+          <div className="retreat-card">
+            <Link to="/retreat" className="card-link">
+              <div className="retreat-img-container">
+                <img src={Retreat} className="retreat-image" alt="Retreat" />
+                <div className="retreat-overlay">
+                  <img src={OverlaySVG} alt="icon" className="overlay-svg" />
+                  <h3>Upcoming Retreat:</h3>
+                  <h2>My Heart is For The Whole</h2>
+                  <p>
+                    Immerse yourself in a weekend of yoga and breath work,
+                    rediscovering wholeness within.
+                  </p>
+                  <span>
+                    <img src={Location} alt="icon" className="overlay-svg2" />
+                    <p>Patrick Brompton Hall, Yorkshire Dales, UK</p>
+                  </span>
+                  <span>
+                    <img src={Calender} alt="icon" className="overlay-svg2" />
+                    <p>1st - 7th May 2024</p>
+                  </span>
+                </div>
+              </div>
             </Link>
           </div>
         </div>
