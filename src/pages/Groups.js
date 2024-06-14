@@ -9,7 +9,7 @@ import MorningBreathe from "../styles/imgs/permanent/morning-breathe.png";
 
 export default function Groups() {
   return (
-    <div className="Groups-Page">
+    <div className="container Groups-Page">
       <div className="intro">
         <h1>Groups.</h1>
       </div>
@@ -51,7 +51,23 @@ export default function Groups() {
       <div className="online-groups">
         <h2>Online Groups</h2>
         <div className="grid grid-4-columns">
-          <div className="yoga class">
+          <div className="yoga-class">
+            <Link to="/approach" className="card-link">
+              <div className="yoga-image-container">
+                <img
+                  src={MorningBreathe}
+                  className="yoga-image"
+                  alt="My Approach - art by Lynn Hanford-Day"
+                />
+              </div>
+              <h2>Morning Breathe</h2>
+              <p className="class-details">
+                WHEN: Every Wednesday at 7.15-7.45am
+              </p>
+              <p className="class-details">
+                PRICE: Drop-In - £7 / Monthly Morning Bundle
+              </p>
+            </Link>
             <img src={MorningBreathe} alt="Good Morning Breathe"></img>
           </div>
         </div>

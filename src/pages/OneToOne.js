@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/OneToOne.css";
-import IconOne from "../styles/imgs/icons/sunshine.svg";
-
+import IconOne from "../styles/imgs/icons/calender.svg";
+import IconTwo from "../styles/imgs/icons/laptop.svg";
+import IconThree from "../styles/imgs/icons/daily.svg";
 export default function OneToOne() {
   return (
     <div className=" container OneToOne-Page">
@@ -44,16 +45,22 @@ export default function OneToOne() {
           <h3 className="subtitle">What to expect</h3>
           <div className="grid grid-3-columns">
             <div className="item-one">
-              <p>Weekly or Bi-Weekly One on One Session</p>
-              <img src={IconOne} alt="sunshine"></img>
+              <p className="heading">Choose Your Rhythm</p>
+
+              <img src={IconOne} alt="Calander"></img>
+              <p>Weekly or Biweekly</p>
             </div>
             <div className="item-two">
-              <p>Weekly or Bi-Weekly One on One Session</p>
-              <img src={IconOne} alt="sunshine"></img>
+              <p className="heading">Where to Meet</p>
+
+              <img src={IconTwo} alt="Meetings"></img>
+              <p>By Phone, Video Call or In-Person</p>
             </div>
             <div className="item-three">
-              <p>Weekly or Bi-Weekly One on One Session</p>
-              <img src={IconOne} alt="sunshine"></img>
+              <p className="heading">Tailored to You</p>
+
+              <img src={IconThree} alt="Daily Practices"></img>
+              <p>Daily Resources & practices: </p>
             </div>
           </div>
         </div>

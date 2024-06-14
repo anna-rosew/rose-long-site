@@ -32,7 +32,26 @@
   text-align: center;
 }
 
+.what-to-expect .heading {
+  font-size: 20px;
+  font-weight: 600;
+}
+
 .what-to-expect img {
   width: 180px;
   margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .OneToOne-Page h2 {
+    margin-bottom: 5px;
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .OneToOne-Page h1 {
+    margin: 0px auto;
+    font-size: 28px;
+    text-align: center;
+  }
 }

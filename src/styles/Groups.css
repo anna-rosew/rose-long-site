@@ -1,9 +1,9 @@
-.Groups-Page {
-  text-align: center;
-  margin: 0px 30px 20px 150px;
-}
-
 .card-links {
   text-decoration: none;
   color: black;
+}
+
+.yoga-image {
+  height: 415px;
+  width: 301px;
 }
