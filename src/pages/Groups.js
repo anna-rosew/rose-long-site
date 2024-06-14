@@ -11,7 +11,9 @@ import Lunar from "../styles/imgs/permanent/lunar-cycles.png";
 import Kundalini from "../styles/imgs/permanent/kundali-magic.png";
 import OverlaySVG from "../styles/imgs/icons/sunshine.svg";
 import Retreat from "../styles/imgs/photos/retreat.png";
-import Location from "../styles/imgs/icons/";
+import Workshop from "../styles/imgs/photos/groups.png";
+import Location from "../styles/imgs/icons/location.svg";
+import Calender from "../styles/imgs/icons/calender.svg";
 
 export default function Groups() {
   return (
@@ -176,6 +178,30 @@ export default function Groups() {
             <Link to="/retreat" className="card-link">
               <div className="retreat-img-container">
                 <img src={Retreat} className="retreat-image" alt="Retreat" />
+                <div className="retreat-overlay">
+                  <img src={OverlaySVG} alt="icon" className="overlay-svg" />
+                  <h3>Upcoming Retreat:</h3>
+                  <h2>My Heart is For The Whole</h2>
+                  <p>
+                    Immerse yourself in a weekend of yoga and breath work,
+                    rediscovering wholeness within.
+                  </p>
+                  <span>
+                    <img src={Location} alt="icon" className="overlay-svg2" />
+                    <p>Patrick Brompton Hall, Yorkshire Dales, UK</p>
+                  </span>
+                  <span>
+                    <img src={Calender} alt="icon" className="overlay-svg2" />
+                    <p>1st - 7th May 2024</p>
+                  </span>
+                </div>
+              </div>
+            </Link>
+          </div>
+          <div className="retreat-card">
+            <Link to="/retreat" className="card-link">
+              <div className="retreat-img-container">
+                <img src={Workshop} className="retreat-image" alt="Retreat" />
                 <div className="retreat-overlay">
                   <img src={OverlaySVG} alt="icon" className="overlay-svg" />
                   <h3>Upcoming Retreat:</h3>

@@ -80,6 +80,10 @@ button:hover {
   grid-gap: 20px;
 }
 
+.grid-2-columns {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .grid-3-columns {
   grid-template-columns: repeat(3, 1fr);
 }
@@ -103,6 +107,7 @@ button:hover {
 .img-hover img {
   display: block;
   transition: opacity 0.5s ease-in-out;
+  border-radius: var(--image-border-radius);
 }
 
 .img-hover:hover img {
@@ -157,8 +162,10 @@ button:hover {
     margin: 0 10px;
   }
 
+  .grid-2-columns,
   .grid-3-columns,
-  .grid-4-columns .grid-5-columns {
+  .grid-4-columns,
+  .grid-5-columns {
     grid-template-columns: 1fr;
   }
 

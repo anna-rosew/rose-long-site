@@ -28,13 +28,13 @@ export default function Work() {
             <Link to="/approach" className="card-link">
               <h2>My Approach</h2>
               <h3 className="subtitle">FIND YOUR FLOW</h3>
-              <div className="image-container">
+              <div className="work-image-container">
                 <img
                   src={MyApproach}
                   className="img-responsive img-hover"
                   alt="My Approach - art by Lynn Hanford-Day"
                 />
-                <div className="overlay">
+                <div className="work-overlay">
                   <p>
                     The ancients knew the power of the{" "}
                     <strong>mind, body and the breath,</strong> and modern
@@ -42,7 +42,7 @@ export default function Work() {
                   </p>
                   <img
                     src={OverlaySVG}
-                    className="overlay-svg"
+                    className="work-overlay-svg"
                     alt="Overlay SVG"
                   />
                   <p>
@@ -57,13 +57,13 @@ export default function Work() {
             <Link to="/groups" className="card-link">
               <h2>Groups</h2>
               <h3 className="subtitle">CLASSES - WORKSHOPS - RETREATS</h3>
-              <div className="image-container">
+              <div className="work-image-container">
                 <img
                   src={Groups}
                   className="img-responsive img-hover"
                   alt="Group - art by Lynn Hanford-Day"
                 />
-                <div className="overlay">
+                <div className="work-overlay">
                   <p>
                     The ancients knew the power of the{" "}
                     <strong>mind, body and the breath,</strong> and modern
@@ -71,7 +71,7 @@ export default function Work() {
                   </p>
                   <img
                     src={OverlaySVG}
-                    className="overlay-svg"
+                    className="work-overlay-svg"
                     alt="Overlay SVG"
                   />
                   <p>
@@ -86,13 +86,13 @@ export default function Work() {
             <Link to="/onetoone" className="card-link">
               <h2>One-To-Ones</h2>
               <h3 className="subtitle">COACHING & GUIDANCE</h3>
-              <div className="image-container">
+              <div className="work-image-container">
                 <img
                   src={OneToOnes}
                   className="img-responsive img-hover"
                   alt="One-To-Ones - art by Lynn Hanford-Day"
                 />
-                <div className="overlay">
+                <div className="work-overlay">
                   <p>
                     The ancients knew the power of the{" "}
                     <strong>mind, body and the breath,</strong> and modern
@@ -100,7 +100,7 @@ export default function Work() {
                   </p>
                   <img
                     src={OverlaySVG}
-                    className="overlay-svg"
+                    className="work-overlay-svg"
                     alt="Overlay SVG"
                   />
                   <p>

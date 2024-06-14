@@ -69,7 +69,7 @@
 }
 
 .overlay-svg2 {
-  height: 20px;
+  height: 35px;
 }
 
 .online-groups {
@@ -126,7 +126,7 @@
   opacity: 0;
   transition: opacity 0.3s ease;
   text-align: center;
-  padding: 20px;
+  padding: 100px;
   box-sizing: border-box;
   border-radius: 127px;
 }
@@ -149,4 +149,19 @@
 
 .retreat-overlay span img {
   margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+  .retreat-img-container {
+    width: 300px; /* Adjusted to 621px */
+    height: 300px;
+  }
+
+  .retreat-image {
+    border-radius: 57px;
+  }
+
+  .retreat-overlay {
+    border-radius: 57px;
+  }
 }

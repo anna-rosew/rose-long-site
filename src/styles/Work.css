@@ -23,21 +23,21 @@
   margin-bottom: 20px;
 }
 
-.image-container {
+.work-image-container {
   position: relative;
   overflow: hidden;
   z-index: 100;
 }
 
-.image-container img {
+.work-image-container img {
   transition: filter 0.3s ease;
 }
 
-.image-container:hover img {
+.work-image-container:hover img {
   filter: grayscale(100%);
 }
 
-.overlay {
+.work-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -54,11 +54,11 @@
   transition: opacity 0.3s ease;
 }
 
-.image-container:hover .overlay {
+.work-image-container:hover .overlay {
   opacity: 1;
 }
 
-.overlay p {
+.work-overlay p {
   margin: 0; /* Remove default margin .Work-Page {
   text-align: center;
   margin: 0px 50px 20px 150px;
@@ -66,7 +66,7 @@
   padding: 15px;
 }
 
-.overlay-svg {
+.work-overlay-svg {
   margin: 0;
   width: 100px;
 }
