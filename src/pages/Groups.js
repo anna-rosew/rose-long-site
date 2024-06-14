@@ -6,6 +6,10 @@ import Online from "../styles/imgs/permanent/online-groups.png";
 import InPerson from "../styles/imgs/permanent/in-person-groups.png";
 import Retreats from "../styles/imgs/permanent/retreats.png";
 import MorningBreathe from "../styles/imgs/permanent/morning-breathe.png";
+import EveningChill from "../styles/imgs/permanent/evening-chillout.png";
+import Lunar from "../styles/imgs/permanent/lunar-cycles.png";
+import Kundalini from "../styles/imgs/permanent/kundali-magic.png";
+import OverlaySVG from "../styles/imgs/icons/sunshine.svg";
 
 export default function Groups() {
   return (
@@ -56,19 +60,115 @@ export default function Groups() {
               <div className="yoga-image-container">
                 <img
                   src={MorningBreathe}
-                  className="yoga-image"
+                  className="yoga-image img-hover"
                   alt="My Approach - art by Lynn Hanford-Day"
                 />
+                <div className="overlay">
+                  <p>
+                    Deeply detoxifying, revitalising and balancing, the practice
+                    of Pranayama has deep and lasting benefits.
+                    <img
+                      src={OverlaySVG}
+                      alt="sunshine-icon"
+                      className="overlay-svg"
+                    ></img>
+                  </p>
+                </div>
               </div>
               <h2>Morning Breathe</h2>
               <p className="class-details">
-                WHEN: Every Wednesday at 7.15-7.45am
+                WHEN: 7.15-7.45am GMT Every Weds Morning
               </p>
               <p className="class-details">
                 PRICE: Drop-In - £7 / Monthly Morning Bundle
               </p>
             </Link>
-            <img src={MorningBreathe} alt="Good Morning Breathe"></img>
+          </div>
+          <div className="yoga-class">
+            <Link to="/approach" className="card-link">
+              <div className="yoga-image-container">
+                <img
+                  src={EveningChill}
+                  className="yoga-image img-hover"
+                  alt="Evening Chill-Out"
+                />
+                <div className="overlay">
+                  <p>
+                    Take an hour to unwind and relax, a deeply restorative way
+                    to care for your health in these stressful times.
+                    <img
+                      src={OverlaySVG}
+                      alt="sunshine-icon"
+                      className="overlay-svg"
+                    ></img>
+                  </p>
+                </div>
+              </div>
+              <h2>Evening Chill-Out</h2>
+              <p className="class-details">
+                WHEN: 8.00-9.00pm GMT Every Thurs Evening
+              </p>
+              <p className="class-details">
+                PRICE: Drop-In - £10 / Monthly Evening Bundle
+              </p>
+            </Link>
+          </div>
+          <div className="yoga-class">
+            <Link to="/approach" className="card-link">
+              <div className="yoga-image-container">
+                <img
+                  src={Lunar}
+                  className="yoga-image img-hover"
+                  alt="Lunar Cycle"
+                />
+                <div className="overlay">
+                  <p>
+                    With each New Moon, we set intentions; during the Full Moon,
+                    we reflect and prepare for new possibilities as it rises
+                    again.
+                    <img
+                      src={OverlaySVG}
+                      alt="sunshine-icon"
+                      className="overlay-svg"
+                    ></img>
+                  </p>
+                </div>
+              </div>
+              <h2>Lunar Cycle</h2>
+              <p className="class-details">WHEN: Evening Every Full-Moon</p>
+              <p className="class-details">
+                PRICE: Drop-In - £12 / Monthly Lunar Bundle
+              </p>
+            </Link>
+          </div>
+          <div className="yoga-class">
+            <Link to="/approach" className="card-link">
+              <div className="yoga-image-container">
+                <img
+                  src={Kundalini}
+                  className="yoga-image img-hover"
+                  alt="Kundalini Magic"
+                />
+                <div className="overlay">
+                  <p>
+                    These 90-minute classes blend movement, breath, and sound
+                    for an intense workout and expanded awareness. Kundalini
+                    Yoga offers a rapid path to altered states of
+                    consciousness—without substances!
+                    <img
+                      src={OverlaySVG}
+                      alt="sunshine-icon"
+                      className="overlay-svg"
+                    ></img>
+                  </p>
+                </div>
+              </div>
+              <h2>Kundalini Magic</h2>
+              <p className="class-details">Two Saturdays each month</p>
+              <p className="class-details">
+                PRICE: Drop-In - £10 / Monthly Kundalini Bundle
+              </p>
+            </Link>
           </div>
         </div>
       </div>

@@ -84,6 +84,9 @@ button:hover {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.grid-4-columns {
+  grid-template-columns: repeat(4, 1fr);
+}
 .grid-5-columns {
   grid-template-columns: repeat(5, 1fr);
 }
@@ -155,7 +158,7 @@ button:hover {
   }
 
   .grid-3-columns,
-  .grid-5-columns {
+  .grid-4-columns .grid-5-columns {
     grid-template-columns: 1fr;
   }
 
