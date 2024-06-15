@@ -35,11 +35,6 @@ export default function Work() {
                   alt="My Approach - art by Lynn Hanford-Day"
                 />
                 <div className="work-overlay">
-                  <p>
-                    The ancients knew the power of the{" "}
-                    <strong>mind, body and the breath,</strong> and modern
-                    research is proving what the ancients knew.   
-                  </p>
                   <img
                     src={OverlaySVG}
                     className="work-overlay-svg"
@@ -64,11 +59,6 @@ export default function Work() {
                   alt="Group - art by Lynn Hanford-Day"
                 />
                 <div className="work-overlay">
-                  <p>
-                    The ancients knew the power of the{" "}
-                    <strong>mind, body and the breath,</strong> and modern
-                    research is proving what the ancients knew.   
-                  </p>
                   <img
                     src={OverlaySVG}
                     className="work-overlay-svg"
@@ -93,11 +83,6 @@ export default function Work() {
                   alt="One-To-Ones - art by Lynn Hanford-Day"
                 />
                 <div className="work-overlay">
-                  <p>
-                    The ancients knew the power of the{" "}
-                    <strong>mind, body and the breath,</strong> and modern
-                    research is proving what the ancients knew.   
-                  </p>
                   <img
                     src={OverlaySVG}
                     className="work-overlay-svg"

@@ -1,0 +1,85 @@
+.Retreats {
+  padding: 20px;
+}
+
+.Retreat-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid-2-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.retreat-image-column {
+  position: relative;
+}
+
+.retreat-image-column img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.image-navigation {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.image-navigation button {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.retreat-info-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.retreat-info-column h3 {
+  margin-bottom: 10px;
+}
+
+.retreat-info-column h1 {
+  margin-bottom: 20px;
+}
+
+.retreat-info-column p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.retreat-info-column img {
+  margin-right: 10px;
+}
+
+.get-in-touch {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.event-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.event-navigation button {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
