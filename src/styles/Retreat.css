@@ -1,9 +1,14 @@
-.Retreats {
-  padding: 20px;
+.details-icon {
+  height: 20px; /* Adjust the size as needed */
+  width: 20px; /* Adjust the size as needed */
+  vertical-align: middle; /* Align the icon with the text */
 }
 
-.details-icon {
-  height: 30px;
+.event-container {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 20px !important;
+  width: 100% !important;
 }
 
 .slider-container {
@@ -11,19 +16,13 @@
   height: 392px;
   width: 543px;
   border-radius: 45px;
+  position: relative; /* Add this for arrow positioning */
 }
 
 img {
   border-radius: 45px;
   object-fit: cover;
-}
-
-.retreat-image-column {
-  border-radius: 45px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
 }
 
 .retreat-info-column {
@@ -52,4 +51,20 @@ img {
   color: white;
   background-color: #2b578e;
   border: 2px solid #2b578e;
+}
+
+.slick-next:before,
+.slick-prev:before {
+  color: black;
+  font-size: 30px;
+}
+
+.slick-prev {
+  left: -25px;
+  z-index: 1;
+}
+
+.slick-next {
+  right: -25px;
+  z-index: 1;
 }
