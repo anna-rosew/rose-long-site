@@ -4,13 +4,13 @@ import "../styles/App.css";
 import "../styles/Groups.css";
 import Online from "../styles/imgs/permanent/online-groups.png";
 import InPerson from "../styles/imgs/permanent/in-person-groups.png";
-import Retreats from "../styles/imgs/permanent/retreats.png";
+import Retreat from "../styles/imgs/photos/retreat1.png";
 import MorningBreathe from "../styles/imgs/permanent/morning-breathe.png";
 import EveningChill from "../styles/imgs/permanent/evening-chillout.png";
 import Lunar from "../styles/imgs/permanent/lunar-cycles.png";
 import Kundalini from "../styles/imgs/permanent/kundali-magic.png";
 import OverlaySVG from "../styles/imgs/icons/sunshine.svg";
-import Retreat from "../styles/imgs/photos/retreat.png";
+
 import Workshop from "../styles/imgs/photos/groups.png";
 import Location from "../styles/imgs/icons/location.svg";
 import Calender from "../styles/imgs/icons/calender.svg";
@@ -19,6 +19,9 @@ export default function Groups() {
   return (
     <div className="container Groups-Page">
       <div className="intro">
+        <Link to="/retreats">
+          <p>Reatreats and workshops</p>
+        </Link>
         <h1>Groups.</h1>
       </div>
       <div className="grid grid-3-columns">
@@ -49,7 +52,7 @@ export default function Groups() {
             <h2>Retreats & Workshops</h2>
             <h3 className="subtitle">JOURNEYS | GROWTH | EXPLORATION</h3>
             <img
-              src={Retreats}
+              src={Retreat}
               className="img-responsive"
               alt="Retreats & Workshops - art by Lynn Hanford-Day"
             />
@@ -175,7 +178,7 @@ export default function Groups() {
       <div className="retreats">
         <div className="grid grid-2-columns">
           <div className="retreat-card">
-            <Link to="/retreat" className="card-link">
+            <Link to="/retreats" className="card-link">
               <div className="retreat-img-container">
                 <img src={Retreat} className="retreat-image" alt="Retreat" />
                 <div className="retreat-overlay">
@@ -199,7 +202,7 @@ export default function Groups() {
             </Link>
           </div>
           <div className="retreat-card">
-            <Link to="/retreat" className="card-link">
+            <Link to="/retreats" className="card-link">
               <div className="retreat-img-container">
                 <img src={Workshop} className="retreat-image" alt="Retreat" />
                 <div className="retreat-overlay">

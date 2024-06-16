@@ -1,12 +1,13 @@
 import React, { useState } from "react";
-import Retreat1 from "../styles/imgs/permanent/retreat";
+import { Link } from "react-router-dom";
+import Retreat1 from "../styles/imgs/photos/retreat1.png";
 import Retreat2 from "../styles/imgs/photos/retreat2.png";
 import Retreat3 from "../styles/imgs/photos/retreat3.png";
-import Workshop1 from "../styles/imgs/photos/groups1.png";
-import Workshop2 from "../styles/imgs/photos/groups2.png";
-import Workshop3 from "../styles/imgs/photos/groups3.png";
+import Workshop1 from "../styles/imgs/photos/workshop1.jpeg";
+import Workshop2 from "../styles/imgs/photos/workshop2.jpeg";
+import Workshop3 from "../styles/imgs/photos/workshop3.jpeg";
 import Location from "../styles/imgs/icons/location.svg";
-import Calendar from "../styles/imgs/icons/calendar.svg";
+import Calendar from "../styles/imgs/icons/calender.svg";
 import "../styles/Retreat.css";
 
 const events = [
@@ -77,13 +78,20 @@ export default function Retreats() {
             <h3>{currentEvent.type}</h3>
             <h1>{currentEvent.title}</h1>
             <p>
-              <img src={Location} alt="Location Icon" /> {currentEvent.location}
+              <img
+                src={Location}
+                alt="Location Icon"
+                className="details-icon"
+              />{" "}
+              {currentEvent.location}
             </p>
             <p>
               <img src={Calendar} alt="Calendar Icon" /> {currentEvent.date}
             </p>
             <p>{currentEvent.description}</p>
-            <button className="get-in-touch">GET IN TOUCH</button>
+            <Link to="/contact" className="get-in-touch">
+              <button className="get-in-touch">GET IN TOUCH</button>
+            </Link>
             <div className="event-navigation">
               <button onClick={handlePreviousEvent}>{"<"}</button>
               <button onClick={handleNextEvent}>{">"}</button>

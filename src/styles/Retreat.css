@@ -72,6 +72,10 @@
   margin-bottom: 20px;
 }
 
+.details-icon {
+  height: 300px;
+}
+
 .event-navigation {
   display: flex;
   justify-content: space-between;

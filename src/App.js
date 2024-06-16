@@ -28,7 +28,7 @@ function App() {
         <Route path="/approach" element={<Approach />} />
         <Route path="/groups" element={<Groups />} />
         <Route path="/onetoone" element={<OneToOne />} />
-        <Route path="./retreats" element={<Retreats />} />
+        <Route path="/retreats" element={<Retreats />} />
         <Route path="/membership" element={<Membership />} />
         <Route path="*" element={<NotPage />} />
       </Routes>
