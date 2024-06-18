@@ -6,30 +6,9 @@ import Retreat2 from "../styles/imgs/photos/retreat2.png";
 import Retreat3 from "../styles/imgs/photos/retreat3.png";
 import Location from "../styles/imgs/icons/location.svg";
 import Calendar from "../styles/imgs/icons/calender.svg";
+import { NextArrow, PrevArrow } from "../components/CustomArrow"; // Import your custom arrow components
 import "../styles/Retreat.css";
 import "../styles/App.css";
-
-function NextArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", right: "10px", zIndex: 1 }}
-      onClick={onClick}
-    />
-  );
-}
-
-function PrevArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", left: "10px", zIndex: 1 }}
-      onClick={onClick}
-    />
-  );
-}
 
 export default function Retreats() {
   const mainSliderSettings = {
@@ -60,13 +39,13 @@ export default function Retreats() {
             <div className="slider-container">
               <Slider {...innerSliderSettings}>
                 <div>
-                  <img src={Retreat1} alt="Retreat1"></img>
+                  <img src={Retreat1} alt="Retreat1" className="retreat-img" />
                 </div>
                 <div>
-                  <img src={Retreat2} alt="Retreat2"></img>
+                  <img src={Retreat2} alt="Retreat2" className="retreat-img" />
                 </div>
                 <div>
-                  <img src={Retreat3} alt="Retreat3"></img>
+                  <img src={Retreat3} alt="Retreat3" className="retreat-img" />
                 </div>
               </Slider>
             </div>
@@ -74,25 +53,25 @@ export default function Retreats() {
               <h3>Upcoming Retreat</h3>
               <h1>My Heart is For The Whole</h1>
               <p>
-                <span>
+                <span className="details-span">
                   <img
                     src={Location}
                     alt="Location Icon"
                     className="details-icon"
                   />
-                  <p>Patrick Brompton Hall, Yorkshire Dales, UK</p>
+                  Patrick Brompton Hall, Yorkshire Dales, UK
                 </span>
               </p>
-
-              <span>
-                <img
-                  src={Calendar}
-                  alt="Calendar Icon"
-                  className="details-icon"
-                />
-                1st - 7th May 2024
-              </span>
-
+              <p>
+                <span className="details-span">
+                  <img
+                    src={Calendar}
+                    alt="Calendar Icon"
+                    className="details-icon"
+                  />
+                  1st - 7th May 2024
+                </span>
+              </p>
               <p>
                 Immerse yourself in a weekend of yoga and breath work,
                 rediscovering wholeness within. Explore the interconnectedness
@@ -107,18 +86,17 @@ export default function Retreats() {
             </div>
           </div>
 
-          {/* Add more event containers here as needed */}
           <div className="event-container">
             <div className="slider-container">
               <Slider {...innerSliderSettings}>
                 <div>
-                  <img src={Retreat1} alt="Retreat1"></img>
+                  <img src={Retreat1} alt="Retreat1" className="retreat-img" />
                 </div>
                 <div>
-                  <img src={Retreat2} alt="Retreat2"></img>
+                  <img src={Retreat2} alt="Retreat2" className="retreat-img" />
                 </div>
                 <div>
-                  <img src={Retreat3} alt="Retreat3"></img>
+                  <img src={Retreat3} alt="Retreat3" className="retreat-img" />
                 </div>
               </Slider>
             </div>
@@ -126,22 +104,22 @@ export default function Retreats() {
               <h3>Upcoming Retreat</h3>
               <h1>Another Retreat Event</h1>
               <p>
-                <span>
+                <span className="details-span">
                   <img
                     src={Location}
                     alt="Location Icon"
                     className="details-icon"
-                  />{" "}
+                  />
                   Another Location, Someplace, World
                 </span>
               </p>
               <p>
-                <span>
+                <span className="details-span">
                   <img
                     src={Calendar}
                     alt="Calendar Icon"
                     className="details-icon"
-                  />{" "}
+                  />
                   15th - 20th June 2024
                 </span>
               </p>
