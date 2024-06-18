@@ -1,14 +1,15 @@
+/* Existing CSS remains unchanged */
 .details-icon {
-  height: 20px; /* Adjust the size as needed */
-  width: 20px; /* Adjust the size as needed */
-  vertical-align: middle; /* Align the icon with the text */
-  display: inline-block; /* Ensure it's treated as an inline element */
-  margin-right: 5px; /* Optional: Add some space between the icon and text */
+  height: 20px;
+  width: 20px;
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 5px;
 }
 
 .details-span {
-  display: inline-flex; /* Ensure the icon and text stay on the same line */
-  align-items: center; /* Vertically align items within the span */
+  display: inline-flex;
+  align-items: center;
 }
 
 .event-container {
@@ -30,6 +31,7 @@
   height: 392px;
   width: 543px;
   position: relative; /* Add this for arrow positioning */
+  margin-bottom: 20px; /* Add margin bottom to create space for mainSlider arrows */
 }
 
 .retreat-info-column {
@@ -52,6 +54,7 @@
   color: black;
   background-color: transparent;
   border: 2px solid black;
+  margin-top: 20px; /* Add margin top to create space for mainSlider arrows */
 }
 
 .get-in-touch:hover {
@@ -60,32 +63,7 @@
   border: 2px solid #2b578e;
 }
 
-.custom-arrow {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 30px;
-  height: 30px;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  border-radius: 50%; /* Circular arrows */
-  cursor: pointer;
-  z-index: 2;
-}
-
-.custom-arrow img {
+.custom-arrow svg {
   width: 100%;
   height: 100%;
-}
-
-.next-arrow {
-  right: 10px;
-}
-
-.prev-arrow {
-  left: 10px;
-}
-
-.details-span {
-  display: inline-flex;
-  align-items: center;
 }

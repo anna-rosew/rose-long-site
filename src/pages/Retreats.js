@@ -6,7 +6,8 @@ import Retreat2 from "../styles/imgs/photos/retreat2.png";
 import Retreat3 from "../styles/imgs/photos/retreat3.png";
 import Location from "../styles/imgs/icons/location.svg";
 import Calendar from "../styles/imgs/icons/calender.svg";
-import { NextArrow, PrevArrow } from "../components/CustomArrow"; // Import your custom arrow components
+import { NextArrow, PrevArrow } from "../components/CustomArrow";
+import { NextArrow1, PrevArrow1 } from "../components/CustomArrow1"; // Import your custom arrow components
 import "../styles/Retreat.css";
 import "../styles/App.css";
 
@@ -17,8 +18,8 @@ export default function Retreats() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
+    nextArrow: <NextArrow1 />,
+    prevArrow: <PrevArrow1 />,
   };
 
   const innerSliderSettings = {
