@@ -4,7 +4,8 @@ import "../styles/App.css";
 import "../styles/Groups.css";
 import Online from "../styles/imgs/permanent/online-groups.png";
 import InPerson from "../styles/imgs/permanent/in-person-groups.png";
-import Retreat from "../styles/imgs/photos/retreat1.png";
+import Retreat from "../styles/imgs/permanent/retreats.png";
+import Retreats from "../styles/imgs/photos/retreat1.png";
 import MorningBreathe from "../styles/imgs/permanent/morning-breathe.png";
 import EveningChill from "../styles/imgs/permanent/evening-chillout.png";
 import Lunar from "../styles/imgs/permanent/lunar-cycles.png";
@@ -21,39 +22,47 @@ export default function Groups() {
       <div className="intro">
         <h1>Groups.</h1>
       </div>
-      <div className="grid grid-3-columns">
-        <div className="online-groups">
-          <Link to="/groups" className="card-links">
-            <h2>Online Groups</h2>
-            <h3 className="subtitle">YOGA | COMMUNITY</h3>
-            <img
-              src={Online}
-              className="img-responsive"
-              alt="Online Groups - art by Lynn Hanford-Day"
-            />
-          </Link>
-        </div>
-        <div className="inperson-groups">
-          <Link to="/groups" className="card-links">
-            <h2>In-Person Classes & Groups</h2>
-            <h3 className="subtitle">CLASSES | WORKSHOPS | RETREATS</h3>
-            <img
-              src={InPerson}
-              className="img-responsive"
-              alt="In-Person Classes & Groups - art by Lynn Hanford-Day"
-            />
-          </Link>
-        </div>
-        <div className="retreats">
-          <Link to="/groups" className="card-links">
-            <h2>Retreats & Workshops</h2>
-            <h3 className="subtitle">JOURNEYS | GROWTH | EXPLORATION</h3>
-            <img
-              src={Retreat}
-              className="img-responsive"
-              alt="Retreats & Workshops - art by Lynn Hanford-Day"
-            />
-          </Link>
+      <div className="group-cards">
+        <div className="grid grid-3-columns">
+          <div className="card online-groups">
+            <Link to="/groups" className="card-links">
+              <h2>Online Groups</h2>
+              <h3 className="subtitle">YOGA | COMMUNITY</h3>
+              <div className="group-image-container">
+                <img
+                  src={Online}
+                  className="img-responsive"
+                  alt="Online Groups - art by Lynn Hanford-Day"
+                />
+              </div>
+            </Link>
+          </div>
+          <div className="card inperson-groups">
+            <Link to="/groups" className="card-links">
+              <h2>In-Person Classes & Groups</h2>
+              <h3 className="subtitle">CLASSES | WORKSHOPS | RETREATS</h3>
+              <div className="group-image-container">
+                <img
+                  src={InPerson}
+                  className="img-responsive"
+                  alt="In-Person Classes & Groups - art by Lynn Hanford-Day"
+                />
+              </div>
+            </Link>
+          </div>
+          <div className="card retreats">
+            <Link to="/groups" className="card-links">
+              <h2>Retreats & Workshops</h2>
+              <h3 className="subtitle">JOURNEYS | GROWTH | EXPLORATION</h3>
+              <div className="group-image-container">
+                <img
+                  src={Retreat}
+                  className="img-responsive"
+                  alt="Retreats & Workshops - art by Lynn Hanford-Day"
+                />
+              </div>
+            </Link>
+          </div>
         </div>
       </div>
       <div className="online-groups">
@@ -177,7 +186,7 @@ export default function Groups() {
           <div className="retreat-card">
             <Link to="/retreats" className="card-link">
               <div className="retreat-img-container">
-                <img src={Retreat} className="retreat-image" alt="Retreat" />
+                <img src={Retreats} className="retreat-image" alt="Retreat" />
                 <div className="retreat-overlay">
                   <img src={OverlaySVG} alt="icon" className="overlay-svg" />
                   <h3>Upcoming Retreat:</h3>

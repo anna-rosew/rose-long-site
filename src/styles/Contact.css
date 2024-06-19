@@ -1,3 +1,4 @@
+/* Heading styles */
 .contact h2 {
   margin-bottom: 5px;
   padding: 0px;
@@ -13,6 +14,111 @@
   font-size: 48px;
 }
 
+/* Container styles */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 768px) {
+  .grid-2-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Contact form styles */
+.contact-form-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: flex-start; /* Align items to the start */
+  align-items: flex-start; /* Align items to the start */
+  padding: 20px;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 600px; /* Adjust the maximum width */
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: black;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 604px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 11px;
+  font-size: 16px;
+  color: #333;
+  background-color: transparent;
+}
+
+.form-group inpu {
+  resize: vertical;
+  height: 100px;
+}
+
+.message input,
+textarea {
+  height: 290px;
+}
+.submit-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  color: black;
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid black;
+  background-color: transparent;
+}
+
+.submit-btn:hover {
+  background-color: #204d7e;
+  color: #fff;
+}
+
+/* Image container styles */
+.contact-image-container {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 395px; /* Adjusted to 300px */
+  height: 100%;
+}
+
+.contact-image-container img {
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+  display: block;
+  border-radius: 127px;
+}
+
 @media (max-width: 768px) {
   .contact h2 {
     margin-bottom: 5px;
@@ -24,5 +130,28 @@
     margin: 0px auto;
     font-size: 28px;
     text-align: center;
+  }
+
+  .contact-form-container {
+    /* Align items to the start */
+    padding: 5px;
+  }
+
+  .contact-form {
+    width: 100%;
+    max-width: 350px; /* Adjust the maximum width */
+    padding: 5px;
+  }
+
+  .contact-image-container {
+    display: none;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 350px;
+  }
+  .submit-btn {
+    width: 100%;
   }
 }

@@ -13,6 +13,7 @@ import Membership from "./pages/MembershipLanding";
 
 import NavBar from "./components/Nav/NavBar";
 import Socials from "./components/Socials";
+import CreditsFooter from "./components/CreditsFooter";
 
 function App() {
   return (
@@ -31,7 +32,8 @@ function App() {
         <Route path="/retreats" element={<Retreats />} />
         <Route path="/membership" element={<Membership />} />
         <Route path="*" element={<NotPage />} />
-      </Routes>
+      </Routes>{" "}
+      <CreditsFooter />
     </div>
   );
 }

@@ -1,10 +1,13 @@
 import React from "react";
-import Header from "../components/Nav/Header";
 
 export default function About() {
   return (
     <div className="About">
-      <Header />
+      <div className="container">
+        <h2>Meet</h2>
+        <h1>Rose</h1>
+        <div className="grid grid-meet-rose"></div>
+      </div>
     </div>
   );
 }

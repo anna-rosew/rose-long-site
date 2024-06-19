@@ -1,0 +1,27 @@
+.CreditsFooter {
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.CreditsFooter a {
+  color: black;
+  opacity: 80%;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.CreditsFooter a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .CreditsFooter {
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+}
