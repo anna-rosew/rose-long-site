@@ -1,0 +1,28 @@
+.contact h2 {
+  margin-bottom: 5px;
+  padding: 0px;
+  font-size: 30px;
+  text-align: left;
+}
+
+.contact h1 {
+  padding: 0px;
+  text-align: left;
+  margin-left: 50px;
+  margin-top: 0px;
+  font-size: 48px;
+}
+
+@media (max-width: 768px) {
+  .contact h2 {
+    margin-bottom: 5px;
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .contact h1 {
+    margin: 0px auto;
+    font-size: 28px;
+    text-align: center;
+  }
+}

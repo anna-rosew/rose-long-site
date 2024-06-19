@@ -19,9 +19,6 @@ export default function Groups() {
   return (
     <div className="container Groups-Page">
       <div className="intro">
-        <Link to="/retreats">
-          <p>Reatreats and workshops</p>
-        </Link>
         <h1>Groups.</h1>
       </div>
       <div className="grid grid-3-columns">
