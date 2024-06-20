@@ -10,6 +10,8 @@ import Groups from "./pages/Groups";
 import OneToOne from "./pages/OneToOne";
 import Retreats from "./pages/Retreats";
 import Membership from "./pages/MembershipLanding";
+import Blog from "./pages/Blog";
+import Qualifications from "./pages/Qualifications";
 
 import NavBar from "./components/Nav/NavBar";
 import Socials from "./components/Socials";
@@ -31,6 +33,8 @@ function App() {
         <Route path="/onetoone" element={<OneToOne />} />
         <Route path="/retreats" element={<Retreats />} />
         <Route path="/membership" element={<Membership />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/qualifications" element={<Qualifications />} />
         <Route path="*" element={<NotPage />} />
       </Routes>{" "}
       <CreditsFooter />
