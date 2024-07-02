@@ -3,9 +3,6 @@ import "../styles/Home.css";
 import StartButton from "../components/StartButton";
 
 import GetInTouch from "../components/GetInTouch";
-//import Courage from "../styles/imgs/icons/courage.svg";
-//import Clarity from "../styles/imgs/icons/clarity.svg";
-//import Presence from "../styles/imgs/icons/presence.svg";
 
 export default function Home() {
   const [isMobile, setIsMobile] = useState(false);

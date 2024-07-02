@@ -16,6 +16,10 @@ import Workshop from "../styles/imgs/photos/groups.png";
 import Location from "../styles/imgs/icons/location.svg";
 import Calender from "../styles/imgs/icons/calender.svg";
 
+//lunar cycles, morning breathe (triad spiral) inside outside, kundali spiral through centers, candle evening chillout, 
+//change last section to retreats alone
+//create workshops section 
+
 export default function Groups() {
   return (
     <div className="container Groups-Page">

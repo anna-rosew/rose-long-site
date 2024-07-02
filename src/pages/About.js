@@ -10,6 +10,7 @@ export default function About() {
       <div className="container">
         <h2>Meet</h2>
         <h1>Rose</h1>
+
         <div className="grid grid-meet-rose">
           <div className="about-para">
             <p>

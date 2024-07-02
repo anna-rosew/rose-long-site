@@ -29,7 +29,7 @@
 .button-overlay {
   position: absolute;
   top: 85%;
-  left: 780px;
+  left: 730px;
   transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
@@ -38,6 +38,10 @@
   height: 100%; /* Ensures the button is centered in the image */
   pointer-events: none;
   opacity: 0; /* Initially hide the button overlay */
+}
+
+.button-overlay :hover {
+  transform: scale(1.05);
 }
 
 .hero-image-container:hover .button-overlay {

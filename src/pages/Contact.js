@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import "../styles/Contact.css";
 import ContactImg from "../styles/imgs/permanent/contact.png";
 
+//I will get back to you within 48 hours
+//Newsletter subscription call to action tick box
+
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: "",

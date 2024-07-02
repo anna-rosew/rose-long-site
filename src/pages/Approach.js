@@ -4,8 +4,8 @@ import TestimonialCarousel from "../components/TestimonialCarousel";
 import "../styles/App.css";
 import "../styles/Approach.css";
 
-//https://github.com/cookpete/react-player/tree/master
-//Style video container
+//Style video container - Thumbnail with play button
+//Make testimonial font size larger
 
 export default function Approach() {
   return (
