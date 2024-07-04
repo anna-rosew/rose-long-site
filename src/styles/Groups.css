@@ -7,6 +7,12 @@
   color: black;
 }
 
+button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
 .group-cards {
   margin: 0px 10px;
 }
@@ -140,6 +146,16 @@
   border-radius: 127px;
 }
 
+.book-btn {
+  width: 80%;
+  margin-top: 20px;
+}
+
+.book-btn-two {
+  width: 80%;
+  margin-top: 45px;
+}
+
 .retreat-overlay {
   position: absolute;
   top: 0;
@@ -192,5 +208,32 @@
 
   .retreat-overlay {
     border-radius: 57px;
+  }
+
+  .book-btn-two {
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  .hr-lines:before {
+    content: " ";
+    display: block;
+    height: 2px;
+    width: 85px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background: black;
+  }
+
+  .hr-lines:after {
+    content: " ";
+    height: 2px;
+    width: 85px;
+    background: black;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
   }
 }

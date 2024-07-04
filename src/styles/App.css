@@ -6,6 +6,10 @@
   background-color: #f6ece1;
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 h1 {
   font-family: "Jomolhari", serif;
   font-weight: 400;

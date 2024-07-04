@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 import "../styles/App.css";
 import "../styles/Groups.css";
 import Online from "../styles/imgs/permanent/online-groups.png";
@@ -18,6 +19,15 @@ import Calender from "../styles/imgs/icons/calender.svg";
 //create workshops section
 
 export default function Groups() {
+  const onClick = () => {
+    window.location.href = "#onlineGroups";
+  };
+  const onClick2 = () => {
+    window.location.href = "#inPerson";
+  };
+  const onClick3 = () => {
+    window.location.href = "#retreats";
+  };
   return (
     <div className="container Groups-Page">
       <div className="intro">
@@ -26,7 +36,7 @@ export default function Groups() {
       <div className="group-cards">
         <div className="grid grid-3-columns">
           <div className="card online-groups">
-            <Link to="/groups" className="card-links">
+            <button onClick={onClick} className="card-links">
               <h2>Online Groups</h2>
               <h3 className="subtitle">YOGA | COMMUNITY</h3>
               <div className="group-image-container">
@@ -36,10 +46,10 @@ export default function Groups() {
                   alt="Online Groups - art by Lynn Hanford-Day"
                 />
               </div>
-            </Link>
+            </button>
           </div>
           <div className="card inperson-groups">
-            <Link to="/groups" className="card-links">
+            <button onClick={onClick2} className="card-links">
               <h2>In-Person Sessions</h2>
               <h3 className="subtitle">CLASSES | WORKSHOPS</h3>
               <div className="group-image-container">
@@ -49,10 +59,10 @@ export default function Groups() {
                   alt="In-Person Classes & Groups - art by Lynn Hanford-Day"
                 />
               </div>
-            </Link>
+            </button>
           </div>
           <div className="card retreats">
-            <Link to="/groups" className="card-links">
+            <button onClick={onClick3} className="card-links">
               <h2>Retreats</h2>
               <h3 className="subtitle">JOURNEYS | GROWTH | EXPLORATION</h3>
               <div className="group-image-container">
@@ -62,16 +72,16 @@ export default function Groups() {
                   alt="Retreats & Workshops - art by Lynn Hanford-Day"
                 />
               </div>
-            </Link>
+            </button>
           </div>
         </div>
       </div>
-      <div className="online-groups">
+      <div className="online-groups" id="onlineGroups">
         <h2 className="section-heading hr-lines">Online Groups</h2>
 
         <div className="grid grid-4-columns section-spacing">
           <div className="yoga-class">
-            <Link to="/approach" className="card-link">
+            <Link to="/contact" className="card-link">
               <h2>Morning Breath</h2>
 
               <img
@@ -86,10 +96,15 @@ export default function Groups() {
               <p className="class-details">
                 PRICE: Drop-In - £7 / Monthly Morning Bundle
               </p>
+              <Link to="/contact" className="card-links">
+                <button className="journey-link button-hover book-btn">
+                  Book
+                </button>
+              </Link>
             </Link>
           </div>
           <div className="yoga-class">
-            <Link to="/approach" className="card-link">
+            <Link to="/contact" className="card-link">
               <h2>Evening Chill-Out</h2>
               <img
                 src={EveningChill}
@@ -103,6 +118,11 @@ export default function Groups() {
               <p className="class-details">
                 PRICE: Drop-In - £10 / Monthly Evening Bundle
               </p>
+              <Link to="/contact" className="card-links">
+                <button className="journey-link button-hover book-btn">
+                  Book
+                </button>
+              </Link>
             </Link>
           </div>
           <div className="yoga-class">
@@ -114,13 +134,15 @@ export default function Groups() {
               <p className="class-details">
                 PRICE: Drop-In - £12 / Monthly Lunar Bundle
               </p>
-              <Link to="/work" className="card-links">
-                <button className="journey-link button-hover">Book</button>
+              <Link to="/contact" className="card-links">
+                <button className="journey-link button-hover book-btn-two">
+                  Book
+                </button>
               </Link>
             </Link>
           </div>
           <div className="yoga-class">
-            <Link to="/approach" className="card-link">
+            <Link to="/contact" className="card-link">
               <h2>Kundalini Magic</h2>
               <img
                 src={Kundalini}
@@ -132,11 +154,69 @@ export default function Groups() {
               <p className="class-details">
                 PRICE: Drop-In - £10 / Monthly Kundalini Bundle
               </p>
+              <Link to="/contact" className="card-links">
+                <button className="journey-link button-hover book-btn-two">
+                  Book
+                </button>
+              </Link>
             </Link>
           </div>
         </div>
       </div>
-      <div className="retreats">
+      <div className="retreats" id="inPerson">
+        <h2 className="section-heading hr-lines">In-Person Sessions</h2>
+        <div className="grid grid-2-columns section-spacing">
+          <div className="retreat-card">
+            <Link to="/workshops" className="card-link">
+              <div className="retreat-img-container">
+                <img src={Retreats} className="retreat-image" alt="Retreat" />
+                <div className="retreat-overlay">
+                  <img src={OverlaySVG} alt="icon" className="overlay-svg" />
+                  <h3>Upcoming Workshop:</h3>
+                  <h2>My Heart is For The Whole</h2>
+                  <p>
+                    Immerse yourself in a weekend of yoga and breath work,
+                    rediscovering wholeness within.
+                  </p>
+                  <span>
+                    <img src={Location} alt="icon" className="overlay-svg2" />
+                    <p>Patrick Brompton Hall, Yorkshire Dales, UK</p>
+                  </span>
+                  <span>
+                    <img src={Calender} alt="icon" className="overlay-svg2" />
+                    <p>1st - 7th May 2024</p>
+                  </span>
+                </div>
+              </div>
+            </Link>
+          </div>
+          <div className="retreat-card">
+            <Link to="/workshops" className="card-link">
+              <div className="retreat-img-container">
+                <img src={Workshop} className="retreat-image" alt="Retreat" />
+                <div className="retreat-overlay">
+                  <img src={OverlaySVG} alt="icon" className="overlay-svg" />
+                  <h3>Upcoming Workshop:</h3>
+                  <h2>My Heart is For The Whole</h2>
+                  <p>
+                    Immerse yourself in a weekend of yoga and breath work,
+                    rediscovering wholeness within.
+                  </p>
+                  <span>
+                    <img src={Location} alt="icon" className="overlay-svg2" />
+                    <p>Patrick Brompton Hall, Yorkshire Dales, UK</p>
+                  </span>
+                  <span>
+                    <img src={Calender} alt="icon" className="overlay-svg2" />
+                    <p>1st - 7th May 2024</p>
+                  </span>
+                </div>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </div>
+      <div className="retreats" id="retreats">
         <h2 className="section-heading hr-lines">Retreats</h2>
         <div className="grid grid-2-columns section-spacing">
           <div className="retreat-card">

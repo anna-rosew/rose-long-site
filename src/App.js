@@ -12,6 +12,7 @@ import Retreats from "./pages/Retreats";
 import Membership from "./pages/MembershipLanding";
 import Blog from "./pages/Blog";
 import Qualifications from "./pages/Qualifications";
+import Workshops from "./pages/Workshops";
 
 import NavBar from "./components/Nav/NavBar";
 import Socials from "./components/Socials";
@@ -35,6 +36,7 @@ function App() {
         <Route path="/membership" element={<Membership />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/qualifications" element={<Qualifications />} />
+        <Route path="/workshops" element={<Workshops />} />
         <Route path="*" element={<NotPage />} />
       </Routes>{" "}
       <CreditsFooter />

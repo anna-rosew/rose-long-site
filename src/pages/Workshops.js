@@ -1,10 +1,9 @@
 import React from "react";
-import Header from "../components/Header";
 
 export default function Workshops() {
   return (
     <div className="Workshops">
-      <Header />
+      <h1>Workshops</h1>
     </div>
   );
 }
