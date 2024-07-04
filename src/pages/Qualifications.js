@@ -2,6 +2,8 @@ import React from "react";
 import "../styles/Qualifications.css";
 import "../styles/About.css";
 import kundaliniResearch from "../styles/imgs/icons/kundali-institute.svg";
+import yogaInstitute from "../styles/imgs/icons/the-yoga-institute.svg";
+import yogaAlliance from "../styles/imgs/icons/yoga-alliance.svg";
 import { Link } from "react-router-dom";
 
 export default function Qualifications() {
@@ -124,17 +126,11 @@ export default function Qualifications() {
               alt="Kundalinini Research Institute"
             ></img>
           </a>
-          <a href="https://kundaliniresearchinstitute.org/en/">
-            <img
-              src={kundaliniResearch}
-              alt="Kundalinini Research Institute"
-            ></img>
+          <a href="https://theyogainstitute.org/">
+            <img src={yogaInstitute} alt="The Yoga Institute"></img>
           </a>
-          <a href="https://kundaliniresearchinstitute.org/en/">
-            <img
-              src={kundaliniResearch}
-              alt="Kundalinini Research Institute"
-            ></img>
+          <a href="https://www.yogaalliance.org/">
+            <img src={yogaAlliance} alt="The Yoga Alliance"></img>
           </a>
         </div>
         <div className="qualification-button-container">
