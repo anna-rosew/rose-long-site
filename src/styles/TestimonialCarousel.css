@@ -55,3 +55,21 @@
 .slick-next:before {
   display: none; /* Hide default arrows */
 }
+
+@media (max-width: 768px) {
+  .testimonial-text {
+    font-size: 14px; /* Adjust font size */
+  }
+
+  .carousel-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2px 0;
+  }
+
+  .testimonial-slide {
+    padding: 10px; /* Reduce padding */
+
+    /* Prevents content from spilling over */
+  }
+}
