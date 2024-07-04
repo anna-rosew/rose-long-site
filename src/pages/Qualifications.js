@@ -124,8 +124,20 @@ export default function Qualifications() {
               alt="Kundalinini Research Institute"
             ></img>
           </a>
+          <a href="https://kundaliniresearchinstitute.org/en/">
+            <img
+              src={kundaliniResearch}
+              alt="Kundalinini Research Institute"
+            ></img>
+          </a>
+          <a href="https://kundaliniresearchinstitute.org/en/">
+            <img
+              src={kundaliniResearch}
+              alt="Kundalinini Research Institute"
+            ></img>
+          </a>
         </div>
-        <div className="about-button-container">
+        <div className="qualification-button-container">
           <Link to="/blog" className="about-buttons">
             Blog
           </Link>

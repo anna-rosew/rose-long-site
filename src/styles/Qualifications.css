@@ -23,10 +23,19 @@
 
 .institution-icons-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  margin-left: 100px;
+  width: 50%;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .institution-icons-grid img {
   height: 120px;
+}
+
+.qualification-button-container {
+  margin-left: 100px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-start;
 }
 
 @media (max-width: 768px) {
