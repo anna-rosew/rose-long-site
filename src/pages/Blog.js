@@ -9,23 +9,29 @@ export default function Blog() {
         <h1>Blog</h1>
         <div className="blog-container-grid grid">
           <div className="blog-block">
-            <img
-              src={mindOverMatter}
-              alt="Mind Over Matter Podcast: Episode 4"
-            ></img>
+            <a href="https://www.youtube.com/watch?v=QdZIW0etTkA">
+              <img
+                src={mindOverMatter}
+                alt="Mind Over Matter Podcast: Episode 4"
+              ></img>
+            </a>
           </div>
           <div className="side-block grid grid-horizontal">
             <div className="blog-block">
-              <img
-                src={mindOverMatter}
-                alt="Mind Over Matter Podcast: Episode 4"
-              ></img>
+              <a href="https://www.youtube.com/watch?v=QdZIW0etTkA">
+                <img
+                  src={mindOverMatter}
+                  alt="Mind Over Matter Podcast: Episode 4"
+                ></img>
+              </a>
             </div>
             <div className="blog-block">
-              <img
-                src={mindOverMatter}
-                alt="Mind Over Matter Podcast: Episode 4"
-              ></img>
+              <a href="https://www.youtube.com/watch?v=QdZIW0etTkA">
+                <img
+                  src={mindOverMatter}
+                  alt="Mind Over Matter Podcast: Episode 4"
+                ></img>
+              </a>
             </div>
           </div>
         </div>
