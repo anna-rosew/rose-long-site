@@ -4,12 +4,16 @@ import Rose1 from "../styles/imgs/photos/about2.png";
 
 import { Link } from "react-router-dom";
 
+//happy with this image size?
+
 export default function About() {
   return (
     <div className="About">
       <div className="container">
-        <h2>Meet</h2>
-        <h1>Rose</h1>
+        <div className="heading-container">
+          <h2>Meet</h2>
+          <h1>Rose</h1>
+        </div>
 
         <div className="grid grid-meet-rose">
           <div className="about-para">
@@ -53,8 +57,8 @@ export default function About() {
               </Link>
             </div>
           </div>
-          <div className="about-pics">
-            <img className="about-pic" alt="Rose Long" src={Rose1} />
+          <div className="about-image-container">
+            <img className="about-image" alt="Rose Long" src={Rose1} />
           </div>
         </div>
       </div>

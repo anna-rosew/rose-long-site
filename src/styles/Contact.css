@@ -133,13 +133,12 @@ textarea {
   }
 
   .contact-form-container {
-    /* Align items to the start */
     padding: 5px;
   }
 
   .contact-form {
     width: 100%;
-    max-width: 350px; /* Adjust the maximum width */
+    max-width: 300px; /* Adjust the maximum width */
     padding: 5px;
   }
 
@@ -149,7 +148,9 @@ textarea {
 
   .form-group input,
   .form-group textarea {
-    width: 350px;
+    display: block;
+    margin: 0 auto;
+    width: 300px;
   }
   .submit-btn {
     width: 100%;
