@@ -27,6 +27,13 @@ export default function About() {
               place. In chaos and despair, I admitted I didn’t know how to live
               but longed to learn.
             </p>
+            <p className="about-quote">
+              “ I used to ask myself regularly, ‘What’s the point?’. Life was a
+              struggle; I didn’t like what was going on in the world, or what
+              was going on inside me. I was deeply uncomfortable. I wanted to
+              make the world a better place, unconsciously driven to fix myself
+              and those around me. ”
+            </p>
             <p>
               Admitting this sparked change. Life brought teachers, mentors,
               challenges, illness, transformative practices. Challenges became
@@ -36,21 +43,15 @@ export default function About() {
               people on the path of healing inspires me to keep learning and
               growing.
             </p>
-            <p className="about-quote">
-              “ I used to ask myself regularly, ‘What’s the point?’. Life was a
-              struggle; I didn’t like what was going on in the world, or what
-              was going on inside me. I was deeply uncomfortable. I wanted to
-              make the world a better place, unconsciously driven to fix myself
-              and those around me. ”
-            </p>
+            <div className="about-button-container">
+              <Link to="/blog" className="about-buttons">
+                Blog
+              </Link>
 
-            <Link to="/blog" className="about-buttons">
-              Blog
-            </Link>
-
-            <Link to="/qualifications" className="about-buttons">
-              Qualifications
-            </Link>
+              <Link to="/qualifications" className="about-buttons">
+                Qualifications
+              </Link>
+            </div>
           </div>
           <div className="about-pics">
             <img className="about-pic" alt="Rose Long" src={Rose1} />
