@@ -127,17 +127,17 @@ export default function Qualifications() {
             ></img>
           </a>
           <a href="https://theyogainstitute.org/">
-            <img src={yogaInstitute} alt="The Yoga Institute"></img>
+            <img src={yogaInstitute} alt="The Yoga Institute" />
           </a>
           <a href="https://www.yogaalliance.org/">
-            <img src={yogaAlliance} alt="The Yoga Alliance"></img>
+            <img src={yogaAlliance} alt="The Yoga Alliance" />
           </a>
         </div>
         <div className="qualification-button-container">
           <Link to="/blog" className="about-buttons">
             Blog
           </Link>
-          <Link to="/qualifications" className="about-buttons">
+          <Link to="/work" className="about-buttons">
             Start Your Journey
           </Link>
         </div>
