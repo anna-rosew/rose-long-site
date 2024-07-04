@@ -1,0 +1,49 @@
+.Qualifications h2 {
+  margin-bottom: 0px;
+  font-size: 30px;
+  padding-left: 50px;
+  text-align: left;
+}
+
+.Qualifications h1 {
+  margin-left: 100px;
+  margin-top: 0px;
+  font-size: 48px;
+  text-align: left;
+}
+
+.credentials-container {
+  text-align: left;
+  margin-left: 100px;
+}
+
+.credentials-container p {
+  line-height: 30px;
+}
+
+.institution-icons-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.institution-icons-grid img {
+  height: 120px;
+}
+
+@media (max-width: 768px) {
+  .heading-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .Qualifications h1 {
+    font-size: 28px;
+    margin: 0;
+    padding: 5px;
+  }
+
+  .Qualifications h2 {
+    font-size: 28px;
+    margin: 0;
+    padding: 5px;
+  }
+}
