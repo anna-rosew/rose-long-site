@@ -3,6 +3,11 @@
   margin-left: 50px;
 }
 
+.blog-container-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
 .blog-block {
   position: relative;
   display: block;
