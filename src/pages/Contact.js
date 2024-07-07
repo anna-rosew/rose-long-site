@@ -36,9 +36,14 @@ export default function Contact() {
   return (
     <div className="contact">
       <div className="container">
-        <h2>Get</h2>
-        <h1>In-Touch</h1>
-        <p>Write a call to action here.</p>
+        <div className="heading-container">
+          <h2>Get</h2>
+          <h1>In-Touch</h1>
+        </div>
+
+        <p className="call-to-action">
+          Thank you for getting in touch. I will get back to you within 48 hours
+        </p>
         <div className="grid grid-2-columns">
           <div className="contact-image-container">
             <img
