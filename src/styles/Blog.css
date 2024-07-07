@@ -1,12 +1,76 @@
 .blog-page {
   padding: 20px;
   margin-left: 100px;
+  text-align: left;
 }
 
 .blog-grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 100px;
+}
+
+.blog-heading {
+  text-align: left;
+  padding-left: 70px;
+}
+
+.cover-post {
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../styles/imgs/photos/maze.png");
+  background-size: cover;
+  height: 500px;
+  border-radius: 45px;
+  background-position: center;
+  padding: 30px;
+  text-align: left;
+  color: white;
+  display: flex; /* Use flexbox for positioning */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: flex-end; /* Align content to the bottom */
+}
+
+.cover-content {
+  align-self: flex-start; /* Align content to the start (top) of the flex container */
+  max-width: 70%; /* Adjust width as needed */
+}
+
+.cover-content h3 {
+  color: white;
+}
+
+.date {
+  opacity: 0.7;
+}
+
+.bottom-grid {
+  display: grid;
+  grid-template-columns: auto 1fr; /* Adjust grid columns as needed */
+  align-items: center;
+  gap: 50px; /* Center items vertically */
+}
+
+.bottom-grid button {
+  padding: 10px 20px; /* Adjust padding as needed */
+  border-radius: 5px;
+  background-color: transparent;
+  font-family: "Jost", sans-serif;
+  color: white;
+  border: 1px solid #ffffff; /* Border with white color */
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.bottom-grid button:hover {
+  background-color: #f0f0f0;
+}
+
+.bottom-grid p {
+  border-top: 2px solid white;
+  margin-top: 10px;
+  padding: 10px;
+  line-height: 1.5;
 }
 
 .blog-block {

@@ -44,7 +44,28 @@ export default function Blog() {
   return (
     <div className="blog-page">
       <div className="container">
-        <h1>Blog</h1>
+        <h1 className="blog-heading">Blog</h1>
+        <div className="cover-post">
+          <div className="cover-content">
+            <h3>MIND OVER MATTER: EPISODE 4</h3>
+            <h1>Life Changes with Rose Long.</h1>
+            <h3 className="date">05/24</h3>
+            <div className="bottom-grid">
+              <button
+                className="action-button "
+                href="https://www.youtube.com/watch?v=QdZIW0etTkA"
+              >
+                LISTEN
+              </button>
+              <p>
+                Explore Rose Long's remarkable journey of profound
+                transformation and alignment with the earth's rhythm on the Mind
+                Over Matter Podcast, where her story serves as a beacon of
+                inspiration for all seeking deeper connection and truth.
+              </p>
+            </div>
+          </div>
+        </div>
         <div className="grid blog-grid">
           {posts.map((post, index) => (
             <div key={index} className="col-md-6">
