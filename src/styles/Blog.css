@@ -98,7 +98,13 @@
 
 .blog-arrow-icon {
   height: 30px;
+  transition: transform 0.3s ease;
 }
+
+.blog-arrow-icon:hover {
+  transform: scale(1.5);
+}
+
 .blog-block {
   position: relative;
   width: 100%;
