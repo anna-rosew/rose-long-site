@@ -28,38 +28,39 @@ export default function Blog() {
         "This article explores meditation's evolution from ancient rituals to modern mindfulness, highlighting its cultural adaptations and contemporary benefits.",
       icon: require("../styles/imgs/icons/article.png"),
       postType: "Article",
-      link: "https://blender-rookie.netlify.app",
+      link: "https://theyogainstitute.org/yogasattva",
       date: "05/24",
-      img: require("../styles/imgs/photos/buddah.png"),
+      img: require("../styles/imgs/photos//buddah.png"),
     },
   ];
 
   return (
     <div className="blog-page">
       <div className="container">
-        <h1 className="blog-heading">Blog</h1>
-        <div className="cover-post">
-          <div className="cover-content">
-            <img src={video} className="blog-type-icon" alt="Youtube Video" />
-            <h3>MIND OVER MATTER: EPISODE 4</h3>
-            <h1>Life Changes with Rose Long.</h1>
-            <h3 className="date">05/24</h3>
-            <div className="bottom-grid">
-              <button
-                className="action-button "
-                href="https://www.youtube.com/watch?v=QdZIW0etTkA"
-              >
-                LISTEN
-              </button>
-              <p className="description">
-                Explore Rose Long's remarkable journey of profound
-                transformation and alignment with the earth's rhythm on the Mind
-                Over Matter Podcast, where her story serves as a beacon of
-                inspiration for all seeking deeper connection and truth.
-              </p>
+        <h1 className="blog-heading">Blog</h1>{" "}
+        <a
+          href="https://www.youtube.com/watch?v=QdZIW0etTkA"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="cover-post">
+            <div className="cover-content">
+              <img src={video} className="blog-type-icon" alt="Youtube Video" />
+              <h3>MIND OVER MATTER: EPISODE 4</h3>
+              <h1>Life Changes with Rose Long.</h1>
+              <h3 className="date">05/24</h3>
+              <div className="bottom-grid">
+                <button className="action-button">LISTEN</button>
+                <p className="description">
+                  Explore Rose Long's remarkable journey of profound
+                  transformation and alignment with the earth's rhythm on the
+                  Mind Over Matter Podcast, where her story serves as a beacon
+                  of inspiration for all seeking deeper connection and truth.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
         <div className="grid blog-grid">
           {posts.map((post, index) => (
             <div key={index} className="col-md-6">
