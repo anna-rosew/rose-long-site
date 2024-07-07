@@ -1,23 +1,19 @@
 import React from "react";
 import "../styles/Blog.css";
 import video from "../styles/imgs/icons/video-icon.svg";
-import podcast from "../styles/imgs/icons/podcast.png";
-
 import BlogBlock from "../components/BlogBlock";
 
-//Large editable cover project
 //Make responsive
-//Grid below for other content
 
 export default function Blog() {
   const posts = [
     {
-      title: "Life Changes with Rose Long",
-      subtitle: "MIND OVER MATTER: EPISODE 4",
+      title: "Yoga (with Rose Long)",
+      subtitle: "RISE: EPISODE 30",
       className: "post-1",
       description:
-        "Explore Rose Long's remarkable journey of profound transformation and alignment with the earth's rhythm on the Mind Over Matter Podcast, where her story serves as a beacon of inspiration for all seeking deeper connection and truth.",
-      icon: { podcast },
+        "Hosted by Elizabeth Vaughan and Julia Carson - a psychologist and a therapist who walked out of a bar and became good mates in sobriety.",
+      icon: require("../styles/imgs/icons/podcast.png"),
       postType: "Podcast",
       link: "https://blender-rookie.netlify.app",
       date: "05/24",

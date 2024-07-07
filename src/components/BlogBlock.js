@@ -9,12 +9,12 @@ export default function BlogBlock({ postInfo }) {
       style={{ backgroundImage: `url(${postInfo.img})` }}
     >
       <div className="overlay">
+        <img
+          src={postInfo.icon}
+          className="blog-type-icon-block"
+          alt={postInfo.postType}
+        />
         <div className="block-header">
-          <img
-            src={postInfo.icon}
-            className="blog-type-icon"
-            alt={postInfo.postType}
-          />
           <h3>{postInfo.subtitle}</h3>
           <h2>{postInfo.title}</h2>
         </div>

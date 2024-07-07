@@ -17,10 +17,17 @@
 }
 
 .blog-type-icon {
-  height: 100px;
+  height: 50px;
   position: absolute;
   top: 20px;
   right: 20px;
+}
+
+.blog-type-icon-block {
+  height: 50px;
+  position: absolute;
+  top: -30px;
+  right: 0px;
 }
 
 .blog-arrow-icon {
@@ -121,8 +128,6 @@
   position: relative;
   z-index: 1;
   text-align: left;
-  margin-top: 100px;
-  padding-right: 40px;
 }
 
 .overlay h3 {
@@ -142,6 +147,8 @@
 
 .block-header {
   margin-bottom: 20px;
+  margin-top: 100px;
+  padding-right: 40px;
 }
 
 @media (max-width: 768px) {
