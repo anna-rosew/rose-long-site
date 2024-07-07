@@ -1,5 +1,7 @@
 import React from "react";
 import "../styles/Blog.css";
+import video from "../styles/imgs/icons/video-icon.svg";
+import podcast from "../styles/imgs/icons/podcast.png";
 
 import BlogBlock from "../components/BlogBlock";
 
@@ -15,38 +17,21 @@ export default function Blog() {
       className: "post-1",
       description:
         "Explore Rose Long's remarkable journey of profound transformation and alignment with the earth's rhythm on the Mind Over Matter Podcast, where her story serves as a beacon of inspiration for all seeking deeper connection and truth.",
-      icon: ["Website", "React.js", "3D", "NPM"],
+      icon: { podcast },
+      postType: "Podcast",
       link: "https://blender-rookie.netlify.app",
       date: "05/24",
       img: require("../styles/imgs/photos/buddah.png"),
     },
-    {
-      title: "second post",
-      subtitle: "Complete Guide to Learning Blender",
-      className: "project-1",
-      description: "Blender Rookie Web App",
-      icon: ["Website", "React.js", "3D", "NPM"],
-      link: "https://blender-rookie.netlify.app",
-      date: "Jun 2024",
-      image: require("../styles/imgs/photos/buddah.png"),
-    },
-    {
-      title: "Third post",
-      subtitle: "Complete Guide to Learning Blender",
-      className: "project-1",
-      description: "Blender Rookie Web App",
-      icon: ["Website", "React.js", "3D", "NPM"],
-      link: "https://blender-rookie.netlify.app",
-      date: "Jun 2024",
-      image: require("../styles/imgs/photos/buddah.png"),
-    },
   ];
+
   return (
     <div className="blog-page">
       <div className="container">
         <h1 className="blog-heading">Blog</h1>
         <div className="cover-post">
           <div className="cover-content">
+            <img src={video} className="blog-type-icon" alt="Youtube Video" />
             <h3>MIND OVER MATTER: EPISODE 4</h3>
             <h1>Life Changes with Rose Long.</h1>
             <h3 className="date">05/24</h3>
