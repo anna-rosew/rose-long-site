@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import TestimonialCarousel from "../components/TestimonialCarousel";
 import "../styles/App.css";
 import "../styles/Approach.css";
+import "@vidstack/react/player/styles/default/theme.css";
+import "@vidstack/react/player/styles/default/layouts/video.css";
+import { VideoPlayerComponent } from "@vidstack/react/player";
 
 //Style video container - Thumbnail with play button
 //Make testimonial font size larger
@@ -11,15 +14,7 @@ export default function Approach() {
   return (
     <div className="container Approach-Page">
       <h1>My Approach</h1>
-      <div className="player-wrapper">
-        <iframe
-          src="https://player.vimeo.com/video/950778932?h=f30e222061"
-          frameBorder="0"
-          allow="autoplay; fullscreen; picture-in-picture"
-          allowFullScreen
-          title="vimeo player"
-        ></iframe>
-      </div>{" "}
+      <VideoPlayerComponent src="path_to_your_video.mp4" />
       <div className="call-to-action">
         {" "}
         <Link to="/work" className="card-links">
