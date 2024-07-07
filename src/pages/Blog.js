@@ -10,7 +10,7 @@ import BlogBlock from "../components/BlogBlock";
 export default function Blog() {
   const posts = [
     {
-      title: "Life Changes with Rose Long.",
+      title: "Life Changes with Rose Long",
       subtitle: "MIND OVER MATTER: EPISODE 4",
       className: "post-1",
       description:
