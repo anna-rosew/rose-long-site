@@ -3,9 +3,9 @@ import "../styles/Blog.css";
 
 import BlogBlock from "../components/BlogBlock";
 
-//Create large blog and small blog components
-//pass title, subtitle, date, icon aand description through props
-//conditionally render grids, one for small screen and one for large screens
+//Large editable cover project
+//Make responsive
+//Grid below for other content
 
 export default function Blog() {
   const posts = [
