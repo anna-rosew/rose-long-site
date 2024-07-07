@@ -2,9 +2,9 @@
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 
-
 :root {
   background-color: #f6ece1;
+  --image-border-radius: 45px;
 }
 
 * {
