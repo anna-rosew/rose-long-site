@@ -1,6 +1,6 @@
 .blog-page {
   padding: 20px;
-  margin-left: 100px;
+  margin-left: 50px;
   text-align: left;
 }
 
@@ -43,6 +43,7 @@
     url("../styles/imgs/photos/maze.png");
   background-size: cover;
   height: 500px;
+  width: 100%;
   border-radius: 45px;
   background-position: center;
   padding: 30px;
@@ -130,6 +131,10 @@
   border-radius: 45px;
 }
 
+.description {
+  display: block;
+}
+
 .overlay {
   position: relative;
   z-index: 1;
@@ -158,5 +163,42 @@
 }
 
 @media (max-width: 768px) {
-  /* Add responsive styles if needed */
+  .blog-page {
+    margin-left: 10px;
+    padding: 0;
+  }
+
+  .blog-heading {
+    padding-left: 0;
+    text-align: center;
+  }
+  .cover-post {
+    height: 300px;
+    width: 80%;
+    border-radius: 45px;
+    background-position: center;
+    padding: 30px;
+  }
+
+  .description {
+    display: none;
+  }
+
+  .blog-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .blog-block {
+    width: 85%;
+    height: 200px;
+    padding: 20px;
+    align-items: center;
+  }
+
+  .blog-type-icon-block {
+    top: 10px;
+    right: 0px;
+  }
 }

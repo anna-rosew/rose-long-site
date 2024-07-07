@@ -15,6 +15,19 @@ export default function Blog() {
         "Hosted by Elizabeth Vaughan and Julia Carson - a psychologist and a therapist who walked out of a bar and became good mates in sobriety.",
       icon: require("../styles/imgs/icons/podcast.png"),
       postType: "Podcast",
+      link: "https://podcasts.apple.com/gb/podcast/episode-30-yoga-with-rose-long/id1654177454?i=1000654109809",
+      date: "05/24",
+      img: require("../styles/imgs/photos/beach-cove.png"),
+    },
+
+    {
+      title: "From Ancient Rituals to Modern Mindfulness",
+      subtitle: "MEDITATION",
+      className: "post-2",
+      description:
+        "This article explores meditation's evolution from ancient rituals to modern mindfulness, highlighting its cultural adaptations and contemporary benefits.",
+      icon: require("../styles/imgs/icons/article.png"),
+      postType: "Article",
       link: "https://blender-rookie.netlify.app",
       date: "05/24",
       img: require("../styles/imgs/photos/buddah.png"),
@@ -38,7 +51,7 @@ export default function Blog() {
               >
                 LISTEN
               </button>
-              <p>
+              <p className="description">
                 Explore Rose Long's remarkable journey of profound
                 transformation and alignment with the earth's rhythm on the Mind
                 Over Matter Podcast, where her story serves as a beacon of

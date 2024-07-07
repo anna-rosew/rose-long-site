@@ -19,7 +19,7 @@ export default function BlogBlock({ postInfo }) {
           <h2>{postInfo.title}</h2>
         </div>
         <div className="block-content">
-          <p>{postInfo.description}</p>
+          <p className="description">{postInfo.description}</p>
           <h3 className="date">{postInfo.date}</h3>
         </div>
         <a
