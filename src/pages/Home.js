@@ -25,7 +25,9 @@ export default function Home() {
       {isMobile ? (
         <div className="mobile-home-container">
           <h1>Rose Long</h1>
-          <div className="hero-image-container"></div>
+          <div className="image-container-mobile">
+            <div className="hero-image-container"></div>
+          </div>
           <h2>Breath - Mind - Body</h2>
 
           <h3>Step Into</h3>

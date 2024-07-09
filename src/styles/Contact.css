@@ -1,7 +1,4 @@
 /* General styles */
-.contact {
-  padding: 50px 0;
-}
 
 .contact h2 {
   margin-bottom: 0px;
@@ -18,7 +15,7 @@
 }
 
 .call-to-action {
-  padding-left: 360px;
+  padding-left: 420px;
 }
 
 .grid {
@@ -28,6 +25,7 @@
 
 .grid-contact {
   grid-template-columns: 1fr 2fr;
+  margin-left: 50px;
 }
 
 @media (max-width: 768px) {

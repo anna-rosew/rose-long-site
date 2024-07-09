@@ -4,13 +4,13 @@
 
 .Home h1 {
   margin: 0;
-  padding-right: 20px;
+  padding-right: 30px;
   font-size: 35px;
 }
 
 .Home h2 {
   margin: 0;
-  padding-right: 20px;
+  padding-right: 30px;
 }
 
 .hero-image-container {
@@ -18,7 +18,7 @@
   background-size: cover;
   background-position: center;
   height: 450px;
-  margin: 10px 270px 10px 220px;
+  margin: 10px 270px 10px 200px;
   border-radius: 23px;
   transition: opacity 0.5s ease, transform 1s ease-in-out;
   position: relative; /* Add this line */
@@ -75,13 +75,13 @@
 }
 
 .journey-container {
-  height: 225px;
+  height: 260px;
   background-image: url("./imgs/icons/mobile-journey.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   margin-bottom: 20px;
-  width: 100vw;
+  /* Adjusting for the right margin */
 }
 
 .courage {
@@ -115,11 +115,14 @@ img.logo-mobile {
 @media (max-width: 768px) {
   .container.Home {
     margin: 0 auto;
-    padding-top: 20px;
+    padding-top: 0px;
+  }
+  .image-container-mobile {
+    padding: 20px;
   }
   .hero-image-container {
     height: 370px;
-    margin: 20px 20px;
+    margin: 0px;
   }
 
   .Home h1 {
