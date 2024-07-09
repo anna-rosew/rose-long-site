@@ -4,19 +4,21 @@
 
 .Home h1 {
   margin: 0;
+  padding-right: 20px;
   font-size: 35px;
 }
 
 .Home h2 {
   margin: 0;
+  padding-right: 20px;
 }
 
 .hero-image-container {
   background-image: url("./imgs/permanent/hero-image.jpg");
   background-size: cover;
   background-position: center;
-  height: 500px;
-  margin: 10px 200px;
+  height: 450px;
+  margin: 10px 270px 10px 220px;
   border-radius: 23px;
   transition: opacity 0.5s ease, transform 1s ease-in-out;
   position: relative; /* Add this line */
@@ -113,10 +115,19 @@ img.logo-mobile {
 @media (max-width: 768px) {
   .container.Home {
     margin: 0 auto;
+    padding-top: 20px;
   }
   .hero-image-container {
     height: 370px;
     margin: 20px 20px;
+  }
+
+  .Home h1 {
+    padding: 0;
+  }
+
+  .Home h2 {
+    padding: 0;
   }
 
   .button-overlay {

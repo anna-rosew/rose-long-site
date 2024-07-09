@@ -18,7 +18,7 @@
 }
 
 .call-to-action {
-  padding-left: 590px;
+  padding-left: 360px;
 }
 
 .grid {
@@ -26,8 +26,8 @@
   gap: 20px;
 }
 
-.grid-2-columns {
-  grid-template-columns: 1fr 1fr;
+.grid-contact {
+  grid-template-columns: 1fr 2fr;
 }
 
 @media (max-width: 768px) {
@@ -59,10 +59,11 @@
 
 /* Contact form styles */
 .contact-form-container {
-  display: flex;
+  display: block;
   flex-direction: column;
   align-items: stretch; /* Ensure items stretch to container width */
   padding: 20px;
+  margin-left: 100px;
 }
 
 .contact-form {
@@ -147,6 +148,9 @@
 }
 
 @media (max-width: 768px) {
+  .grid-contact {
+    grid-template-columns: 1fr;
+  }
   .contact-image-container {
     display: none;
   }

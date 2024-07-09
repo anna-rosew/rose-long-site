@@ -45,7 +45,7 @@ export default function Contact() {
         <p className="call-to-action">
           Thank you for getting in touch. I will get back to you within 48 hours
         </p>
-        <div className="grid grid-2-columns">
+        <div className="grid grid-contact">
           <div className="contact-image-container">
             <img
               src={ContactImg}
