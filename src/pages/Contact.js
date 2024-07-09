@@ -4,6 +4,7 @@ import ContactImg from "../styles/imgs/permanent/contact.png";
 
 //I will get back to you within 48 hours
 //Newsletter subscription call to action tick box
+//Alert styling
 
 export default function Contact() {
   const [formData, setFormData] = useState({
