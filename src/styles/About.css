@@ -108,7 +108,7 @@
   .about-image-container {
     order: -1; /* Ensures the image appears before the text on mobile */
     position: relative; /* Ensure the container itself is positioned */
-    height: 200px; /* Set a fixed height for the container */
+    height: 300px; /* Set a fixed height for the container */
     margin-bottom: 10px;
     margin-top: 20px; /* Optional: Add margin to separate from text */
   }
@@ -122,6 +122,6 @@
   }
 
   .about-button-container {
-    justify-content: center;
+    margin-left: 10px;
   }
 }
