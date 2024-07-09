@@ -15,14 +15,14 @@ import Qualifications from "./pages/Qualifications";
 import Workshops from "./pages/Workshops";
 
 import NavBar from "./components/Nav/NavBar";
-import Socials from "./components/Socials";
+
 import CreditsFooter from "./components/CreditsFooter";
 
 function App() {
   return (
     <div className="App">
       <NavBar />
-      <Socials />
+      
       <Routes>
         <Route index element={<Home />} />
         <Route path="/home" element={<Home />} />

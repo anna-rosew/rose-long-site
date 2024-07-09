@@ -41,10 +41,17 @@ export default function Contact() {
           <h2>Get</h2>
           <h1>In-Touch</h1>
         </div>
+        <div className="call-to-action">
+          <p>
+            If you have any questions or would like to book a class, workshop or
+            retreat, please get in touch below. I usually get back to you within
+            48 hours.
+          </p>
+          <p>
+            You can also stay-in-touch by signing up for the monthly newsletter.
+          </p>
+        </div>
 
-        <p className="call-to-action">
-          Thank you for getting in touch. I will get back to you within 48 hours
-        </p>
         <div className="grid grid-contact">
           <div className="contact-image-container">
             <img

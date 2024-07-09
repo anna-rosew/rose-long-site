@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../styles/Home.css";
+import Socials from "../components/Socials";
 import StartButton from "../components/StartButton";
 
 import GetInTouch from "../components/GetInTouch";
@@ -36,6 +37,7 @@ export default function Home() {
         </div>
       ) : (
         <div className="desktop">
+          <Socials />
           <GetInTouch link="/contact" />
           <h1>Rose Long</h1>
           <div className="hero-image-container">

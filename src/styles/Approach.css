@@ -2,6 +2,11 @@
   margin-top: 10px;
 }
 
+.journey-link {
+  display: block;
+  margin: 0 auto;
+}
+
 .approach-text {
   padding: 20px;
   text-align: left;
