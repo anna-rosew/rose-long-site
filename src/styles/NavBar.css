@@ -1,3 +1,6 @@
+.NavBar {
+  margin-top: 15px;
+}
 .nav {
   width: 1100px;
   height: 100px;
@@ -9,6 +12,7 @@
 .site-logo {
   height: 100px;
   color: black;
+  margin-left: 20px;
 }
 
 .menu-link {
@@ -30,6 +34,7 @@
 @media (max-width: 768px) {
   .site-logo {
     text-align: center;
+    margin-left: 0;
   }
 
   .menu-link {

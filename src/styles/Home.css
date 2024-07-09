@@ -19,6 +19,7 @@
   margin: 10px 200px;
   border-radius: 23px;
   transition: opacity 0.5s ease, transform 1s ease-in-out;
+  position: relative; /* Add this line */
 }
 
 .hero-image-container:hover {
@@ -28,16 +29,21 @@
 
 .button-overlay {
   position: absolute;
-  top: 85%;
-  left: 730px;
-  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -15%);
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%; /* Ensures the button is centered in the image */
-  height: 100%; /* Ensures the button is centered in the image */
+  width: 100%;
+  height: 100%;
   pointer-events: none;
-  opacity: 0; /* Initially hide the button overlay */
+  opacity: 0;
+}
+
+.button-overlay button {
+  pointer-events: auto;
+  margin: 0 auto; /* Center the button */
 }
 
 .button-overlay :hover {
@@ -67,12 +73,13 @@
 }
 
 .journey-container {
-  height: 200px;
+  height: 225px;
   background-image: url("./imgs/icons/mobile-journey.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   margin-bottom: 20px;
+  width: 100vw;
 }
 
 .courage {
@@ -95,14 +102,27 @@
   margin-top: 70px;
 }
 
+.mobile-home-container {
+  width: 100vw;
+}
+
 img.logo-mobile {
   height: 70px;
 }
 
 @media (max-width: 768px) {
+  .container.Home {
+    margin: 0 auto;
+  }
   .hero-image-container {
     height: 370px;
-    margin: 20px auto;
+    margin: 20px 20px;
+  }
+
+  .button-overlay {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .start-journey-button {

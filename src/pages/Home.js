@@ -24,7 +24,6 @@ export default function Home() {
     <div className="container Home">
       {isMobile ? (
         <div className="mobile-home-container">
-          {/* Add your mobile-specific content here */}
           <h1>Rose Long</h1>
           <div className="hero-image-container"></div>
           <h2>Breath - Mind - Body</h2>
