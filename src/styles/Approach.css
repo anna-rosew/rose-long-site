@@ -12,6 +12,10 @@
   text-align: left;
 }
 
+.player-wrapper {
+  margin: 30px;
+}
+
 @media (max-width: 768px) {
   .work-cards {
     margin: 0px 20px;

@@ -1,18 +1,25 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import TestimonialCarousel from "../components/TestimonialCarousel";
-import "../styles/App.css";
-import "../styles/Approach.css";
-//import "@vidstack/react/player/styles/default/theme.css";
-//import "@vidstack/react/player/styles/default/layouts/video.css";
-//import { VideoPlayerComponent } from "@vidstack/react/player";
 
-//<VideoPlayerComponent src="path_to_your_video.mp4" />
+import "../styles/Approach.css";
+import "../styles/App.css";
 
 export default function Approach() {
   return (
     <div className="container Approach-Page">
       <h1>My Approach</h1>
+      <div className="player-wrapper">
+        <iframe
+          src="https://player.vimeo.com/video/981928855?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          width="960"
+          height="540"
+          frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowfullscreen
+          title="vimeo player"
+        ></iframe>
+      </div>
 
       <div className="call-to-action">
         {" "}
