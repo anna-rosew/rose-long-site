@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function StartButton() {
   return (
-    <Link to="/work">
+    <Link to="/approach">
       <button className="start-journey-button">Start Journey</button>
     </Link>
   );
