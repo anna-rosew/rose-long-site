@@ -17,9 +17,13 @@
   gap: 20px;
 }
 
+.forms-container {
+  display: block;
+  width: 100%;
+}
+
 .grid-contact {
   grid-template-columns: 1fr 2fr;
-  margin-left: 50px;
 }
 
 .stay-in-touch {
@@ -28,7 +32,7 @@
   padding: 20px;
 }
 
-.newletter-icon {
+.newsletter-icon {
   height: 120px;
 }
 
@@ -65,7 +69,6 @@
   flex-direction: column;
   align-items: stretch; /* Ensure items stretch to container width */
   padding: 20px;
-  margin-left: 20px;
 }
 
 .contact-form {
@@ -142,8 +145,8 @@
 /* Image container styles */
 .contact-image-container {
   display: block;
-  width: 100%;
-  max-width: 395px;
+
+  width: 470px;
 }
 
 .contact-image-container img {

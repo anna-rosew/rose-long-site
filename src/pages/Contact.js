@@ -3,9 +3,8 @@ import "../styles/Contact.css";
 import ContactImg from "../styles/imgs/permanent/contact.png";
 import newsletterIcon from "../styles/imgs/icons/newsletter.svg";
 
-//I will get back to you within 48 hours
-//Newsletter subscription call to action tick box
-//Alert styling
+//Contact Form: https://www.youtube.com/watch?v=bMq2riFCF90&t=15s
+//Newsletter: https://www.youtube.com/watch?v=Db2uW8xhqJY
 
 export default function Contact() {
   return (
@@ -55,14 +54,13 @@ export default function Contact() {
               <div className="stay-in-touch">
                 <img
                   src={newsletterIcon}
-                  alt="Newletter"
-                  className="newletter-icon"
+                  alt="Newsletter"
+                  className="newsletter-icon"
                 />
                 <div className="newsletter-subscribe">
                   <p>
-                    If you’d like to stay up-to-date with classes, workshops and
-                    retreats, please sign-up to the monthly newsletter. I like
-                    to keep it short but sweet. You can unsubscribe at anytime.
+                    Join for news on classes, workshops, retreats and free
+                    resources/offers.
                   </p>
                   <button type="submit" className="submit-btn">
                     SIGN-UP
