@@ -3,16 +3,54 @@ import { Link } from "react-router-dom";
 import TestimonialCarousel from "../components/TestimonialCarousel";
 import "../styles/App.css";
 import "../styles/Approach.css";
-//import "@vidstack/react/player/styles/default/theme.css";
-//import "@vidstack/react/player/styles/default/layouts/video.css";
-//import { VideoPlayerComponent } from "@vidstack/react/player";
+import "@vidstack/react/player/styles/default/theme.css";
+import "@vidstack/react/player/styles/default/layouts/audio.css";
+import "@vidstack/react/player/styles/default/layouts/video.css";
+import myApproachThumbnail from "../styles/imgs/permanent/approach-thumbnail.png";
 
-//<VideoPlayerComponent src="path_to_your_video.mp4" />
+import { MediaPlayer, MediaProvider, Poster, Track } from "@vidstack/react";
+import {
+  DefaultVideoLayout,
+  defaultLayoutIcons,
+} from "@vidstack/react/player/layouts/default";
+
+import {
+  defaultLayoutIcons,
+  DefaultVideoLayout,
+} from "@vidstack/react/player/layouts/default";
 
 export default function Approach() {
   return (
     <div className="container Approach-Page">
       <h1>My Approach</h1>
+      <MediaPlayer
+        src="vimeo/640499893"
+        viewType="video"
+        streamType="on-demand"
+        logLevel="warn"
+        crossOrigin
+        playsInline
+        title="Rose Long: My"
+        poster={myApproachThumbnail}
+      >
+        <MediaProvider>
+          <Poster className="vds-poster" />
+          {textTracks.map((track) => (
+            <Track {...track} key={track.src} />
+          ))}
+        </MediaProvider>
+        <DefaultVideoLayout
+          thumbnails="https://files.vidstack.io/sprite-fight/thumbnails.vtt"
+          icons={defaultLayoutIcons}
+        />
+      </MediaPlayer>
+      <MediaPlayer title="Rose Long: My Approach" src="vimeo/981928855">
+        <MediaProvider />
+        <DefaultVideoLayout
+          thumbnails={myApproachThumbnail}
+          icons={defaultLayoutIcons}
+        />
+      </MediaPlayer>
 
       <div className="call-to-action">
         {" "}
