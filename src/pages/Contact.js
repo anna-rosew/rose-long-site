@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../styles/Contact.css";
 import ContactImg from "../styles/imgs/permanent/contact.png";
+import newsletterIcon from "../styles/imgs/icons/newsletter.svg";
 
 //I will get back to you within 48 hours
 //Newsletter subscription call to action tick box
@@ -60,44 +61,52 @@ export default function Contact() {
               className="img-responsive"
             />
           </div>
-          <div className="contact-form-container">
-            <form onSubmit={handleSubmit} className="contact-form">
-              <div className="form-group">
-                <label htmlFor="name">NAME</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-              <div className="form-group">
-                <label htmlFor="email">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-              <div className="form-group">
-                <label htmlFor="message">Message</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                ></textarea>
-              </div>
-              <button type="submit" className="submit-btn">
-                SEND
-              </button>
-            </form>
+          <div className="forms-container">
+            <div className="contact-form-container">
+              <h2>Get-In Touch</h2>
+              <form onSubmit={handleSubmit} className="contact-form">
+                <div className="form-group">
+                  <label htmlFor="name">NAME</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="message">Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" className="submit-btn">
+                  SEND
+                </button>
+              </form>
+            </div>
+            <div className="stay-in-touch">
+              <h2>Stay-in-Touch</h2>
+              <img src={newsletterIcon} alt="Newletter" />
+              <p></p>
+            </div>
           </div>
         </div>
       </div>
