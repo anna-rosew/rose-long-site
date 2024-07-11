@@ -10,17 +10,7 @@ export default function OneToOne() {
       <h2>One-To-One</h2>
       <h1>Sessions.</h1>
       <h3 className="subtitle">Unlocking the Answers from Within.</h3>
-      <div className="player-wrapper">
-        <iframe
-          src="https://player.vimeo.com/video/950778932?h=f30e222061"
-          width="960"
-          height="540"
-          frameborder="0"
-          allow="autoplay; fullscreen; picture-in-picture"
-          allowfullscreen
-          title="vimeo player"
-        ></iframe>
-      </div>
+
       <div className="one-to-one-text">
         <p>
           These sessions offer you what you need to{" "}
