@@ -68,6 +68,11 @@
   width: 100vw;
 }
 
+.blog-home {
+  display: inline-block;
+  margin: 0 auto;
+}
+
 img.logo-mobile {
   height: 70px;
 }

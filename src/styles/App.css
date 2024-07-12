@@ -56,6 +56,10 @@ p {
   letter-spacing: 0.3px;
 }
 
+a {
+  text-decoration: none;
+}
+
 button:hover {
   cursor: pointer;
 }

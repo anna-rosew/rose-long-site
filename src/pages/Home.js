@@ -4,6 +4,7 @@ import Socials from "../components/Socials";
 import StartButton from "../components/StartButton";
 import GetInTouch from "../components/GetInTouch";
 import BlogBlock from "../components/BlogBlock";
+import "../styles/Blog.css";
 
 export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
@@ -32,7 +33,7 @@ export default function Home() {
       postType: "Podcast",
       link: "https://podcasts.apple.com/gb/podcast/episode-30-yoga-with-rose-long/id1654177454?i=1000654109809",
       date: "05/24",
-      img: require("../styles/imgs/photos/beach-cove.png"),
+      img: require("../styles/imgs/photos/woman-beach.png"),
     },
   ];
 
@@ -51,11 +52,13 @@ export default function Home() {
           <StartButton />
 
           <div className="journey-container"></div>
-          {posts.map((post, index) => (
-            <div key={index} className="col-md-6">
-              <BlogBlock postInfo={post} />
-            </div>
-          ))}
+          <div className="blog-home">
+            {posts.map((post, index) => (
+              <div key={index} className="col-md-6">
+                <BlogBlock postInfo={post} />
+              </div>
+            ))}
+          </div>
         </div>
       ) : (
         <div className="desktop">

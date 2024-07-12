@@ -17,7 +17,7 @@ export default function Blog() {
       postType: "Podcast",
       link: "https://podcasts.apple.com/gb/podcast/episode-30-yoga-with-rose-long/id1654177454?i=1000654109809",
       date: "05/24",
-      img: require("../styles/imgs/photos/beach-cove.png"),
+      img: require("../styles/imgs/photos/woman-beach.png"),
     },
 
     {
