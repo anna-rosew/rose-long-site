@@ -4,31 +4,30 @@
   border: none;
   padding: 0;
   cursor: pointer;
-  text-decoration: none; /* Remove underline from link */
-  position: fixed; /* Fix the position */
-  bottom: 20px; /* Distance from the bottom */
-  right: 20px; /* Distance from the right */
+  text-decoration: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
 }
 
 .get-in-touch-btn img {
-  width: 100px; /* Adjust size as needed */
-  height: 100px; /* Adjust size as needed */
-  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Add transition for smooth hover effect */
+  width: 100px;
+  height: 100px;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 .get-in-touch-btn:hover img {
-  transform: scale(1.1); /* Optional: Add a slight scaling effect */
-  /* Optional: Change opacity for additional effect */
+  transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
   .get-in-touch-btn {
-    bottom: 20px; /* Distance from the bottom */
+    top: 10px;
     left: 20px;
   }
 
   .get-in-touch-btn img {
-    width: 90px; /* Adjust size as needed */
-    height: 90px; /* Adjust size as needed */
+    width: 90px;
+    height: 90px;
   }
 }

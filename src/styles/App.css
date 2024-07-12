@@ -151,9 +151,9 @@ button:hover {
 }
 
 .button-hover:hover {
-  color: white;
-  background-color: #2b578e;
-  border: 2px solid #2b578e;
+  color: #ccbb99;
+  background-color: black;
+  border: 2px solid black;
 }
 
 @media (max-width: 768px) {

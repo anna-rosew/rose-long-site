@@ -32,8 +32,9 @@ export default function Home() {
           <div className="image-container-mobile">
             <div className="hero-image-container"></div>
           </div>
+
           <StartButton />
-          <h3>Step Into</h3>
+
           <div className="journey-container"></div>
         </div>
       ) : (
@@ -45,7 +46,9 @@ export default function Home() {
             <h3>Breath - Mind - Body</h3>
           </div>
           <div className="hero-image-container" />
-          <StartButton />
+          <div className="button-center">
+            <StartButton />
+          </div>
         </div>
       )}
     </div>

@@ -4,7 +4,7 @@
 
 .home-header {
   margin: 0;
-  padding-right: 35px;
+  padding-right: 85px;
 }
 
 .home-header h1 {
@@ -17,19 +17,23 @@
   margin: 0;
 }
 
+.button-center {
+  margin-right: 85px;
+}
+
 .hero-image-container {
-  background-image: url("./imgs/permanent/hero-image.jpg");
+  background-image: url("./imgs/permanent/maze-hero.png");
   background-size: cover;
   background-position: center;
   height: 450px;
   margin: 10px 270px 10px 200px;
   border-radius: 23px;
-  transition: opacity 0.5s ease, transform 1s ease-in-out;
+  transition: opacity 1.5s ease, transform 1.5s ease-in-out;
   position: relative;
 }
 
 .hero-image-container:hover {
-  background-image: url("./imgs/permanent/hero-img2.png");
+  background-image: url("./imgs/permanent/hero-image-overlay.png");
   opacity: 0.7;
 }
 
@@ -43,7 +47,7 @@
 
 .journey-container {
   height: 260px;
-  background-image: url("./imgs/icons/mobile-journey.png");
+  background-image: url("./imgs/permanent//hero-image-overlay.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -51,24 +55,12 @@
   /* Adjusting for the right margin */
 }
 
-.courage {
-  background-color: #356d65;
-}
-
-.clarity {
-  background-color: #b9ca9d;
-}
-
-.presence {
-  background-color: #f8e0a4;
-}
-
 .journey-container img {
   width: 250px;
 }
 
 .mobile-home-container h3 {
-  margin-top: 70px;
+  margin-top: 25px;
 }
 
 .mobile-home-container {
@@ -105,7 +97,7 @@ img.logo-mobile {
   }
 
   .hero-image-container:hover {
-    background-image: url("./imgs/permanent/hero-image.jpg");
+    background-image: url("./imgs/permanent/maze-hero.png");
     opacity: 1;
   }
 
@@ -115,5 +107,9 @@ img.logo-mobile {
 
   .mobile-header h3 {
     margin: 0;
+  }
+
+  .mobile-header h1 {
+    margin-bottom: 10px;
   }
 }
