@@ -28,7 +28,7 @@
   height: 450px;
   margin: 10px 270px 10px 200px;
   border-radius: 23px;
-  transition: opacity 1.5s ease, transform 1.5s ease-in-out;
+  transition: opacity 1.5s ease, transform 3s ease-in-out;
   position: relative;
 }
 

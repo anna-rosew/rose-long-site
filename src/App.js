@@ -22,7 +22,6 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      
       <Routes>
         <Route index element={<Home />} />
         <Route path="/home" element={<Home />} />

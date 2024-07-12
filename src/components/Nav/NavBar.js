@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import Burger from "./Burger";
 import "../../styles/NavBar.css";
@@ -31,6 +31,16 @@ const Nav = styled.nav`
 `;
 
 export default function NavBar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <div className="NavBar">
       <Nav>
@@ -39,7 +49,11 @@ export default function NavBar() {
             <img src={Logo} alt="Rose Long Logo" className="site-logo" />
           </a>
         </div>
-        <Burger />
+        <Burger
+          menuOpen={menuOpen}
+          toggleMenu={toggleMenu}
+          closeMenu={closeMenu}
+        />
       </Nav>
     </div>
   );
