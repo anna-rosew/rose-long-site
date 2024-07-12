@@ -54,7 +54,7 @@ export default function OneToOne() {
             </div>
           </div>
         </div>
-        <Link to="/work" className="card-links">
+        <Link to="/contact" className="card-links">
           <button className="journey-link button-hover">
             Book a Free 30 Min Session
           </button>

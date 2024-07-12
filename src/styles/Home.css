@@ -47,10 +47,11 @@
 
 .journey-container {
   height: 260px;
-  background-image: url("./imgs/permanent//hero-image-overlay.png");
+  background-image: url("./imgs/permanent/mobile-symbols.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  margin-top: 20px;
   margin-bottom: 20px;
   /* Adjusting for the right margin */
 }
