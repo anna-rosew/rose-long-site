@@ -15,7 +15,7 @@ const Socials = () => {
         <img src={InstaIcon} alt="Instagram" />
       </a>
       <a
-        href="https://www.roselong-lifechanges.com/"
+        href="https://vimeo.com/roselong"
         target="_blank"
         rel="noopener noreferrer"
         className="social-icon icon-hover"
