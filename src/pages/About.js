@@ -51,7 +51,6 @@ export default function About() {
               <Link to="/blog" className="about-buttons">
                 Blog
               </Link>
-
               <Link to="/qualifications" className="about-buttons">
                 Qualifications
               </Link>
