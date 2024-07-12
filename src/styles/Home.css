@@ -2,15 +2,19 @@
   text-align: center;
 }
 
-.Home h1 {
+.home-header {
   margin: 0;
   padding-right: 35px;
-  font-size: 35px;
 }
 
-.Home h2 {
+.home-header h1 {
+  font-size: 35px;
   margin: 0;
-  padding-right: 30px;
+}
+
+.home-header h3 {
+  opacity: 70%;
+  margin: 0;
 }
 
 .hero-image-container {
@@ -21,35 +25,12 @@
   margin: 10px 270px 10px 200px;
   border-radius: 23px;
   transition: opacity 0.5s ease, transform 1s ease-in-out;
-  position: relative; /* Add this line */
+  position: relative;
 }
 
 .hero-image-container:hover {
   background-image: url("./imgs/permanent/hero-img2.png");
   opacity: 0.7;
-}
-
-.button-overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -15%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  opacity: 0;
-}
-
-.button-overlay button {
-  pointer-events: auto;
-  margin: 0 auto; /* Center the button */
-}
-
-.button-overlay :hover {
-  transform: scale(1.05);
 }
 
 .hero-image-container:hover .button-overlay {
@@ -58,20 +39,6 @@
 
 .button-overlay button {
   pointer-events: auto; /* Makes the button interactive */
-}
-
-.start-journey-button {
-  padding: 5px 35px 5px 35px;
-  border-radius: 9px;
-  font-family: "Jost", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  text-transform: uppercase;
-  font-size: 20px;
-  color: white;
-  background-color: transparent;
-  border: 2px solid white;
 }
 
 .journey-container {

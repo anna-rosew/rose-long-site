@@ -40,13 +40,13 @@ const testimonials = [
 
   {
     name: "Janine",
-    text: "Rose is somebody who really listens and knows when to ask the right questions. She is incredibly clear in her observation and way of expression. Rose is very intuitive and combines this with a tangible wisdom and great sense of humour. She makes you feel like you are talking to a good old friend while she always stays professional. The feeling I got from working with her was one of trust, joy and warmth.",
+    text: "I first practised yoga with Rose on a retreat in Portugal in 2018. It was the first time I had tried kundalini yoga and I found it really powerful. It released emotions and I felt that it was very healing.  I find Rose's calm approach really grounding.  Her on-line yoga leaves me feeling relaxed, much more aware of the power of my breath and with a heightened awareness.",
     location: "UK",
     profileImage: janine,
   },
   {
     name: "Ruth",
-    text: "Rose is somebody who really listens and knows when to ask the right questions. She is incredibly clear in her observation and way of expression. Rose is very intuitive and combines this with a tangible wisdom and great sense of humour. She makes you feel like you are talking to a good old friend while she always stays professional. The feeling I got from working with her was one of trust, joy and warmth.",
+    text: "I really enjoyed being part of the group and I found your Zoom ‘ technique’ worked really well. I just had you on the screen while doing the practice, so it felt like a one to one, whilst being aware of the others in the group , all with a common purpose. Emotionally, it felt so lovely to be part of a ‘family’ in spirit.",
     location: "UK",
     profileImage: ruth,
   },

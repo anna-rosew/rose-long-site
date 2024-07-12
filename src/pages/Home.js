@@ -10,10 +10,10 @@ export default function Home() {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768); // You can adjust the breakpoint as needed
+      setIsMobile(window.innerWidth <= 768);
     };
 
-    handleResize(); // Check the screen width on initial load
+    handleResize();
     window.addEventListener("resize", handleResize);
 
     return () => {
@@ -39,25 +39,14 @@ export default function Home() {
         <div className="desktop">
           <Socials />
           <GetInTouch link="/contact" />
-          <h1>Rose Long</h1>
-          <div className="hero-image-container">
-            <div className="button-overlay">
-              <StartButton />
-            </div>
+          <div className="home-header">
+            <h1>Rose Long</h1>
+            <h3>Breath - Mind - Body</h3>
           </div>
-          <h2>Breath - Mind - Body</h2>
+          <div className="hero-image-container" />
+          <StartButton />
         </div>
       )}
     </div>
   );
 }
-
-// <div className="journey-container courage">
-// <img src={Courage} alt="Courage"></img>
-//</div>
-//<div className="journey-container clarity">
-//<img src={Clarity} alt="Clarity"></img>
-//</div>
-//<div className="journey-container presence">
-//<img src={Presence} alt="Presence"></img>
-//</div>
