@@ -68,7 +68,7 @@ export default function Workshops() {
               meditations, workshops, and discussions designed to unlock your
               potential and elevate your journey.
             </p>
-            <Link to="/contact" className="get-in-touch">
+            <Link to="/contact" className="nav-buttons">
               GET IN TOUCH
             </Link>
           </div>

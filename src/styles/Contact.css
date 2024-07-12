@@ -124,22 +124,23 @@
 
 .submit-btn {
   display: block; /* Ensure button takes up full width */
-
   margin: 10px auto; /* Add spacing above the button */
-  padding: 10px 20px;
+  padding: 10px 35px;
   color: black;
-  border: 1px solid black;
-  border-radius: 5px;
-  font-size: 16px;
+  border: 2px solid black;
+  border-radius: 17px;
+  font-size: 17px;
   cursor: pointer;
   background-color: transparent;
   width: 99%; /* Button spans full width of container */
-  box-sizing: border-box; /* Include padding and border in width calculation */
+  box-sizing: border-box;
+  transition: color 0.5s, background-color 0.3s, border 0.3s; /* Include padding and border in width calculation */
 }
 
 .submit-btn:hover {
-  background-color: #204d7e;
-  color: #fff;
+  background-color: #cf7132;
+  color: black;
+  border: 2px solid #cf7132;
 }
 
 /* Image container styles */
