@@ -25,15 +25,16 @@ export default function Home() {
     <div className="container Home">
       {isMobile ? (
         <div className="mobile-home-container">
-          <h1>Rose Long</h1>
+          <div className="mobile-header">
+            <h1>Rose Long</h1>
+            <h3>Breath - Mind - Body</h3>
+          </div>
           <div className="image-container-mobile">
             <div className="hero-image-container"></div>
           </div>
-          <h2>Breath - Mind - Body</h2>
-
+          <StartButton />
           <h3>Step Into</h3>
           <div className="journey-container"></div>
-          <StartButton />
         </div>
       ) : (
         <div className="desktop">

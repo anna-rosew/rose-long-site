@@ -92,14 +92,6 @@ img.logo-mobile {
     margin: 0px;
   }
 
-  .Home h1 {
-    padding: 0;
-  }
-
-  .Home h2 {
-    padding: 0;
-  }
-
   .button-overlay {
     top: 50%;
     left: 50%;
@@ -115,5 +107,13 @@ img.logo-mobile {
   .hero-image-container:hover {
     background-image: url("./imgs/permanent/hero-image.jpg");
     opacity: 1;
+  }
+
+  .mobile-header {
+    padding: 0;
+  }
+
+  .mobile-header h3 {
+    margin: 0;
   }
 }
