@@ -62,6 +62,7 @@ export default function Contact() {
                     Join for news on classes, workshops, retreats and free
                     resources/offers.
                   </p>
+                  <button className="general-button">SIGN-UP</button>
                   <button type="submit" className="submit-btn">
                     SIGN-UP
                   </button>

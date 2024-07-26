@@ -63,7 +63,6 @@
   }
 }
 
-/* Contact form styles */
 .contact-form-container {
   display: block;
   flex-direction: column;
@@ -123,8 +122,8 @@
 }
 
 .submit-btn {
-  display: block; /* Ensure button takes up full width */
-  margin: 10px auto; /* Add spacing above the button */
+  display: block; 
+  margin: 10px auto; 
   padding: 10px 35px;
   color: black;
   border: 2px solid black;

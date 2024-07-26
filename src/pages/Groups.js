@@ -16,8 +16,6 @@ import Workshop from "../styles/imgs/photos/groups.png";
 import Location from "../styles/imgs/icons/location_line.svg";
 import Calender from "../styles/imgs/icons/calander_white.svg";
 
-//create workshops section
-
 export default function Groups() {
   const onClick = () => {
     window.location.href = "#onlineGroups";
