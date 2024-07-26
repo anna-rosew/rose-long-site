@@ -44,21 +44,20 @@
 }
 
 .profile-image {
-  width: 80px; /* Adjust size as necessary */
-  height: 80px; /* Adjust size as necessary */
-  border-radius: 50%; /* Makes the image appear as a circle */
-  margin: 10px auto; /* Adjust as necessary */
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin: 10px auto;
 }
 
-/* Additional styling for arrows can be added here if needed */
 .slick-prev:before,
 .slick-next:before {
-  display: none; /* Hide default arrows */
+  display: none;
 }
 
 @media (max-width: 768px) {
   .testimonial-text {
-    font-size: 14px; /* Adjust font size */
+    font-size: 14px;
   }
 
   .carousel-container {
@@ -68,8 +67,6 @@
   }
 
   .testimonial-slide {
-    padding: 10px; /* Reduce padding */
-
-    /* Prevents content from spilling over */
+    padding: 10px;
   }
 }

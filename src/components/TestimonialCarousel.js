@@ -14,7 +14,7 @@ import janine from "../styles/imgs/testimonials/Janine.png";
 
 const testimonials = [
   {
-    name: "Survi",
+    name: "Suri",
     text: "Rose came into my life at a traumatic and distressing time.  I've unearthed insights when I didn't think my mind would let me and overcome challenges that I could not see beyond. Through movement, breath and her excellent coaching skills, a sense of calm and peace is restored. I don't know how Rose does it, but she just knows. ",
     location: "Switzerland",
     profileImage: survi,

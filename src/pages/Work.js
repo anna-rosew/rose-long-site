@@ -6,6 +6,7 @@ import MyApproach from "../styles/imgs/permanent/my-approach.png";
 import Groups from "../styles/imgs/permanent/groups.png";
 import OneToOnes from "../styles/imgs/permanent/one-to-one.png";
 import OverlaySVG from "../styles/imgs/icons/sunshine_white.svg";
+import TestimonialCarousel from "../components/TestimonialCarousel";
 
 export default function Work() {
   return (
@@ -98,6 +99,7 @@ export default function Work() {
           </div>
         </div>
       </div>
+      <TestimonialCarousel />
     </div>
   );
 }
