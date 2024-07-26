@@ -44,9 +44,7 @@ export default function Contact() {
                   <label htmlFor="message">Message</label>
                   <textarea id="message" name="message" required></textarea>
                 </div>
-                <button type="submit" className="submit-btn">
-                  SEND
-                </button>
+                <button className="general-button">SEND</button>
               </form>
             </div>
             <div className="contact-form-container">
@@ -63,9 +61,6 @@ export default function Contact() {
                     resources/offers.
                   </p>
                   <button className="general-button">SIGN-UP</button>
-                  <button type="submit" className="submit-btn">
-                    SIGN-UP
-                  </button>
                 </div>
               </div>
             </div>

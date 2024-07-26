@@ -98,8 +98,8 @@
     100% - 22px
   ); /* Adjust width to account for padding and borders */
   padding: 5px;
-  border: 1px solid black;
-  border-radius: 11px;
+  border: 2px solid black;
+
   font-size: 16px;
   color: #333;
   background-color: transparent;
@@ -118,34 +118,16 @@
 }
 
 .form-group #message {
-  height: 50px;
+  height: 150px;
 }
 
-.submit-btn {
-  display: block; 
-  margin: 10px auto; 
-  padding: 10px 35px;
-  color: black;
-  border: 2px solid black;
-  border-radius: 17px;
-  font-size: 17px;
-  cursor: pointer;
-  background-color: transparent;
-  width: 99%; /* Button spans full width of container */
-  box-sizing: border-box;
-  transition: color 0.5s, background-color 0.3s, border 0.3s; /* Include padding and border in width calculation */
+.contact .general-button {
+  margin: 10px auto;
+  width: 97%;
 }
 
-.submit-btn:hover {
-  background-color: #cf7132;
-  color: black;
-  border: 2px solid #cf7132;
-}
-
-/* Image container styles */
 .contact-image-container {
   display: block;
-
   width: 470px;
 }
 
