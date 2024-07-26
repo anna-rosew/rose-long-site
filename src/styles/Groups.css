@@ -184,6 +184,7 @@ button {
 .retreat-overlay p,
 .retreat-overlay span {
   margin: 5px 0;
+  color: white;
 }
 
 .retreat-overlay span {

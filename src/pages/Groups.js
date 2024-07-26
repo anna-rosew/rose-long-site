@@ -11,7 +11,7 @@ import MorningBreathe from "../styles/imgs/icons/morning-breath.svg";
 import EveningChill from "../styles/imgs/icons/evening-chill.svg";
 import Lunar from "../styles/imgs/icons/lunar.svg";
 import Kundalini from "../styles/imgs/icons/kundalini.svg";
-import OverlaySVG from "../styles/imgs/icons/sunshine.svg";
+import OverlaySVG from "../styles/imgs/icons/sunshine_white.svg";
 import Workshop from "../styles/imgs/photos/groups.png";
 import Location from "../styles/imgs/icons/location.svg";
 import Calender from "../styles/imgs/icons/calender.svg";
