@@ -38,11 +38,11 @@
 }
 
 .hero-image-container:hover .button-overlay {
-  opacity: 1; /* Show the button overlay on hover */
+  opacity: 1;
 }
 
 .button-overlay button {
-  pointer-events: auto; /* Makes the button interactive */
+  pointer-events: auto;
 }
 
 .journey-container {
@@ -53,7 +53,6 @@
   background-position: center;
   margin-top: 20px;
   margin-bottom: 20px;
-  /* Adjusting for the right margin */
 }
 
 .journey-container img {

@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import "../styles/App.css";
 import "../styles/Home.css";
 import Socials from "../components/Socials";
-import StartButton from "../components/StartButton";
 import GetInTouch from "../components/GetInTouch";
 import BlogBlock from "../components/BlogBlock";
 import "../styles/Blog.css";
@@ -49,7 +50,9 @@ export default function Home() {
             <div className="hero-image-container"></div>
           </div>
 
-          <StartButton />
+          <Link to="/work">
+            <button className="general-button">Start Your Journey</button>
+          </Link>
 
           <div className="journey-container"></div>
           <div className="blog-home">
@@ -70,7 +73,9 @@ export default function Home() {
           </div>
           <div className="hero-image-container" />
           <div className="button-center">
-            <StartButton />
+            <Link to="/work">
+              <button className="general-button">Start Your Journey</button>
+            </Link>
           </div>
         </div>
       )}
