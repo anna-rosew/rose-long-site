@@ -5,6 +5,7 @@ import newsletterIcon from "../styles/imgs/icons/newsletter.svg";
 
 //Contact Form: https://www.youtube.com/watch?v=bMq2riFCF90&t=15s
 //Newsletter: https://www.youtube.com/watch?v=Db2uW8xhqJY
+//update carousel to https://codesandbox.io/p/devbox/swiper-react-pagination-custom-m54gfx?file=%2Fsrc%2FApp.jsx https://swiperjs.com/demos
 
 export default function Contact() {
   return (
