@@ -48,10 +48,10 @@ export default function About() {
               growing.
             </p>
             <div className="about-button-container">
-              <Link to="/blog" className="about-buttons">
+              <Link to="/blog" className="general-button">
                 Blog
               </Link>
-              <Link to="/qualifications" className="about-buttons">
+              <Link to="/qualifications" className="general-button">
                 Qualifications
               </Link>
             </div>
