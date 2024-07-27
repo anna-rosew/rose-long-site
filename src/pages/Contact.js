@@ -4,10 +4,6 @@ import ContactImg from "../styles/imgs/permanent/contact.png";
 import newsletterIcon from "../styles/imgs/icons/newsletter.svg";
 import BlurryImage from "../components/BlurryImage";
 
-//Contact Form: https://www.youtube.com/watch?v=bMq2riFCF90&t=15s
-//Newsletter: https://www.youtube.com/watch?v=Db2uW8xhqJY
-//update carousel to https://codesandbox.io/p/devbox/swiper-react-pagination-custom-m54gfx?file=%2Fsrc%2FApp.jsx https://swiperjs.com/demos
-
 export default function Contact() {
   return (
     <div className="contact">
@@ -21,16 +17,16 @@ export default function Contact() {
             src={ContactImg}
             className="contact-image-container img-responsive"
             alt="Woman doing tree pose outside at sunrise."
-          ></BlurryImage>
+          />
 
           <div className="forms-container">
             <div className="contact-form-container">
-              <h2>Get-In Touch</h2>{" "}
+              <h2>Get-In Touch</h2>
               <p>
                 If you'd like to book a class, workshop or retreat or have any
                 questions, please don't hesitate to reach out. I will get back
                 to you within 2 working days. I look forward to hearing from
-                you!{" "}
+                you!
               </p>
               <form className="contact-form">
                 <div className="form-group">

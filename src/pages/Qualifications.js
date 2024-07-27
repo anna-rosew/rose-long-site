@@ -17,7 +17,14 @@ export default function Qualifications() {
         <div className="credentials-container">
           <p>
             <p>
-              2022: <strong>Exploring Metaphors with Clean Language,</strong>{" "}
+              2023:{" "}
+              <strong>
+                The Yoga Sutras of Patanjali: Kia Miller, Radiant Body Yoga
+              </strong>
+              <br />
+              2022: <strong>
+                Exploring Metaphors with Clean Language,
+              </strong>{" "}
               The Clean Coaching Centre
               <br />
               2022:{" "}
@@ -59,6 +66,11 @@ export default function Qualifications() {
               2017:{" "}
               <strong>
                 Trained as Certified Recovery Coach at The Addiction Academy
+              </strong>
+              <br />
+              2017:{" "}
+              <strong>
+                Supercharge your Chakras course with Andodea Judith
               </strong>
               <br />
               2017: <strong>Meditation Teacher Training,</strong> certified by

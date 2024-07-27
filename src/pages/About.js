@@ -28,21 +28,14 @@ export default function About() {
               place. In chaos and despair, I admitted I didn’t know how to live
               but longed to learn.
             </p>
-            <p className="about-quote">
-              “ I used to ask myself regularly, ‘What’s the point?’. Life was a
-              struggle; I didn’t like what was going on in the world, or what
-              was going on inside me. I was deeply uncomfortable. I wanted to
-              make the world a better place, unconsciously driven to fix myself
-              and those around me. ”
-            </p>
+            <p className="about-quote"></p>
             <p>
-              Admitting this sparked change. Life brought teachers, mentors,
-              challenges, illness, transformative practices. Challenges became
-              opportunities for growth. I learned to cultivate inner coherence
-              instead of chaos, transforming despair into gratitude. Sharing
-              these tools is a pleasure and privilege. Witnessing remarkable
-              people on the path of healing inspires me to keep learning and
-              growing.
+              Admitting this sparked change. Life brought teachers, mentors and
+              transformative practices. Challenges became opportunities for
+              growth. I learned to cultivate inner coherence instead of chaos,
+              transforming despair into gratitude. Sharing these tools is a
+              pleasure and privilege. Witnessing remarkable people on the path
+              of healing inspires me to keep learning and growing.
             </p>
             <div className="about-button-container">
               <Link to="/blog" className="general-button">
