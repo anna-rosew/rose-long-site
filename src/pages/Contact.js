@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/Contact.css";
 import ContactImg from "../styles/imgs/permanent/contact.png";
 import newsletterIcon from "../styles/imgs/icons/newsletter.svg";
+import BlurryImage from "../components/BlurryImage";
 
 //Contact Form: https://www.youtube.com/watch?v=bMq2riFCF90&t=15s
 //Newsletter: https://www.youtube.com/watch?v=Db2uW8xhqJY
@@ -16,13 +17,12 @@ export default function Contact() {
         </div>
 
         <div className="grid grid-contact">
-          <div className="contact-image-container">
-            <img
-              src={ContactImg}
-              alt="Woman doing tree pose outside at sunrise."
-              className="img-responsive"
-            />
-          </div>
+          <BlurryImage
+            src={ContactImg}
+            className="contact-image-container img-responsive"
+            alt="Woman doing tree pose outside at sunrise."
+          ></BlurryImage>
+
           <div className="forms-container">
             <div className="contact-form-container">
               <h2>Get-In Touch</h2>{" "}

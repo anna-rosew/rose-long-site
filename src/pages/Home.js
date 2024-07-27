@@ -6,6 +6,7 @@ import Socials from "../components/Socials";
 import GetInTouch from "../components/GetInTouch";
 import BlogBlock from "../components/BlogBlock";
 import "../styles/Blog.css";
+import BlurryImage from "../components/BlurryImage";
 
 export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
@@ -46,14 +47,13 @@ export default function Home() {
             <h1>Rose Long</h1>
             <h3>Breath - Mind - Body</h3>
           </div>
+
           <div className="image-container-mobile">
             <div className="hero-image-container"></div>
           </div>
-
           <Link to="/work">
             <button className="general-button">Start Your Journey</button>
           </Link>
-
           <div className="journey-container"></div>
           <div className="blog-home">
             {posts.map((post, index) => (

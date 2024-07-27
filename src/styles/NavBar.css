@@ -55,4 +55,8 @@
   .menu-link {
     color: white;
   }
+
+  .menu-link::after {
+    background-color: white;
+  }
 }
