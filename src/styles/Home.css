@@ -45,6 +45,14 @@
   pointer-events: auto;
 }
 
+.blurry {
+  filter: blur(10px);
+}
+
+.loaded {
+  filter: blur(0);
+}
+
 .journey-container {
   height: 260px;
   background-image: url("./imgs/permanent/mobile-symbols.png");

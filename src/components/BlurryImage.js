@@ -1,23 +1,16 @@
-import React, { useState, useEffect } from "react";
-import "../styles/App.css";
+import React, { useState } from "react";
 
-const BlurryImage = ({ src, className, children, ...props }) => {
-  const [isLoaded, setIsLoaded] = useState(false);
-
-  useEffect(() => {
-    const img = new Image();
-    img.src = src;
-    img.onload = () => setIsLoaded(true);
-  }, [src]);
+const BlurryImage = ({ src, alt, className = "", ...props }) => {
+  const [loaded, setLoaded] = useState(false);
 
   return (
-    <div
-      className={`blurry-background ${isLoaded ? "loaded" : ""} ${className}`}
-      style={{ backgroundImage: `url(${src})` }}
+    <img
+      src={src}
+      alt={alt}
+      className={`${className} ${loaded ? "loaded" : "blurred"}`}
+      onLoad={() => setLoaded(true)}
       {...props}
-    >
-      {children}
-    </div>
+    />
   );
 };
 

@@ -5,8 +5,8 @@ import "../styles/Home.css";
 import Socials from "../components/Socials";
 import GetInTouch from "../components/GetInTouch";
 import BlogBlock from "../components/BlogBlock";
+import BlurryBackgroundImage from "../components/BlurryBackgroundImg"; // Import the new component
 import "../styles/Blog.css";
-import BlurryImage from "../components/BlurryImage";
 
 export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
@@ -39,6 +39,9 @@ export default function Home() {
     },
   ];
 
+  const heroImageSrc = require("../styles/imgs/permanent/maze-hero.png");
+  const heroImageOverlaySrc = require("../styles/imgs/permanent/hero-image-overlay.png");
+
   return (
     <div className="container Home">
       {isMobile ? (
@@ -49,7 +52,11 @@ export default function Home() {
           </div>
 
           <div className="image-container-mobile">
-            <div className="hero-image-container"></div>
+            <BlurryBackgroundImage
+              src={heroImageSrc}
+              overlaySrc={heroImageOverlaySrc}
+              className="hero-image-container"
+            />
           </div>
           <Link to="/work">
             <button className="general-button">Start Your Journey</button>
@@ -71,7 +78,11 @@ export default function Home() {
             <h1>Rose Long</h1>
             <h3>Breath - Mind - Body</h3>
           </div>
-          <div className="hero-image-container" />
+          <BlurryBackgroundImage
+            src={heroImageSrc}
+            overlaySrc={heroImageOverlaySrc}
+            className="hero-image-container"
+          />
           <div className="button-center">
             <Link to="/work">
               <button className="general-button">Start Your Journey</button>
