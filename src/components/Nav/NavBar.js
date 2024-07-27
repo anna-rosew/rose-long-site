@@ -10,7 +10,7 @@ const Nav = styled.nav`
   padding: 0 20px;
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Ensure vertical alignment */
+  align-items: center;
 
   .site-logo {
     height: 120px;

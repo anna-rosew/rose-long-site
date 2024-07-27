@@ -25,17 +25,35 @@
   display: grid;
   margin-left: 100px;
   width: 50%;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 .institution-icons-grid img {
-  height: 140px;
+  height: 110px;
 }
 
 .qualification-button-container {
-  margin-left: 100px;
+  margin-left: 30px;
   margin-top: 30px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   justify-content: flex-start;
+  gap: 30px;
+}
+
+.Qualifications .general-button {
+  width: 100%;
+}
+
+.start {
+  color: white;
+  background-color: #cf7132;
+  border: 2px solid #cf7132;
+}
+
+.start:hover {
+  color: black;
+  background-color: transparent;
+  border: 2px solid black;
 }
 
 @media (max-width: 768px) {
@@ -73,5 +91,14 @@
     margin-left: 10px;
     width: 100%;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .qualification-button-container {
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+  }
+  .custom-spacer {
+    display: block;
+    margin: 30px auto;
   }
 }
