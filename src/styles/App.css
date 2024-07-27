@@ -85,6 +85,14 @@ button:hover {
   cursor: pointer;
 }
 
+.NotPage .general-button {
+  margin-top: 10px;
+}
+
+.NotPage img {
+  height: 200px;
+}
+
 .player-wrapper {
   position: relative;
   padding-top: 56.25%; /* 16:9 Aspect Ratio */
