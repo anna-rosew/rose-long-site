@@ -49,11 +49,7 @@ export default function NavBar() {
             <img src={Logo} alt="Rose Long Logo" className="site-logo" />
           </a>
         </div>
-        <Burger
-          menuOpen={menuOpen}
-          toggleMenu={toggleMenu}
-          closeMenu={closeMenu}
-        />
+        <Burger open={menuOpen} toggleMenu={toggleMenu} closeMenu={closeMenu} />
       </Nav>
     </div>
   );

@@ -37,6 +37,28 @@
   width: 80%;
 }
 
+.book-now {
+  padding: 20px 35px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 17px;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: white;
+  background-color: #862b0d;
+  border: 2px solid #862b0d;
+  transition: color 0.5s, background-color 0.3s, border 0.3s;
+}
+
+.book-now:hover {
+  color: #ccbb99;
+  background-color: black;
+  border: 2px solid black;
+}
+
 @media (max-width: 768px) {
   .site-logo {
     text-align: center;

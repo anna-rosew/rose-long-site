@@ -31,38 +31,57 @@ const Ul = styled.ul`
     li {
       color: white;
     }
+
+    .book-now {
+      margin-top: auto; /* Push to bottom */
+      padding: 15px;
+      background-color: #f7a700; /* Adjust color as needed */
+      text-align: center;
+      border-radius: 5px;
+      font-weight: bold;
+      color: black;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #e68a00; /* Adjust hover color as needed */
+      }
+    }
   }
 `;
 
-const RightNav = ({ open }) => {
+const RightNav = ({ open, closeMenu }) => {
   return (
     <Ul open={open}>
       <li>
-        <Link to="/" className="menu-link">
+        <Link to="/" className="menu-link" onClick={closeMenu}>
           Home
         </Link>
       </li>
       <li>
-        <Link to="/work" className="menu-link">
+        <Link to="/work" className="menu-link" onClick={closeMenu}>
           Work With Me
         </Link>
       </li>
       <li>
-        <Link to="/about" className="menu-link">
+        <Link to="/about" className="menu-link" onClick={closeMenu}>
           About
         </Link>
       </li>
       <li>
-        {" "}
-        <Link to="/contact" className="menu-link">
+        <Link to="/contact" className="menu-link" onClick={closeMenu}>
           Contact
         </Link>
       </li>
       <li>
-        {" "}
-        <Link to="/membership" className="menu-link">
+        <Link to="/membership" className="menu-link" onClick={closeMenu}>
           Membership
         </Link>
+      </li>
+      <li>
+        <a href="/book-now" className="book-now" onClick={closeMenu}>
+          Book Now
+        </a>
       </li>
     </Ul>
   );

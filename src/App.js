@@ -15,13 +15,14 @@ import Qualifications from "./pages/Qualifications";
 import Workshops from "./pages/Workshops";
 
 import NavBar from "./components/Nav/NavBar";
-
 import CreditsFooter from "./components/CreditsFooter";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <div className="App">
       <NavBar />
+      <ScrollToTop />
       <Routes>
         <Route index element={<Home />} />
         <Route path="/home" element={<Home />} />
