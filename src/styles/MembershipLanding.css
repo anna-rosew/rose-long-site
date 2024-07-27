@@ -1,3 +1,8 @@
 .MembershipPage {
   height: 100vh;
 }
+
+.membership-text {
+  display: block;
+  margin: 0 auto;
+}

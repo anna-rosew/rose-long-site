@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
-import PropTypes from "prop-types";
-import "../styles/App.css"; // Assuming you have a CSS file for these components
+import "../styles/App.css";
 
-const BlurryBackgroundImg = ({ src, className = "", alt = "", ...props }) => {
+const BlurryBackgroundImg = ({ src, overlaySrc, className = "", ...props }) => {
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
@@ -18,20 +17,17 @@ const BlurryBackgroundImg = ({ src, className = "", alt = "", ...props }) => {
       className={`${className} ${loaded ? "loaded" : "blurry"}`}
       style={{
         backgroundImage: `url(${src})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
+        transition: "filter 0.3s ease-out, background-image 0.3s ease-out",
       }}
-      role="img"
-      aria-label={alt}
       {...props}
+      onMouseEnter={(e) =>
+        (e.currentTarget.style.backgroundImage = `url(${overlaySrc})`)
+      }
+      onMouseLeave={(e) =>
+        (e.currentTarget.style.backgroundImage = `url(${src})`)
+      }
     ></div>
   );
-};
-
-BlurryBackgroundImg.propTypes = {
-  src: PropTypes.string.isRequired,
-  className: PropTypes.string,
-  alt: PropTypes.string,
 };
 
 export default BlurryBackgroundImg;

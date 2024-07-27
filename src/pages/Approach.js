@@ -23,11 +23,11 @@ export default function Approach() {
 
       <div className="call-to-action">
         {" "}
-        <Link to="/work" className="card-links">
-          <button className="journey-link button-hover">
-            Start Your Journey
-          </button>
-        </Link>
+        <div className="button-center">
+          <Link to="/work">
+            <button className="general-button">Start Your Journey</button>
+          </Link>
+        </div>
       </div>
       <div className="approach-text">
         <p>
