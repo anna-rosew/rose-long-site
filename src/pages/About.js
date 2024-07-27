@@ -1,10 +1,8 @@
 import React from "react";
 import "../styles/About.css";
 import Rose1 from "../styles/imgs/photos/about2.png";
-
 import { Link } from "react-router-dom";
-
-//happy with this image size?
+import BlurryImage from "../components/BlurryImage";
 
 export default function About() {
   return (
@@ -14,7 +12,6 @@ export default function About() {
           <h2>Meet</h2>
           <h1>Rose</h1>
         </div>
-
         <div className="grid grid-meet-rose">
           <div className="about-para">
             <p>
@@ -57,7 +54,7 @@ export default function About() {
             </div>
           </div>
           <div className="about-image-container">
-            <img className="about-image" alt="Rose Long" src={Rose1} />
+            <BlurryImage className="about-image" alt="Rose Long" src={Rose1} />
           </div>
         </div>
       </div>

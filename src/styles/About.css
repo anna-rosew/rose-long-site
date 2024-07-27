@@ -33,18 +33,10 @@
   height: 100%;
 }
 
-.about-image-container img {
-  width: 100%;
-  object-fit: cover;
-  height: auto;
-  display: block;
-  border-radius: 127px;
-}
-
-.about-pic {
+.about-image {
   display: block;
   border-radius: 45px;
-  height: 500px;
+  height: 600px;
   margin: 20px;
 }
 
@@ -115,5 +107,9 @@
   .about-button-container {
     margin-left: 10px;
     grid-template-columns: 1fr;
+  }
+
+  .about-image {
+    margin: 0px;
   }
 }

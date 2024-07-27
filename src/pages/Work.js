@@ -7,10 +7,12 @@ import Groups from "../styles/imgs/permanent/groups.png";
 import OneToOnes from "../styles/imgs/permanent/one-to-one.png";
 import OverlaySVG from "../styles/imgs/icons/sunshine_white.svg";
 import TestimonialCarousel from "../components/TestimonialCarousel";
+import BlurryImage from "../components/BlurryImage";
+import BlurryBackgroundImg from "../components/BlurryBackgroundImg";
 
 export default function Work() {
   return (
-    <div className=" container Work-Page">
+    <div className="container Work-Page">
       <div className="intro">
         <h1>Work With Me.</h1>
         <p>
@@ -30,13 +32,13 @@ export default function Work() {
               <h2>My Approach</h2>
               <h3 className="subtitle">FIND YOUR FLOW</h3>
               <div className="work-image-container">
-                <img
+                <BlurryImage
                   src={MyApproach}
                   className="img-responsive img-hover"
                   alt="My Approach - art by Lynn Hanford-Day"
                 />
                 <div className="work-overlay">
-                  <img
+                  <BlurryBackgroundImg
                     src={OverlaySVG}
                     className="work-overlay-svg"
                     alt="Overlay SVG"
@@ -54,13 +56,13 @@ export default function Work() {
               <h2>Groups</h2>
               <h3 className="subtitle">CLASSES - WORKSHOPS - RETREATS</h3>
               <div className="work-image-container">
-                <img
+                <BlurryImage
                   src={Groups}
                   className="img-responsive img-hover"
                   alt="Group - art by Lynn Hanford-Day"
                 />
                 <div className="work-overlay">
-                  <img
+                  <BlurryBackgroundImg
                     src={OverlaySVG}
                     className="work-overlay-svg"
                     alt="Overlay SVG"
@@ -78,13 +80,13 @@ export default function Work() {
               <h2>One-To-Ones</h2>
               <h3 className="subtitle">COACHING & GUIDANCE</h3>
               <div className="work-image-container">
-                <img
+                <BlurryImage
                   src={OneToOnes}
                   className="img-responsive img-hover"
                   alt="One-To-Ones - art by Lynn Hanford-Day"
                 />
                 <div className="work-overlay">
-                  <img
+                  <BlurryBackgroundImg
                     src={OverlaySVG}
                     className="work-overlay-svg"
                     alt="Overlay SVG"
