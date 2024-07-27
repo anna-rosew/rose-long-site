@@ -8,7 +8,6 @@ import OneToOnes from "../styles/imgs/permanent/one-to-one.png";
 import OverlaySVG from "../styles/imgs/icons/sunshine_white.svg";
 import TestimonialCarousel from "../components/TestimonialCarousel";
 import BlurryImage from "../components/BlurryImage";
-import BlurryBackgroundImg from "../components/BlurryBackgroundImg";
 
 export default function Work() {
   return (
@@ -38,7 +37,7 @@ export default function Work() {
                   alt="My Approach - art by Lynn Hanford-Day"
                 />
                 <div className="work-overlay">
-                  <BlurryBackgroundImg
+                  <img
                     src={OverlaySVG}
                     className="work-overlay-svg"
                     alt="Overlay SVG"
@@ -62,7 +61,7 @@ export default function Work() {
                   alt="Group - art by Lynn Hanford-Day"
                 />
                 <div className="work-overlay">
-                  <BlurryBackgroundImg
+                  <img
                     src={OverlaySVG}
                     className="work-overlay-svg"
                     alt="Overlay SVG"
@@ -86,7 +85,7 @@ export default function Work() {
                   alt="One-To-Ones - art by Lynn Hanford-Day"
                 />
                 <div className="work-overlay">
-                  <BlurryBackgroundImg
+                  <img
                     src={OverlaySVG}
                     className="work-overlay-svg"
                     alt="Overlay SVG"
