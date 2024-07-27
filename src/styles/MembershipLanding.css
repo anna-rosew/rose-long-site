@@ -6,3 +6,16 @@
   display: block;
   margin: 0 auto;
 }
+
+.MembershipPage img {
+  height: 150px;
+}
+
+.current-deals {
+  margin-top: 80px;
+}
+
+.MembershipPage .general-button {
+  width: 70%;
+  margin-top: 30px;
+}
