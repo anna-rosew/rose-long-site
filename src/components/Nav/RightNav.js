@@ -32,20 +32,7 @@ const Ul = styled.ul`
       color: white;
     }
 
-    .book-now {
-      margin-top: auto; /* Push to bottom */
-      padding: 15px;
-      background-color: #f7a700; /* Adjust color as needed */
-      text-align: center;
-      border-radius: 5px;
-      font-weight: bold;
-      color: black;
-      cursor: pointer;
-      transition: background-color 0.3s;
-
-      &:hover {
-        background-color: #e68a00; /* Adjust hover color as needed */
-      }
+  
     }
   }
 `;
@@ -77,11 +64,6 @@ const RightNav = ({ open, closeMenu }) => {
         <Link to="/membership" className="menu-link" onClick={closeMenu}>
           Membership
         </Link>
-      </li>
-      <li>
-        <a href="/book-now" className="book-now" onClick={closeMenu}>
-          Book Now
-        </a>
       </li>
     </Ul>
   );
