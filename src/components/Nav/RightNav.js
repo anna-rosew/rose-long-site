@@ -31,9 +31,31 @@ const Ul = styled.ul`
     li {
       color: white;
     }
+  }
+`;
 
-  
-    }
+const BookNowButton = styled.a`
+  padding: 20px 35px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 17px;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: white;
+  background-color: #862b0d;
+  border: 2px solid #862b0d;
+  transition: color 0.5s, background-color 0.3s, border 0.3s;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    color: #ccbb99;
+    background-color: black;
+    border: 2px solid black;
   }
 `;
 
@@ -65,6 +87,13 @@ const RightNav = ({ open, closeMenu }) => {
           Membership
         </Link>
       </li>
+      {open && (
+        <li>
+          <BookNowButton href="/contact" onClick={closeMenu}>
+            Book Now
+          </BookNowButton>
+        </li>
+      )}
     </Ul>
   );
 };

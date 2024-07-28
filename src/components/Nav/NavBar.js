@@ -19,13 +19,12 @@ const Nav = styled.nav`
 
   @media (max-width: 768px) {
     padding: 0px;
-    width: 100%; /* Full width of the viewport */
-
+    width: 100%;
     height: 100px;
-    justify-content: center; /* Center content horizontally */
+    justify-content: center;
 
     .site-logo {
-      height: 100px; /* Adjust height as needed */
+      height: 100px;
     }
   }
 `;
@@ -49,7 +48,11 @@ export default function NavBar() {
             <img src={Logo} alt="Rose Long Logo" className="site-logo" />
           </a>
         </div>
-        <Burger open={menuOpen} toggleMenu={toggleMenu} closeMenu={closeMenu} />
+        <Burger
+          menuOpen={menuOpen}
+          toggleMenu={toggleMenu}
+          closeMenu={closeMenu}
+        />
       </Nav>
     </div>
   );

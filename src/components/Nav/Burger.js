@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import "../../styles/NavBar.css";
 import RightNav from "./RightNav";
@@ -41,10 +41,21 @@ const StyledBurger = styled.div`
   }
 `;
 
-const Burger = ({ open, toggleMenu, closeMenu }) => {
+const Burger = ({ menuOpen, toggleMenu, closeMenu }) => {
+  const [open, setOpen] = useState(menuOpen);
+
+  useEffect(() => {
+    setOpen(menuOpen);
+  }, [menuOpen]);
+
+  const handleClick = () => {
+    setOpen(!open);
+    toggleMenu();
+  };
+
   return (
     <>
-      <StyledBurger open={open} onClick={toggleMenu}>
+      <StyledBurger open={open} onClick={handleClick}>
         <div />
         <div />
         <div />
