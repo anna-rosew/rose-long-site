@@ -54,7 +54,7 @@ export default function Home() {
           <div className="image-container-mobile">
             <BlurryBackgroundImage
               src={heroImageSrc}
-              overlaySrc={heroImageSrc}
+              overlaySrc={heroImageOverlaySrc}
               className="hero-image-container"
             />
           </div>
