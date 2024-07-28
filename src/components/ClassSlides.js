@@ -57,10 +57,14 @@ export default function ClassSlides() {
           <h3>Prices</h3>
           <div className="price-grid">
             <ul>
-              <li>Dro-In Price</li>
-              <li>Montntly £15</li>
+              <li>
+                <p>Dro-In Price</p>
+              </li>
+              <li>
+                <p>Dro-In Price</p>
+              </li>
             </ul>
-            <div>
+            <div className="membership">
               <h3>Monthly Membership</h3>
               <p>
                 Join all classes and access replays for £50 (from £86). Please
@@ -70,8 +74,8 @@ export default function ClassSlides() {
           </div>
         </div>
       </div>
-      <Link to="/book">
-        <button>BOOK NOW</button>
+      <Link to="/contact">
+        <button className="book-button">BOOK NOW</button>
       </Link>
     </div>
   );
