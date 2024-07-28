@@ -15,20 +15,42 @@ export default function ClassSlides() {
         />
         <h1>Good Morning Breath</h1>
       </div>
-      <p>
-        If you're looking for a fast way to regenerate your body, mind and
-        spirit, come and experience the magic of the breath.
-      </p>
-      <p>You can join this class anywhere in the world on Zoom</p>
-      <div className="bottom-grid">
-        <div className="table">
-          <div className="column">
+      <div className="class-description">
+        <p>
+          If you're looking for a fast way to regenerate your body, mind and
+          spirit, come and experience the magic of the breath.
+        </p>
+        <p>You can join this class anywhere in the world on Zoom</p>
+      </div>
+      <div className="class-bottom-grid">
+        <div className="details-table">
+          <div className="dates-column">
             <h3>Class Dates</h3>
-            <p>Wed 5th August</p>
+            <ul>
+              <li>
+                <p>Wed 5th August</p>
+              </li>
+              <li>
+                <p>Wed 5th August</p>
+              </li>{" "}
+              <li>
+                <p>Wed 5th August</p>
+              </li>
+            </ul>
           </div>
-          <div className="column">
+          <div className="time-column">
             <h3>Time</h3>
-            <p>7-7:30am GMT</p>
+            <ul>
+              <li>
+                <p>7-7:30am</p>
+              </li>
+              <li>
+                <p>7-7:30am</p>
+              </li>
+              <li>
+                <p>7-7:30am</p>
+              </li>
+            </ul>
           </div>
         </div>
         <div className="prices">
