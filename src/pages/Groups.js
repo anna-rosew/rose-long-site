@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
+
+import ClassSlides from "../components/ClassSlides";
 
 import "../styles/App.css";
 import "../styles/Groups.css";
@@ -34,6 +33,7 @@ export default function Groups() {
       <div className="intro">
         <h1>Groups.</h1>
       </div>
+
       <div className="group-cards">
         <div className="grid grid-3-columns">
           <div className="card online-groups">
@@ -77,8 +77,10 @@ export default function Groups() {
           </div>
         </div>
       </div>
+
       <div className="online-groups" id="onlineGroups">
         <h2 className="section-heading hr-lines">Online Groups</h2>
+        <ClassSlides />
         <div className="grid grid-4-columns section-spacing">
           <div className="yoga-class">
             <Link to="/contact" className="card-link">
