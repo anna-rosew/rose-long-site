@@ -1,58 +1,56 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "../styles/ClassSlide.css";
+import MorningBreathe from "../styles/imgs/icons/morning-breath.svg";
+import { Link } from "react-router-dom";
 
-export default function ClassSlides({
-  icon,
-  classType,
-  description,
-  permanentDescription,
-  dates = [],
-  times = [],
-  dropInPrice,
-  monthlyPrice,
-}) {
-  console.log("Props:", {
-    icon,
-    classType,
-    description,
-    permanentDescription,
-    dates,
-    times,
-    dropInPrice,
-    monthlyPrice,
-  });
-
+export default function ClassSlides() {
   return (
     <div className="class-slide">
       <div className="class-header">
-        <img src={icon} alt={classType} className="class-icon" />
-        <h1>{classType}</h1>
+        <img
+          src={MorningBreathe}
+          alt="Good Morning Breath"
+          className="class-icon"
+        />
+        <h1>Good Morning Breath</h1>
       </div>
       <div className="class-description">
-        <p>{description}</p>
-        <p className="permanent-description">{permanentDescription}</p>
+        <p>
+          If you're looking for a fast way to regenerate your body, mind and
+          spirit, come and experience the magic of the breath.
+        </p>
+        <p className="permanent-description">
+          You can join this class anywhere in the world on Zoom
+        </p>
       </div>
       <div className="class-bottom-grid">
         <div className="details-table">
           <div className="dates-column">
             <h3>Class Dates</h3>
             <ul>
-              {dates.map((date, index) => (
-                <li key={index}>
-                  <p>{date}</p>
-                </li>
-              ))}
+              <li>
+                <p>Wed 5th August</p>
+              </li>
+              <li>
+                <p>Wed 5th August</p>
+              </li>{" "}
+              <li>
+                <p>Wed 5th August</p>
+              </li>
             </ul>
           </div>
           <div className="time-column">
             <h3>Time</h3>
             <ul>
-              {times.map((time, index) => (
-                <li key={index}>
-                  <p>{time}</p>
-                </li>
-              ))}
+              <li>
+                <p>7-7:30am</p>
+              </li>
+              <li>
+                <p>7-7:30am</p>
+              </li>
+              <li>
+                <p>7-7:30am</p>
+              </li>
             </ul>
           </div>
         </div>
@@ -61,10 +59,10 @@ export default function ClassSlides({
           <div className="price-grid">
             <ul>
               <li>
-                <p>Drop-In Price: {dropInPrice}</p>
+                <p>Dro-In Price</p>
               </li>
               <li>
-                <p>Monthly: {monthlyPrice}</p>
+                <p>Dro-In Price</p>
               </li>
             </ul>
             <div className="membership">
