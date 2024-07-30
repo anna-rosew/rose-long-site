@@ -52,9 +52,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #ccbb99;
+  background: black;
   border-radius: var(--image-border-radius);
-  color: black;
+  color: #ccbb99;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
