@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import ClassSlides from "../components/ClassSlides";
+import OnlineGroups from "../components/OnlineGroups";
 
 import "../styles/App.css";
 import "../styles/Groups.css";
@@ -37,6 +37,7 @@ export default function Groups() {
       <div className="group-cards">
         <div className="grid grid-3-columns">
           <div className="card online-groups">
+            <OnlineGroups />
             <button onClick={onClick} className="card-links">
               <h2>Online Groups</h2>
               <h3 className="subtitle">YOGA | COMMUNITY</h3>
@@ -80,87 +81,75 @@ export default function Groups() {
 
       <div className="online-groups" id="onlineGroups">
         <h2 className="section-heading hr-lines">Online Groups</h2>
-        <ClassSlides />
+
         <div className="grid grid-4-columns section-spacing">
           <div className="yoga-class">
-            <Link to="/contact" className="card-link">
-              <h2>Morning Breath</h2>
+            <h2>Morning Breath</h2>
 
-              <img
-                src={MorningBreathe}
-                className="yoga-image"
-                alt="Morning Breath"
-              />
+            <img
+              src={MorningBreathe}
+              className="yoga-image"
+              alt="Morning Breath"
+            />
 
-              <p className="class-details">
-                WHEN: 7.15-7.45am GMT Every Weds Morning
-              </p>
-              <p className="class-details">
-                PRICE: Drop-In - £7 / Monthly Morning Bundle
-              </p>
-              <Link to="/contact" className="card-links">
-                <button className="journey-link button-hover book-btn">
-                  Book
-                </button>
-              </Link>
+            <p className="class-details">
+              WHEN: 7.15-7.45am GMT Every Weds Morning
+            </p>
+            <p className="class-details">
+              PRICE: Drop-In - £7 / Monthly Morning Bundle
+            </p>
+            <Link to="/contact" className="card-links">
+              <button className="journey-link button-hover book-btn">
+                Book
+              </button>
             </Link>
           </div>
           <div className="yoga-class">
-            <Link to="/contact" className="card-link">
-              <h2>Evening Chill-Out</h2>
-              <img
-                src={EveningChill}
-                className="yoga-image"
-                alt="Evening Chill-Out"
-              />
+            <h2>Evening Chill-Out</h2>
+            <img
+              src={EveningChill}
+              className="yoga-image"
+              alt="Evening Chill-Out"
+            />
 
-              <p className="class-details">
-                WHEN: 8.00-9.00pm GMT Every Thurs Evening
-              </p>
-              <p className="class-details">
-                PRICE: Drop-In - £10 / Monthly Evening Bundle
-              </p>
-              <Link to="/contact" className="card-links">
-                <button className="journey-link button-hover book-btn">
-                  Book
-                </button>
-              </Link>
+            <p className="class-details">
+              WHEN: 8.00-9.00pm GMT Every Thurs Evening
+            </p>
+            <p className="class-details">
+              PRICE: Drop-In - £10 / Monthly Evening Bundle
+            </p>
+            <Link to="/contact" className="card-links">
+              <button className="journey-link button-hover book-btn">
+                Book
+              </button>
             </Link>
           </div>
           <div className="yoga-class">
-            <Link to="/approach" className="card-link">
-              <h2>Lunar Cycle</h2>
-              <img src={Lunar} className="yoga-image " alt="Lunar Cycle" />
+            <h2>Lunar Cycle</h2>
+            <img src={Lunar} className="yoga-image " alt="Lunar Cycle" />
 
-              <p className="class-details">WHEN: Evening Every Full-Moon</p>
-              <p className="class-details">
-                PRICE: Drop-In - £12 / Monthly Lunar Bundle
-              </p>
-              <Link to="/contact" className="card-links">
-                <button className="journey-link button-hover book-btn-two">
-                  Book
-                </button>
-              </Link>
+            <p className="class-details">WHEN: Evening Every Full-Moon</p>
+            <p className="class-details">
+              PRICE: Drop-In - £12 / Monthly Lunar Bundle
+            </p>
+            <Link to="/contact" className="card-links">
+              <button className="journey-link button-hover book-btn-two">
+                Book
+              </button>
             </Link>
           </div>
           <div className="yoga-class">
-            <Link to="/contact" className="card-link">
-              <h2>Kundalini Magic</h2>
-              <img
-                src={Kundalini}
-                className="yoga-image"
-                alt="Kundalini Magic"
-              />
+            <h2>Kundalini Magic</h2>
+            <img src={Kundalini} className="yoga-image" alt="Kundalini Magic" />
 
-              <p className="class-details">Two Saturdays each month</p>
-              <p className="class-details">
-                PRICE: Drop-In - £10 / Monthly Kundalini Bundle
-              </p>
-              <Link to="/contact" className="card-links">
-                <button className="journey-link button-hover book-btn-two">
-                  Book
-                </button>
-              </Link>
+            <p className="class-details">Two Saturdays each month</p>
+            <p className="class-details">
+              PRICE: Drop-In - £10 / Monthly Kundalini Bundle
+            </p>
+            <Link to="/contact" className="card-links">
+              <button className="journey-link button-hover book-btn-two">
+                Book
+              </button>
             </Link>
           </div>
         </div>

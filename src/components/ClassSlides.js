@@ -1,13 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../styles/ClassSlide.css";
 
-export default function ClassSlides({ classInfo }) {
-  console.log("ClassInfo in ClassSlides:", classInfo);
-
-  if (!classInfo) {
-    return <div>Error: classInfo is undefined</div>;
-  }
-
+export default function ClassSlides(classInfo) {
   return (
     <div className="class-slide">
       <div className="class-header">
@@ -16,7 +11,7 @@ export default function ClassSlides({ classInfo }) {
           alt={classInfo.classType}
           className="class-icon"
         />
-        <h1>{classInfo.classType}</h1>
+        <h1>{classInfo.classInfoclassType}</h1>
       </div>
       <div className="class-description">
         <p>{classInfo.description}</p>
@@ -62,12 +57,15 @@ export default function ClassSlides({ classInfo }) {
               <h3>Monthly Membership</h3>
               <p>
                 Join all classes and access replays for £50 (from £86). Please
-                get in touch for more details.
+                get-in-touch for more details.
               </p>
             </div>
           </div>
         </div>
       </div>
+      <Link to="/contact">
+        <button className="book-button">BOOK NOW</button>
+      </Link>
     </div>
   );
 }
