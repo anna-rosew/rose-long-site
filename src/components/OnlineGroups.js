@@ -6,7 +6,7 @@ import "swiper/css/pagination";
 import ClassSlides from "../components/ClassSlides";
 import { Pagination } from "swiper/modules";
 
-export default function OnlineGroups() {
+export default function OnlineGroupsSlider() {
   const pagination = {
     clickable: true,
     renderBullet: function (index, className) {
