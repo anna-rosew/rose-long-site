@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Blog.css";
-import arrowIcon from "../styles/imgs/icons/blog-arrow.svg"; // Import your SVG icon
+import arrowIcon from "../styles/imgs/icons/blog-arrow.svg";
 
 export default function BlogBlock({ postInfo }) {
   return (

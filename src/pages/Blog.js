@@ -3,7 +3,6 @@ import "../styles/Blog.css";
 import video from "../styles/imgs/icons/video-icon.svg";
 import BlogBlock from "../components/BlogBlock";
 
-//Make responsive
 
 export default function Blog() {
   const posts = [
