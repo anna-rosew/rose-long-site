@@ -64,11 +64,13 @@ export default function ClassSlides({ classInfo }) {
               </li>
             </ul>
             <div className="membership">
-              <h3>Monthly Membership</h3>
-              <p>
-                Join all classes and access replays for £50 (from £86). Please
-                get-in-touch for more details.
-              </p>
+              <div className="membership-price">
+                <h3>Monthly Membership</h3>
+                <p>
+                  Join all classes and access replays for £50 (from £86). Please
+                  get-in-touch for more details.
+                </p>
+              </div>
             </div>
           </div>
         </div>
