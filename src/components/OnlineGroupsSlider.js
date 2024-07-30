@@ -43,20 +43,19 @@ export default function OnlineGroupsSlider() {
   return (
     <div>
       <h1>Parent Component</h1>
-      <Swiper spaceBetween={50} slidesPerView={1}>
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
+      <Swiper
+        spaceBetween={50}
+        slidesPerView={1}
+        pagination={pagination}
+        modules={[Pagination]}
+        className="mySwiper"
+      >
+        {classes.map((classItem, index) => (
+          <SwiperSlide key={index}>
+            <ClassSlides classInfo={classItem} />
+          </SwiperSlide>
+        ))}
       </Swiper>
-      <div className="section">
-        <Swiper
-          pagination={pagination}
-          modules={[Pagination]}
-          className="mySwiper"
-        >
-          <ClassSlides classInfo={classes} />
-        </Swiper>
-      </div>
     </div>
   );
 }
