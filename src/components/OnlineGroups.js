@@ -2,7 +2,7 @@ import React from "react";
 import ClassSlides from "../components/ClassSlides";
 
 export default function OnlineGroups() {
-  const classData = [
+  const classes = [
     {
       icon: require("../styles/imgs/icons/evening-chill.svg").default,
       classType: "Deep Chill",
@@ -20,12 +20,8 @@ export default function OnlineGroups() {
   return (
     <div>
       <h1>Parent Component</h1>
-      <div className="grid">
-        {classData.map((slide, index) => (
-          <div key={index} className="col-md-6">
-            <ClassSlides classInfo={slide} />
-          </div>
-        ))}
+      <div className="section">
+        <ClassSlides classInfo={classes} />
       </div>
     </div>
   );

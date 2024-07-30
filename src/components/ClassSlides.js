@@ -2,43 +2,56 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/ClassSlide.css";
 
-export default function ClassSlides(classInfo) {
+export default function ClassSlides({ classInfo }) {
+  const {
+    icon,
+    classType = "Unknown Class Type",
+    description = "No description available",
+    permanentDescription = "No permanent description available",
+    dates = [],
+    times = [],
+    dropInPrice = "Price not available",
+    monthlyPrice = "Price not available",
+  } = classInfo || {};
+
   return (
     <div className="class-slide">
       <div className="class-header">
-        <img
-          src={classInfo.icon}
-          alt={classInfo.classType}
-          className="class-icon"
-        />
-        <h1>{classInfo.classInfoclassType}</h1>
+        <img src={icon} alt={classType} className="class-icon" />
+        <h1>{classType}</h1>
       </div>
       <div className="class-description">
-        <p>{classInfo.description}</p>
-        <p className="permanent-description">
-          {classInfo.permanentDescription}
-        </p>
+        <p>{description}</p>
+        <p className="permanent-description">{permanentDescription}</p>
       </div>
       <div className="class-bottom-grid">
         <div className="details-table">
           <div className="dates-column">
             <h3>Class Dates</h3>
             <ul>
-              {classInfo.dates.map((date, index) => (
-                <li key={index}>
-                  <p>{date}</p>
-                </li>
-              ))}
+              {dates.length > 0 ? (
+                dates.map((date, index) => (
+                  <li key={index}>
+                    <p>{date}</p>
+                  </li>
+                ))
+              ) : (
+                <p>No dates available</p>
+              )}
             </ul>
           </div>
           <div className="time-column">
             <h3>Time</h3>
             <ul>
-              {classInfo.times.map((time, index) => (
-                <li key={index}>
-                  <p>{time}</p>
-                </li>
-              ))}
+              {times.length > 0 ? (
+                times.map((time, index) => (
+                  <li key={index}>
+                    <p>{time}</p>
+                  </li>
+                ))
+              ) : (
+                <p>No times available</p>
+              )}
             </ul>
           </div>
         </div>
@@ -47,10 +60,10 @@ export default function ClassSlides(classInfo) {
           <div className="price-grid">
             <ul>
               <li>
-                <p>Drop-In Price: {classInfo.dropInPrice}</p>
+                <p>Drop-In Price: {dropInPrice}</p>
               </li>
               <li>
-                <p>Monthly: {classInfo.monthlyPrice}</p>
+                <p>Monthly: {monthlyPrice}</p>
               </li>
             </ul>
             <div className="membership">
