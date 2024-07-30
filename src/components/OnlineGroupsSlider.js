@@ -1,5 +1,5 @@
 import React from "react";
-import { Swiper } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -43,6 +43,11 @@ export default function OnlineGroupsSlider() {
   return (
     <div>
       <h1>Parent Component</h1>
+      <Swiper spaceBetween={50} slidesPerView={1}>
+        <SwiperSlide>Slide 1</SwiperSlide>
+        <SwiperSlide>Slide 2</SwiperSlide>
+        <SwiperSlide>Slide 3</SwiperSlide>
+      </Swiper>
       <div className="section">
         <Swiper
           pagination={pagination}
