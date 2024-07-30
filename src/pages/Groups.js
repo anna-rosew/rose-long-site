@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import OnlineGroups from "../components/OnlineGroups";
+import OnlineGroupsSlider from "../components/OnlineGroupsSlider";
 
 import "../styles/App.css";
 import "../styles/Groups.css";
@@ -37,7 +37,6 @@ export default function Groups() {
       <div className="group-cards">
         <div className="grid grid-3-columns">
           <div className="card online-groups">
-            <OnlineGroups />
             <button onClick={onClick} className="card-links">
               <h2>Online Groups</h2>
               <h3 className="subtitle">YOGA | COMMUNITY</h3>
@@ -81,7 +80,7 @@ export default function Groups() {
 
       <div className="online-groups" id="onlineGroups">
         <h2 className="section-heading hr-lines">Online Groups</h2>
-
+        <OnlineGroupsSlider />
         <div className="grid grid-4-columns section-spacing">
           <div className="yoga-class">
             <h2>Morning Breath</h2>
