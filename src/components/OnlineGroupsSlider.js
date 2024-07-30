@@ -1,18 +1,14 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 
 import ClassSlides from "../components/ClassSlides";
 import { Pagination } from "swiper/modules";
+import "../styles/ClassSlide.css"; // Ensure this includes your Swiper and custom styles
 
 export default function OnlineGroupsSlider() {
-  const pagination = {
-    clickable: true,
-    renderBullet: function (index, className) {
-      return '<span class="' + className + '">' + (index + 1) + "</span>";
-    },
-  };
+  const swiperRef = useRef(null);
 
   const classes = [
     {
@@ -29,33 +25,69 @@ export default function OnlineGroupsSlider() {
     },
     {
       icon: require("../styles/imgs/icons/morning-breath.svg").default,
-      classType: "Morning Yoga",
+      classType: "Good Morning Breath",
       description:
-        "Start your day with a refreshing yoga session designed to energize and rejuvenate you. This morning class focuses on flexibility and strength.",
-      permanentDescription: "Available in-person and via Zoom.",
-      dates: ["Mon, Aug 5", "Wed, Aug 7", "Fri, Aug 9"],
-      times: ["7:00-8:00am", "7:00-8:00am", "7:00-8:00am"],
+        "If you're looking for a fast way to regenerate your body, mind, and spirit, come and experience the magic of the breath. Deeply detoxifying, revitalising, and balancing, the practice of Pranayama has deep and lasting benefits.",
+      permanentDescription:
+        "You can join this class anywhere in the world on Zoom",
+      dates: ["Wed, Aug 7", "Wed, Aug 21", "Tue, Aug 27"],
+      times: ["7:00-7:30am", "7:00-7:30am", "7:00-7:30am"],
+      dropInPrice: "£8",
+      monthlyPrice: "3 session bundle £18",
+    },
+    {
+      icon: require("../styles/imgs/icons/kundalini.svg").default,
+      classType: "Kundalini Magic",
+      description:
+        "These 90-minute classes combine movement, breath, and sound. If you’re looking for an intense physical workout and a tangible experience of expansive awareness, this is for you. Kundalini Yoga is the fastest way to experience altered states of consciousness without substances.",
+      permanentDescription:
+        "You can join this class anywhere in the world on Zoom",
+      dates: ["Sat, Aug 3", "Sat, Aug 24", "Sat, Aug 31"],
+      times: ["8:00-9:00am", "8:00-9:00am", "8:00-9:00am"],
       dropInPrice: "£12",
-      monthlyPrice: "4 class bundle £40",
+      monthlyPrice: "3 class bundle £30",
+    },
+    {
+      icon: require("../styles/imgs/icons/lunar.svg").default,
+      classType: "Lunar Cycles",
+      description:
+        "Meeting twice each month, this practice helps you drop into the natural rhythms of your body and the world. Women have practiced at the New and Full Moon for centuries to deepen awareness of their bodies and cyclical connection with nature. Set an intention with each New Moon and reflect and release with each Full Moon.",
+      permanentDescription:
+        "You can join this class anywhere in the world on Zoom",
+      dates: ["Sat, Aug 3", "Tue, Aug 20"],
+      times: ["8:00-9:30am", "8:00-9:00pm"],
+      dropInPrice: "£12 (New Moon), £10 (Full Moon)",
+      monthlyPrice: "2 class bundle £17",
     },
   ];
 
+  const pagination = {
+    el: ".custom-pagination",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return `<h3 class="${className} custom-bullet">${classes[index].classType}</h3>`;
+    },
+  };
+
   return (
-    <div>
-      <h1>Parent Component</h1>
-      <Swiper
-        spaceBetween={50}
-        slidesPerView={1}
-        pagination={pagination}
-        modules={[Pagination]}
-        className="mySwiper"
-      >
-        {classes.map((classItem, index) => (
-          <SwiperSlide key={index}>
-            <ClassSlides classInfo={classItem} />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+    <div className="online-groups-slider">
+      <div className="section">
+        <div className="custom-pagination"></div>
+        <Swiper
+          ref={swiperRef}
+          pagination={pagination}
+          modules={[Pagination]}
+          spaceBetween={50}
+          slidesPerView={1}
+          className="mySwiper"
+        >
+          {classes.map((classItem, index) => (
+            <SwiperSlide key={index}>
+              <ClassSlides classInfo={classItem} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </div>
   );
 }
