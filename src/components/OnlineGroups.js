@@ -1,7 +1,19 @@
 import React from "react";
+import { Swiper } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+
 import ClassSlides from "../components/ClassSlides";
+import { Pagination } from "swiper/modules";
 
 export default function OnlineGroups() {
+  const pagination = {
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
+    },
+  };
+
   const classes = [
     {
       icon: require("../styles/imgs/icons/evening-chill.svg").default,
@@ -15,13 +27,30 @@ export default function OnlineGroups() {
       dropInPrice: "£10",
       monthlyPrice: "3 class bundle £21",
     },
+    {
+      icon: require("../styles/imgs/icons/morning-breath.svg").default,
+      classType: "Morning Yoga",
+      description:
+        "Start your day with a refreshing yoga session designed to energize and rejuvenate you. This morning class focuses on flexibility and strength.",
+      permanentDescription: "Available in-person and via Zoom.",
+      dates: ["Mon, Aug 5", "Wed, Aug 7", "Fri, Aug 9"],
+      times: ["7:00-8:00am", "7:00-8:00am", "7:00-8:00am"],
+      dropInPrice: "£12",
+      monthlyPrice: "4 class bundle £40",
+    },
   ];
 
   return (
     <div>
       <h1>Parent Component</h1>
       <div className="section">
-        <ClassSlides classInfo={classes} />
+        <Swiper
+          pagination={pagination}
+          modules={[Pagination]}
+          className="mySwiper"
+        >
+          <ClassSlides classInfo={classes} />
+        </Swiper>
       </div>
     </div>
   );
