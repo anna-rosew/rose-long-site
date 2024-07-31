@@ -89,18 +89,19 @@ export default function Groups() {
                 <div className="retreat-overlay">
                   <img src={OverlaySVG} alt="icon" className="overlay-svg" />
                   <h3>Upcoming Workshop:</h3>
-                  <h2>My Heart is For The Whole</h2>
+                  <h2>Moving Beyond Separation: The Power of The Breath.</h2>
                   <p>
-                    Immerse yourself in a weekend of yoga and breath work,
-                    rediscovering wholeness within.
+                    This workshop uses movement and breathwork to experience
+                    unity through conscious breathing. Followed by a{" "}
+                    <strong>shared lunch.</strong>
                   </p>
                   <span>
                     <img src={Location} alt="icon" className="overlay-svg2" />
-                    <p>Patrick Brompton Hall, Yorkshire Dales, UK</p>
+                    <p>Home Studio, Liverpool. UK</p>
                   </span>
                   <span>
                     <img src={Calender} alt="icon" className="overlay-svg2" />
-                    <p>1st - 7th May 2024</p>
+                    <p>Mon 26 Aug, 10.00-12.30am</p>
                   </span>
                 </div>
               </div>
