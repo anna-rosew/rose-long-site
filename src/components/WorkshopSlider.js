@@ -9,14 +9,18 @@ export default function WorkshopSlider({ workshopInfo }) {
     <div className="workshop-slide">
       <div className="event-container">
         <div className="slider-container">
-          {workshopInfo.images.map((img, index) => (
-            <img
-              key={index}
-              src={img}
-              alt={`Workshop ${index + 1}`}
-              className="retreat-img"
-            />
-          ))}
+          <div className="image-grid">
+            {workshopInfo.images.map((img, index) => (
+              <img
+                key={index}
+                src={img}
+                alt={`Workshop ${index + 1}`}
+                className={`retreat-img ${
+                  index === 0 ? "large-image" : "small-image"
+                }`}
+              />
+            ))}
+          </div>
         </div>
         <div className="retreat-info-column">
           <h3>Upcoming Workshop</h3>

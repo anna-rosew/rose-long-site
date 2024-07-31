@@ -1,4 +1,3 @@
-/* General Styles */
 .retreat-page {
   padding: 30px;
 }
@@ -9,6 +8,10 @@
   vertical-align: middle;
   display: inline-block;
   margin-right: 5px;
+}
+
+.workshop-slide {
+  padding: 70px;
 }
 
 .details-span {
@@ -23,13 +26,13 @@
   width: 100%;
 }
 
-.slick-slide .retreat-img {
+.retreat-img {
   border-radius: 45px;
   object-fit: cover;
   width: 100%;
 }
 
-.slider-container {
+.image-container {
   border-radius: 45px;
   height: 392px;
   width: 543px;

@@ -9,11 +9,7 @@ import WorkshopSlider from "../components/WorkshopSlider";
 export default function Workshops() {
   const workshops = [
     {
-      images: [
-        require("../styles/imgs/photos/workshop1.png"),
-        require("../styles/imgs/photos/workshop2.png"),
-        require("../styles/imgs/photos/workshop3.png"),
-      ],
+      images: [require("../styles/imgs/photos/workshop1.png")],
       title: "Discover Your Inner Power",
       location: "Green Valley Retreat Center, California, USA",
       date: "15th - 17th August 2024",
@@ -22,11 +18,7 @@ export default function Workshops() {
       maxCapacity: "50 participants",
     },
     {
-      images: [
-        require("../styles/imgs/photos/workshop1.png"),
-        require("../styles/imgs/photos/workshop2.png"),
-        require("../styles/imgs/photos/workshop3.png"),
-      ],
+      images: [require("../styles/imgs/photos/workshop1.png")],
       title: "Discover Your Inner Power",
       location: "Green Valley Retreat Center, California, USA",
       date: "15th - 17th August 2024",
