@@ -2,10 +2,8 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import "../styles/Retreat.css"; // Custom styles including Swiper navigation
-
+import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
-
 import WorkshopSlider from "../components/WorkshopSlider";
 
 export default function Workshops() {
@@ -44,15 +42,21 @@ export default function Workshops() {
         <h1>Workshops</h1>
         <Swiper
           pagination={{ clickable: true }}
-          navigation={true} // Enable navigation arrows
+          navigation={{
+            nextEl: ".workshop-swiper-button-next",
+            prevEl: ".workshop-swiper-button-prev",
+          }}
           modules={[Pagination, Navigation]}
-          className="mySwiper"
+          className="workshop-swiper"
         >
           {workshops.map((workshop, index) => (
             <SwiperSlide key={index}>
               <WorkshopSlider workshopInfo={workshop} />
             </SwiperSlide>
           ))}
+          {/* Custom Navigation Buttons */}
+          <div className="workshop-swiper-button-prev">Prev</div>
+          <div className="workshop-swiper-button-next">Next</div>
         </Swiper>
       </div>
     </div>

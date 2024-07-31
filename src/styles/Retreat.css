@@ -66,38 +66,41 @@
   border: 2px solid #2b578e;
 }
 
-/* Custom Arrow Styles for Swiper on This Page */
-.workshop-swiper .button-next,
-.workshop-swiper .button-prev {
-  color: #000; /* Arrow color */
-  width: 44px; /* Adjust size */
-  height: 44px; /* Adjust size */
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.8
-  ); /* Background color for better visibility */
+/* Swiper Navigation Styles */
+.workshop-swiper {
+  position: relative; /* Ensure positioning for buttons */
+}
+
+.workshop-swiper-button-next,
+.workshop-swiper-button-prev {
+  color: black !important; /* Arrow color */
+  width: 44px !important; /* Adjust size */
+  height: 44px !important; /* Adjust size */
+  background-color: rgba(255, 255, 255, 0.8) !important; /* Background color */
   border-radius: 50%; /* Round the arrows */
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 10; /* Ensure the arrows are on top */
+  position: absolute; /* Absolute positioning to place them correctly */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Center vertically */
+  cursor: pointer; /* Pointer cursor to indicate clickable */
 }
 
 .workshop-swiper-button-next {
-  right: 10px; /* Positioning for next arrow */
+  right: 10px; /* Position for next arrow */
 }
 
 .workshop-swiper-button-prev {
-  left: 10px; /* Positioning for prev arrow */
+  left: 10px; /* Position for prev arrow */
 }
 
 .workshop-swiper-button-next::after,
 .workshop-swiper-button-prev::after {
-  font-size: 20px; /* Arrow size */
-  font-family: swiper-icons;
-  color: black; /* Use the font family of Swiper icons */
+  font-family: swiper-icons; /* Ensure correct font family */
+  font-size: 20px !important; /* Adjust size */
+  color: black !important; /* Arrow color */
 }
 
 /* Responsive Styles */
