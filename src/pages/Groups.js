@@ -10,7 +10,7 @@ import InPerson from "../styles/imgs/permanent/in-person-groups.png";
 import Retreat from "../styles/imgs/permanent/retreats.png";
 import Retreats from "../styles/imgs/photos/retreat1.png";
 import Workshop1 from "../styles/imgs/photos/workshop3.png";
-import Workshop2 from "../styles/imgs/photos/";
+import Workshop2 from "../styles/imgs/photos/home-studio3.png";
 import OverlaySVG from "../styles/imgs/icons/sunshine_white.svg";
 import Workshop from "../styles/imgs/photos/groups.png";
 import Location from "../styles/imgs/icons/location_line.svg";
