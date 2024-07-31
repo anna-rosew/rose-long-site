@@ -109,9 +109,9 @@
   height: 70px;
 }
 
-.swiper-pagination-bullet-active {
+.workshop-swiper .swiper-pagination-bullet-active {
   background-color: #356d65; /* Active bullet color */
-  opacity: 1; /* Active bullet opacity */
+  opacity: 1;
 }
 
 /* Responsive Styles */
