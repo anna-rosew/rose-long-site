@@ -12,8 +12,7 @@ export default function MembershipLanding() {
         <img src={sunshine} alt="sunshine" />
         <p>
           I am currently working on a <strong>new membership page</strong> where
-          you will be able to login and find all purchased video replays as well
-          as some fresh free content.
+          you will be able to login and find a library of replays & resources.
         </p>
         <div className="current-deals">
           <h3>Current Monthly membership deals</h3>

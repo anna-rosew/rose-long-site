@@ -69,7 +69,7 @@ const RightNav = ({ open, closeMenu }) => {
       </li>
       <li>
         <Link to="/work" className="menu-link" onClick={closeMenu}>
-          Work With Me
+          Work With Rose
         </Link>
       </li>
       <li>

@@ -13,15 +13,18 @@ export default function Work() {
   return (
     <div className="container Work-Page">
       <div className="intro">
-        <h1>Work With Me.</h1>
+        <h1>Work With Rose.</h1>
         <p>
           When you are stuck in unhelpful patterns rooted in the past, it shows
           up in your daily life. The discomfort within you surfaces in different
-          ways. You may be emotionally overwhelmed and reactive, you may be
-          experiencing restlessness and mental agitation, low energy and
-          depression or physical symptoms. All these states indicate it’s time
-          for you turn your focus inwards and listen.{" "}
-          <strong>Life is leading you on a journey of self-discovery.</strong>
+          ways. All these states indicate it’s time for you turn your focus
+          inwards and listen.
+        </p>
+        <p>
+          <strong>
+            Come and explore how your body, mind and breath work together. Open
+            yourself to new dimensions of experience and personal growth.
+          </strong>
         </p>
       </div>
       <div className="work-cards">
@@ -29,7 +32,7 @@ export default function Work() {
           <div className="card">
             <Link to="/approach" className="card-link">
               <h2>My Approach</h2>
-              <h3 className="subtitle">FIND YOUR FLOW</h3>
+              <h3 className="subtitle">LEARN FROM EXPERIENCE</h3>
               <div className="work-image-container">
                 <BlurryImage
                   src={MyApproach}
@@ -43,8 +46,7 @@ export default function Work() {
                     alt="Overlay SVG"
                   />
                   <p>
-                    You have the capacity to{" "}
-                    <strong>transform yourself from the inside out.</strong>
+                    <strong>Transform from the inside out.</strong>
                   </p>
                 </div>
               </div>
@@ -67,8 +69,7 @@ export default function Work() {
                     alt="Overlay SVG"
                   />
                   <p>
-                    You have the capacity to{" "}
-                    <strong>transform yourself from the inside out.</strong>
+                    <strong>Share in the power of the collective.</strong>
                   </p>
                 </div>
               </div>
@@ -77,7 +78,7 @@ export default function Work() {
           <div className="card">
             <Link to="/onetoone" className="card-link">
               <h2>One-To-Ones</h2>
-              <h3 className="subtitle">COACHING & GUIDANCE</h3>
+              <h3 className="subtitle">COACHING & YOGA</h3>
               <div className="work-image-container">
                 <BlurryImage
                   src={OneToOnes}
@@ -91,8 +92,7 @@ export default function Work() {
                     alt="Overlay SVG"
                   />
                   <p>
-                    You have the capacity to{" "}
-                    <strong>transform yourself from the inside out.</strong>
+                    <strong>The path of self discovery</strong>
                   </p>
                 </div>
               </div>

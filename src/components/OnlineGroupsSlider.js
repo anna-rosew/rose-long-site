@@ -17,7 +17,7 @@ export default function OnlineGroupsSlider() {
       description:
         "Thursday nights are about releasing tension and moving into the parasympathetic nervous system, which allows the body to replenish and heal. This hour is a deeply restorative way to look after your health in these stressful times. Come and enjoy an hour to unwind and relax.",
       permanentDescription:
-        "You can join this class anywhere in the world on Zoom",
+        "You can join this class anywhere in the world on Zoom.",
       dates: ["Thu, Aug 1", "Thu, Aug 22", "Thu, Aug 29"],
       times: ["8:00-9:00pm", "8:00-9:00pm", "8:00-9:00pm"],
       dropInPrice: "£10",
@@ -29,7 +29,7 @@ export default function OnlineGroupsSlider() {
       description:
         "If you're looking for a fast way to regenerate your body, mind, and spirit, come and experience the magic of the breath. Deeply detoxifying, revitalising, and balancing, the practice of Pranayama has deep and lasting benefits.",
       permanentDescription:
-        "You can join this class anywhere in the world on Zoom",
+        "You can join this class anywhere in the world on Zoom.",
       dates: ["Wed, Aug 7", "Wed, Aug 21", "Tue, Aug 27"],
       times: ["7:00-7:30am", "7:00-7:30am", "7:00-7:30am"],
       dropInPrice: "£8",
@@ -41,7 +41,7 @@ export default function OnlineGroupsSlider() {
       description:
         "These 90-minute classes combine movement, breath, and sound. If you’re looking for an intense physical workout and a tangible experience of expansive awareness, this is for you. Kundalini Yoga is the fastest way to experience altered states of consciousness without substances.",
       permanentDescription:
-        "You can join this class anywhere in the world on Zoom",
+        "You can join this class anywhere in the world on Zoom.",
       dates: ["Sat, Aug 3", "Sat, Aug 24", "Sat, Aug 31"],
       times: ["8:00-9:00am", "8:00-9:00am", "8:00-9:00am"],
       dropInPrice: "£12",
@@ -53,7 +53,7 @@ export default function OnlineGroupsSlider() {
       description:
         "Meeting twice each month, this practice helps you drop into the natural rhythms of your body and the world. Women have practiced at the New and Full Moon for centuries to deepen awareness of their bodies and cyclical connection with nature. Set an intention with each New Moon and reflect and release with each Full Moon.",
       permanentDescription:
-        "You can join this class anywhere in the world on Zoom",
+        "You can join this class anywhere in the world on Zoom.",
       dates: ["Sat, Aug 3", "Tue, Aug 20"],
       times: ["8:00-9:30am", "8:00-9:00pm"],
       dropInPrice: "£12 (New Moon), £10 (Full Moon)",
