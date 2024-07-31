@@ -8,11 +8,11 @@ import "../styles/Groups.css";
 import Online from "../styles/imgs/permanent/online-groups.png";
 import InPerson from "../styles/imgs/permanent/in-person-groups.png";
 import Retreat from "../styles/imgs/permanent/retreats.png";
-import Retreats from "../styles/imgs/photos/retreat1.png";
+//import Retreats from "../styles/imgs/photos/retreat1.png";
 import Workshop1 from "../styles/imgs/photos/workshop3.png";
 import Workshop2 from "../styles/imgs/photos/home-studio3.png";
 import OverlaySVG from "../styles/imgs/icons/sunshine_white.svg";
-import Workshop from "../styles/imgs/photos/groups.png";
+
 import Location from "../styles/imgs/icons/location_line.svg";
 import Calender from "../styles/imgs/icons/calander_white.svg";
 
@@ -115,18 +115,19 @@ export default function Groups() {
                 <div className="retreat-overlay">
                   <img src={OverlaySVG} alt="icon" className="overlay-svg" />
                   <h3>Upcoming Workshop:</h3>
-                  <h2>My Heart is For The Whole</h2>
+                  <h2>Return to the Heart.</h2>
                   <p>
-                    Immerse yourself in a weekend of yoga and breath work,
-                    rediscovering wholeness within.
+                    Join us for a morning focused on the heart: a cacao
+                    ceremony, heart-centered breathwork, and yoga nidra. All are
+                    welcome.
                   </p>
                   <span>
                     <img src={Location} alt="icon" className="overlay-svg2" />
-                    <p>Patrick Brompton Hall, Yorkshire Dales, UK</p>
+                    <p>Home Studio, Liverpool. UK</p>
                   </span>
                   <span>
                     <img src={Calender} alt="icon" className="overlay-svg2" />
-                    <p>1st - 7th May 2024</p>
+                    <p>Mon 26 August 10.00am - 12.30pm </p>
                   </span>
                 </div>
               </div>
@@ -136,56 +137,13 @@ export default function Groups() {
       </div>
       <div className="retreats" id="retreats">
         <h2 className="section-heading hr-lines">Retreats</h2>
-        <div className="grid grid-2-columns section-spacing">
-          <div className="retreat-card">
-            <Link to="/retreats" className="card-link">
-              <div className="retreat-img-container">
-                <img src={Retreats} className="retreat-image" alt="Retreat" />
-                <div className="retreat-overlay">
-                  <img src={OverlaySVG} alt="icon" className="overlay-svg" />
-                  <h3>Upcoming Retreat:</h3>
-                  <h2>My Heart is For The Whole</h2>
-                  <p>
-                    Immerse yourself in a weekend of yoga and breath work,
-                    rediscovering wholeness within.
-                  </p>
-                  <span>
-                    <img src={Location} alt="icon" className="overlay-svg2" />
-                    <p>Patrick Brompton Hall, Yorkshire Dales, UK</p>
-                  </span>
-                  <span>
-                    <img src={Calender} alt="icon" className="overlay-svg2" />
-                    <p>1st - 7th May 2024</p>
-                  </span>
-                </div>
-              </div>
-            </Link>
-          </div>
-          <div className="retreat-card">
-            <Link to="/retreats" className="card-link">
-              <div className="retreat-img-container">
-                <img src={Workshop} className="retreat-image" alt="Retreat" />
-                <div className="retreat-overlay">
-                  <img src={OverlaySVG} alt="icon" className="overlay-svg" />
-                  <h3>Upcoming Retreat:</h3>
-                  <h2>My Heart is For The Whole</h2>
-                  <p>
-                    Immerse yourself in a weekend of yoga and breath work,
-                    rediscovering wholeness within.
-                  </p>
-                  <span>
-                    <img src={Location} alt="icon" className="overlay-svg2" />
-                    <p>Patrick Brompton Hall, Yorkshire Dales, UK</p>
-                  </span>
-                  <span>
-                    <img src={Calender} alt="icon" className="overlay-svg2" />
-                    <p>1st - 7th May 2024</p>
-                  </span>
-                </div>
-              </div>
-            </Link>
-          </div>
-        </div>
+        <p>
+          There are currently no retreats planned but be sure to{" "}
+          <Link to="/contact" className="word-link">
+            <strong>sign-up to the newsletter</strong>
+          </Link>{" "}
+          to stay posted.
+        </p>
       </div>
     </div>
   );

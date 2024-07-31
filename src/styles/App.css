@@ -119,6 +119,15 @@ button:hover {
   margin: 0px 100px 20px 200px;
 }
 
+.word-link {
+  text-decoration: none;
+  color: black;
+}
+
+.word-link:hover {
+  text-decoration: underline;
+}
+
 .grid {
   display: grid;
   grid-gap: 20px;
