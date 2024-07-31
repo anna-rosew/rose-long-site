@@ -9,6 +9,7 @@ import Online from "../styles/imgs/permanent/online-groups.png";
 import InPerson from "../styles/imgs/permanent/in-person-groups.png";
 import Retreat from "../styles/imgs/permanent/retreats.png";
 import Retreats from "../styles/imgs/photos/retreat1.png";
+import HomeStudio from "../styles/imgs/photos/workshop3.png";
 import OverlaySVG from "../styles/imgs/icons/sunshine_white.svg";
 import Workshop from "../styles/imgs/photos/groups.png";
 import Location from "../styles/imgs/icons/location_line.svg";
@@ -84,7 +85,7 @@ export default function Groups() {
           <div className="retreat-card">
             <Link to="/workshops" className="card-link">
               <div className="retreat-img-container">
-                <img src={Retreats} className="retreat-image" alt="Retreat" />
+                <img src={HomeStudio} className="retreat-image" alt="Retreat" />
                 <div className="retreat-overlay">
                   <img src={OverlaySVG} alt="icon" className="overlay-svg" />
                   <h3>Upcoming Workshop:</h3>
