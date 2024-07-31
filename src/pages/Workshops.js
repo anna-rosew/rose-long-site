@@ -5,6 +5,8 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
 import WorkshopSlider from "../components/WorkshopSlider";
+import prevArrow from "../styles/imgs/icons/arrow-prev.svg";
+import nextArrow from "../styles/imgs/icons/arrow-next.svg";
 
 export default function Workshops() {
   const workshops = [
@@ -47,8 +49,12 @@ export default function Workshops() {
             </SwiperSlide>
           ))}
           {/* Custom Navigation Buttons */}
-          <div className="workshop-swiper-button-prev">Prev</div>
-          <div className="workshop-swiper-button-next">Next</div>
+          <div className="workshop-swiper-button-prev">
+            <img src={prevArrow} alt="prev arrow" className="nav-arrow" />
+          </div>
+          <div className="workshop-swiper-button-next">
+            <img src={nextArrow} alt="prev arrow" className="nav-arrow" />
+          </div>
         </Swiper>
       </div>
     </div>
