@@ -61,18 +61,6 @@ button {
   transform: scale(1.05);
 }
 
-.yoga-class {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.yoga-class h2,
-.yoga-class .class-details {
-  margin-top: 10px;
-}
-
 .overlay-svg {
   height: 100px;
 }
@@ -102,9 +90,8 @@ button {
 
 .hr-lines {
   position: relative;
-
   max-width: 500px;
-  margin: 100px auto;
+  margin: 30px auto;
   text-align: center;
 }
 

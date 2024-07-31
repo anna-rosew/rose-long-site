@@ -26,16 +26,20 @@ export default function About() {
               quick fixes that only increased my inner turmoil. Life brought me
               to my knees, everything falling apart for real change to take
               place. In chaos and despair, I admitted I didn’t know how to live
-              but longed to learn.
+              but longed to learn. Admitting this sparked change.
             </p>
-            <p className="about-quote"></p>
+            <p className="about-quote">
+              The despair I felt began to transform into quiet gratitude and
+              wonder.
+            </p>
             <p>
-              Admitting this sparked change. Life brought teachers, mentors and
-              transformative practices. Challenges became opportunities for
-              growth. I learned to cultivate inner coherence instead of chaos,
-              transforming despair into gratitude. Sharing these tools is a
-              pleasure and privilege. Witnessing remarkable people on the path
-              of healing inspires me to keep learning and growing.
+              Life brought teachers, mentors and transformative practices.
+              Challenges became opportunities for growth. I learned to cultivate
+              inner coherence instead of chaos. The mystery of life opened from
+              within. I continue to be amazed by what's possible when we make a
+              conscious choice to change. Working with people who are up for the
+              challenge keeps me inspired and motivated to keep learning and
+              growing myself.
             </p>
             <div className="about-button-container">
               <Link to="/blog" className="general-button">
