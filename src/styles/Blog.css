@@ -53,7 +53,7 @@
     url("../styles/imgs/photos/beach-cove.png") center/cover;
   height: 500px;
   width: 100%;
-  border-radius: 45px;
+  border-radius: 20px;
   padding: 30px;
   color: white;
   display: flex;
@@ -90,7 +90,7 @@
 .bottom-grid button {
   padding: 10px 20px;
   font-size: 16px;
-  border-radius: 5px;
+  border-radius: 20px;
   background-color: transparent;
   font-family: "Jost", sans-serif;
   color: white;
@@ -122,7 +122,7 @@
   align-items: center;
   justify-content: center;
   padding: 20px;
-  border-radius: 45px;
+  border-radius: 20px;
   transition: transform 0.3s ease; /* Add transition for smooth scaling */
 }
 
@@ -138,10 +138,8 @@
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.3);
-  border-radius: 45px;
+  border-radius: 20px;
 }
-
-/* Other existing styles remain the same */
 
 .description {
   display: block;
