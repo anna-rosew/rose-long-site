@@ -5,7 +5,7 @@ import ".../styles/Article.css";
 export default function BlogArticleTemp() {
   return (
     <div className="BlogArticle container">
-      <h1></h1>
+      <h1>Hello</h1>
     </div>
   );
 }
