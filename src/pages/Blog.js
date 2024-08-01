@@ -3,7 +3,6 @@ import "../styles/Blog.css";
 import video from "../styles/imgs/icons/video-icon.svg";
 import BlogBlock from "../components/BlogBlock";
 
-
 export default function Blog() {
   const posts = [
     {
@@ -20,11 +19,11 @@ export default function Blog() {
     },
 
     {
-      title: "From Ancient Rituals to Modern Mindfulness",
-      subtitle: "MEDITATION",
+      title: "Learning to Make Healthy Choices Around Food",
+      subtitle: "ARTICLE",
       className: "post-2",
       description:
-        "This article explores meditation's evolution from ancient rituals to modern mindfulness, highlighting its cultural adaptations and contemporary benefits.",
+        "Discover the power of awareness to transform your health and well-being by understanding your thoughts, emotions, and choices, and embracing conscious practices that connect you to your true self.",
       icon: require("../styles/imgs/icons/article.png"),
       postType: "Article",
       link: "https://theyogainstitute.org/yogasattva",

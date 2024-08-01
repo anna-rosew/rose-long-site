@@ -102,7 +102,7 @@ export default function Groups() {
                   </span>
                   <span>
                     <img src={Calender} alt="icon" className="overlay-svg2" />
-                    <p>Mon 26 Aug, 10.00-12.30am</p>
+                    <p>Mon 26 Aug, 10.00 - 12.30 am</p>
                   </span>
                 </div>
               </div>
@@ -127,7 +127,7 @@ export default function Groups() {
                   </span>
                   <span>
                     <img src={Calender} alt="icon" className="overlay-svg2" />
-                    <p>Mon 26 August 10.00am - 12.30pm </p>
+                    <p>Mon 26 August 10.00am - 12.30 pm </p>
                   </span>
                 </div>
               </div>
