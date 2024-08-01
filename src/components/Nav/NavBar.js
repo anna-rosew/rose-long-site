@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Burger from "./Burger";
 import "../../styles/NavBar.css";
-import Logo from "../../styles/imgs/icons/logo.svg";
+import Logo from "../../styles/imgs/icons/LOGO.svg";
 
 const Nav = styled.nav`
   width: 1100px;

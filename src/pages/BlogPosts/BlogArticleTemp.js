@@ -1,6 +1,6 @@
 import React from "react";
-import ".../styles/App.css";
-import ".../styles/Article.css";
+import "../../styles/App.css";
+import "../../styles/Article.css";
 
 export default function BlogArticleTemp() {
   return (
