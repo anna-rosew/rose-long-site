@@ -11,25 +11,25 @@ const formatDescription = (text) => {
   return text.replace(/\[strong\](.*?)\[\/strong\]/g, "<strong>$1</strong>");
 };
 
-export default function InPersonSlider({ workshopInfo }) {
+export default function InPersonSlider({ eventInfo }) {
   return (
-    <div className="workshop-slide">
+    <div className="event-slide">
       <div className="event-container">
         <div className="slider-container">
-          {workshopInfo.images.map((img, index) => (
+          {eventInfo.images.map((img, index) => (
             <img
               key={index}
               src={img}
-              alt={`Workshop ${index + 1}`}
-              className={`retreat-img ${
+              alt={`Event ${index + 1}`}
+              className={`event-img ${
                 index === 0 ? "large-image" : "small-image"
               }`}
             />
           ))}
         </div>
-        <div className="retreat-info-column">
-          <h3>Upcoming Workshop</h3>
-          <h1>{workshopInfo.title}</h1>
+        <div className="event-info-column">
+          <h3>Upcoming Event</h3>
+          <h1>{eventInfo.title}</h1>
           <p>
             <span className="details-span">
               <img
@@ -37,7 +37,7 @@ export default function InPersonSlider({ workshopInfo }) {
                 alt="Location Icon"
                 className="details-icon"
               />
-              {workshopInfo.location}
+              {eventInfo.location}
             </span>
           </p>
           <p>
@@ -47,24 +47,24 @@ export default function InPersonSlider({ workshopInfo }) {
                 alt="Calendar Icon"
                 className="details-icon"
               />
-              {workshopInfo.date}
+              {eventInfo.date}
             </span>
           </p>
           <p>
             <span className="details-span">
               <img src={Time} alt="Time Icon" className="details-icon" />
-              {workshopInfo.time}
+              {eventInfo.time}
             </span>
           </p>
           <p
             dangerouslySetInnerHTML={{
-              __html: formatDescription(workshopInfo.description),
+              __html: formatDescription(eventInfo.description),
             }}
           />
-          <p>{workshopInfo.description2}</p>
-          <p>AVAILABILITY: {workshopInfo.maxCapacity}</p>
+          <p>{eventInfo.description2}</p>
+          <p>AVAILABILITY: {eventInfo.maxCapacity}</p>
           <p>
-            PRICE: <strong>{workshopInfo.price}</strong>
+            PRICE: <strong>{eventInfo.price}</strong>
           </p>
           <Link to="/contact">
             <button className="get-in-touch">BOOK NOW</button>{" "}
