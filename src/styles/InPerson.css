@@ -20,42 +20,42 @@
 }
 
 .event-container {
-  display: block;
+  display: flex;
+  flex-direction: column;
   width: 100%;
 }
 
 .image-gallery {
   display: grid;
-  grid-template-areas:
-    "large"
-    "small1"
-    "small2";
-  grid-template-columns: 2fr; /* Only one column */
-  grid-template-rows: 2fr 1fr 1fr; /* Large image takes more space */
-  gap: 10px; /* Space between images */
+  grid-template-columns: 2fr 1fr; /* Two columns: large image on the left, small images on the right */
+  gap: 10px; /* Space between columns */
   width: 100%; /* Ensure grid takes full width of its container */
-  max-width: 100%; /* Prevent overflow */
+}
+
+.large-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px; /* Optional: rounded corners */
+  overflow: hidden;
 }
 
 .large-image {
-  grid-area: large;
-  border-radius: 15px; /* Optional: rounded corners */
-  object-fit: cover; /* Ensure image covers its area */
   width: 100%;
-  height: 100%; /* Fill its grid cell */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.small-images-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between images */
 }
 
 .small-image {
   border-radius: 15px; /* Optional: rounded corners */
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
   object-fit: cover; /* Ensure image covers its area */
-  width: 100%;
-  height: 100%; /* Fill its grid cell */
-}
-
-.event-img {
-  border-radius: 20px;
-  object-fit: cover;
-  width: 100%;
 }
 
 .event-info-column {

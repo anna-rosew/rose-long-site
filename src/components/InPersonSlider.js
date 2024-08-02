@@ -15,17 +15,24 @@ export default function InPersonSlider({ eventInfo }) {
   return (
     <div className="event-slide">
       <div className="event-container">
-        <div className="slider-container">
-          {eventInfo.images.map((img, index) => (
+        <div className="image-gallery">
+          <div className="large-image-container">
             <img
-              key={index}
-              src={img}
-              alt={`Event ${index + 1}`}
-              className={`event-img ${
-                index === 0 ? "large-image" : "small-image"
-              }`}
+              src={eventInfo.images[0]}
+              alt="Large Event"
+              className="large-image"
             />
-          ))}
+          </div>
+          <div className="small-images-container">
+            {eventInfo.images.slice(1).map((img, index) => (
+              <img
+                key={index}
+                src={img}
+                alt={`Small Event ${index + 1}`}
+                className="small-image"
+              />
+            ))}
+          </div>
         </div>
         <div className="event-info-column">
           <h3>Upcoming Event</h3>
