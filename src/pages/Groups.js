@@ -8,13 +8,13 @@ import "../styles/Groups.css";
 import Online from "../styles/imgs/permanent/online-groups.png";
 import InPerson from "../styles/imgs/permanent/in-person-groups.png";
 import Retreat from "../styles/imgs/permanent/retreats.png";
-//import Retreats from "../styles/imgs/photos/retreat1.png";
 import Workshop1 from "../styles/imgs/photos/workshop3.png";
 import Workshop2 from "../styles/imgs/photos/home-studio3.png";
 import OverlaySVG from "../styles/imgs/icons/sunshine_white.svg";
-
 import Location from "../styles/imgs/icons/location_line.svg";
 import Calender from "../styles/imgs/icons/calander_white.svg";
+import LocationBlack from "../styles/imgs/icons/location_black.svg";
+import CalenderBlack from "../styles/imgs/icons/calender_black.svg";
 
 export default function Groups() {
   const onClick = () => {
@@ -26,6 +26,7 @@ export default function Groups() {
   const onClick3 = () => {
     window.location.href = "#retreats";
   };
+
   return (
     <div className="container Groups-Page">
       <div className="intro">
@@ -80,14 +81,19 @@ export default function Groups() {
         <h2 className="section-heading hr-lines">Online Groups</h2>
         <OnlineGroupsSlider />
       </div>
-      <div className="retreats" id="inPerson">
+
+      <div className="in-person-sessions" id="inPerson">
         <h2 className="section-heading hr-lines">In-Person Sessions</h2>
         <div className="grid grid-2-columns section-spacing">
-          <div className="retreat-card">
+          <div className="in-person-card">
             <Link to="/workshops" className="card-link">
-              <div className="retreat-img-container">
-                <img src={Workshop1} className="retreat-image" alt="Retreat" />
-                <div className="retreat-overlay">
+              <div className="in-person-img-container">
+                <img
+                  src={Workshop1}
+                  className="in-person-image"
+                  alt="In-Person Session"
+                />
+                <div className="in-person-overlay">
                   <img src={OverlaySVG} alt="icon" className="overlay-svg" />
                   <h3>Upcoming Workshop:</h3>
                   <h2>Moving Beyond Separation: The Power of The Breath.</h2>
@@ -106,8 +112,7 @@ export default function Groups() {
                   </span>
                 </div>
               </div>
-              <div className="retreat-info-mobile">
-                <img src={OverlaySVG} alt="icon" className="overlay-svg" />
+              <div className="in-person-info-mobile">
                 <h3>Upcoming Workshop:</h3>
                 <h2>Moving Beyond Separation: The Power of The Breath.</h2>
                 <p>
@@ -116,22 +121,34 @@ export default function Groups() {
                   <strong>shared lunch.</strong>
                 </p>
                 <span>
-                  <img src={Location} alt="icon" className="overlay-svg2" />
+                  <img
+                    src={LocationBlack}
+                    alt="icon"
+                    className="overlay-svg2"
+                  />
                   <p>Home Studio, Liverpool. UK</p>
                 </span>
                 <span>
-                  <img src={Calender} alt="icon" className="overlay-svg2" />
+                  <img
+                    src={CalenderBlack}
+                    alt="icon"
+                    className="overlay-svg2"
+                  />
                   <p>Mon 26 Aug, 10.00 - 12.30 am</p>
                 </span>
               </div>
             </Link>
           </div>
 
-          <div className="retreat-card">
+          <div className="in-person-card">
             <Link to="/workshops" className="card-link">
-              <div className="retreat-img-container">
-                <img src={Workshop2} className="retreat-image" alt="Retreat" />
-                <div className="retreat-overlay">
+              <div className="in-person-img-container">
+                <img
+                  src={Workshop2}
+                  className="in-person-image"
+                  alt="In-Person Session"
+                />
+                <div className="in-person-overlay">
                   <img src={OverlaySVG} alt="icon" className="overlay-svg" />
                   <h3>Upcoming Workshop:</h3>
                   <h2>Return to the Heart.</h2>
@@ -150,7 +167,7 @@ export default function Groups() {
                   </span>
                 </div>
               </div>
-              <div className="retreat-info-mobile">
+              <div className="in-person-info-mobile">
                 <img src={OverlaySVG} alt="icon" className="overlay-svg" />
                 <h3>Upcoming Workshop:</h3>
                 <h2>Return to the Heart.</h2>
@@ -159,11 +176,19 @@ export default function Groups() {
                   heart-centered breathwork, and yoga nidra. All are welcome.
                 </p>
                 <span>
-                  <img src={Location} alt="icon" className="overlay-svg2" />
+                  <img
+                    src={LocationBlack}
+                    alt="icon"
+                    className="overlay-svg2"
+                  />
                   <p>Home Studio, Liverpool. UK</p>
                 </span>
                 <span>
-                  <img src={Calender} alt="icon" className="overlay-svg2" />
+                  <img
+                    src={CalenderBlack}
+                    alt="icon"
+                    className="overlay-svg2"
+                  />
                   <p>Mon 26 August 10.00am - 12.30 pm</p>
                 </span>
               </div>
@@ -171,6 +196,7 @@ export default function Groups() {
           </div>
         </div>
       </div>
+
       <div className="retreats" id="retreats">
         <h2 className="section-heading hr-lines">Retreats</h2>
         <p>

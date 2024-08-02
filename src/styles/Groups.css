@@ -191,6 +191,112 @@ button {
   display: none;
 }
 
+.in-person-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.in-person-sessions {
+  margin-bottom: 20px;
+}
+
+.in-person-img-container {
+  position: relative;
+  width: 590px;
+  height: 430px;
+}
+
+.in-person-image {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  display: block;
+  border-radius: 127px;
+}
+
+.in-person-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #356d65;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+  padding: 100px;
+  box-sizing: border-box;
+  border-radius: 127px;
+}
+
+.in-person-img-container:hover .in-person-overlay {
+  opacity: 1;
+}
+
+.in-person-overlay h3,
+.in-person-overlay h2,
+.in-person-overlay p,
+.in-person-overlay span {
+  margin: 10px 0;
+}
+
+.in-person-overlay span {
+  display: flex;
+  align-items: center;
+}
+
+.in-person-overlay span img {
+  margin-right: 5px;
+}
+
+.in-person-overlay .overlay-svg,
+.in-person-overlay .overlay-svg2 {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.in-person-info-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .grid.grid-2-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .in-person-img-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .in-person-image {
+    border-radius: 20px;
+  }
+
+  .in-person-info-mobile {
+    display: block;
+    text-align: center;
+    margin-top: 0px;
+  }
+
+  .in-person-info-mobile h3 {
+    margin-bottom: 0px;
+  }
+
+  .in-person-overlay .overlay-svg,
+  .in-person-overlay .overlay-svg2 {
+    color: black;
+  }
+}
+
 @media (max-width: 768px) {
   .retreat-img-container {
     width: 300px; /* Adjusted to 621px */
@@ -230,42 +336,5 @@ button {
     position: absolute;
     top: 50%;
     right: 0;
-  }
-
-  .retreat-img-container {
-    width: 300px;
-    height: 300px;
-  }
-
-  .retreat-image {
-    border-radius: 57px;
-  }
-
-  .retreat-overlay {
-    display: none; /* Hide the overlay on mobile devices */
-  }
-
-  .retreat-info-mobile {
-    display: block; /* Show the new section on mobile devices */
-    background-color: #356d65;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    border-radius: 57px;
-    margin-top: 20px;
-  }
-
-  .retreat-info-mobile img.overlay-svg {
-    height: 80px;
-  }
-
-  .retreat-info-mobile span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .retreat-info-mobile span img.overlay-svg2 {
-    margin-right: 5px;
   }
 }
