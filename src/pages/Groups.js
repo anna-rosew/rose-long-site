@@ -86,7 +86,7 @@ export default function Groups() {
         <h2 className="section-heading hr-lines">In-Person Sessions</h2>
         <div className="grid grid-2-columns section-spacing">
           <div className="in-person-card">
-            <Link to="/workshops" className="card-link">
+            <Link to="/inperson" className="card-link">
               <div className="in-person-img-container">
                 <img
                   src={Workshop1}
@@ -140,7 +140,7 @@ export default function Groups() {
           </div>
 
           <div className="in-person-card">
-            <Link to="/workshops" className="card-link">
+            <Link to="/inperson" className="card-link">
               <div className="in-person-img-container">
                 <img
                   src={Workshop2}

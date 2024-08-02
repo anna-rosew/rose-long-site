@@ -12,6 +12,7 @@
 
 .event-slide {
   padding: 70px;
+  padding-top: 10px;
 }
 
 .details-span {
@@ -53,7 +54,7 @@
 
 .small-image {
   border-radius: 15px; /* Optional: rounded corners */
-  width: 100%;
+  width: 99%;
   height: auto; /* Maintain aspect ratio */
   object-fit: cover; /* Ensure image covers its area */
 }
