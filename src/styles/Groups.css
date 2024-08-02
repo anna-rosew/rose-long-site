@@ -2,6 +2,9 @@
   margin-bottom: 20px;
 }
 
+.card .group-image-container:hover {
+  transform: scale(1.03); /* Scale up by 5% on hover */
+}
 .card-links {
   text-decoration: none;
   color: black;
