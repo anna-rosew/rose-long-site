@@ -81,7 +81,3 @@ export default function InPersonSlider({ eventInfo }) {
     </div>
   );
 }
-
-//<Link to="/contact">
-//    <button className="get-in-touch">BOOK NOW</button>
-// </Link>

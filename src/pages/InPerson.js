@@ -13,9 +13,9 @@ export default function InPerson() {
   const events = [
     {
       images: [
-        require("../styles/imgs/photos/workshop1.png"),
-        require("../styles/imgs/photos/workshop1.png"),
-        require("../styles/imgs/photos/workshop1.png"),
+        require("../styles/imgs/photos/home-studio1.png"),
+        require("../styles/imgs/photos/home-studio4.png"),
+        require("../styles/imgs/photos/home-studio3.png"),
       ],
       title: "Moving Beyond Separation: The Power of The Breath.",
       location: "Home Studio, Liverpool. UK",
