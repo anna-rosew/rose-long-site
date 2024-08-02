@@ -5,11 +5,11 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "../styles/InPerson.css";
 import { Pagination, Navigation } from "swiper/modules";
-import WorkshopSlider from "../components/WorkshopSlider";
+import WorkshopSlider from "../components/InPersonSlider";
 import prevArrow from "../styles/imgs/icons/arrow-prev.svg";
 import nextArrow from "../styles/imgs/icons/arrow-next.svg";
 
-export default function Workshops() {
+export default function InPerson() {
   const workshops = [
     {
       images: [require("../styles/imgs/photos/workshop1.png")],

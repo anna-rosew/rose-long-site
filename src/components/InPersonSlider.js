@@ -11,7 +11,7 @@ const formatDescription = (text) => {
   return text.replace(/\[strong\](.*?)\[\/strong\]/g, "<strong>$1</strong>");
 };
 
-export default function WorkshopSlider({ workshopInfo }) {
+export default function InPersonSlider({ workshopInfo }) {
   return (
     <div className="workshop-slide">
       <div className="event-container">

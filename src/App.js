@@ -12,7 +12,7 @@ import Retreats from "./pages/Retreats";
 import Membership from "./pages/MembershipLanding";
 import Blog from "./pages/Blog";
 import Qualifications from "./pages/Qualifications";
-import Workshops from "./pages/Workshops";
+import Workshops from "./pages/InPerson";
 import BlogArticle from "./pages/BlogPosts/BlogArticleTemp";
 
 import NavBar from "./components/Nav/NavBar";
