@@ -89,7 +89,7 @@
 
 /* Swiper Navigation Styles */
 .event-swiper {
-  position: relative;
+  position: relative; /* To allow positioning of arrows inside */
 }
 
 .event-swiper-button-next,
@@ -103,8 +103,8 @@
   justify-content: center;
   z-index: 10; /* Ensure the arrows are on top */
   position: absolute; /* Absolute positioning to place them correctly */
-  top: 50%; /* Center vertically */
-  transform: translateY(-50%); /* Center vertically */
+  top: 0; /* Position at the top */
+  transform: translateY(0); /* Adjust vertical alignment */
   cursor: pointer; /* Pointer cursor to indicate clickable */
 }
 
@@ -116,15 +116,19 @@
   left: 10px; /* Position for prev arrow */
 }
 
-.event-swiper-button-next::after,
-.event-swiper-button-prev::after {
-  font-family: swiper-icons; /* Ensure correct font family */
-  font-size: 20px !important; /* Adjust size */
-  color: black !important; /* Arrow color */
+/* Add a container for top navigation arrows */
+.top-nav-container {
+  position: absolute;
+  top: 10px; /* Position from the top */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  box-sizing: border-box; /* Ensure padding does not affect layout */
 }
 
-.nav-arrow {
-  height: 70px;
+.top-nav-container img {
+  height: 30px; /* Adjust size as needed */
 }
 
 .event-swiper .swiper-pagination-bullet-active {
@@ -132,6 +136,7 @@
   opacity: 1;
 }
 
+/* Responsive adjustments if needed */
 @media (max-width: 768px) {
   .event-container {
     grid-template-columns: 1fr !important;
