@@ -1,3 +1,4 @@
+/* General Styles */
 .in-person-page {
   padding: 20px;
 }
@@ -139,6 +140,7 @@
   opacity: 1;
 }
 
+/* Mobile Styles */
 @media (max-width: 768px) {
   .event-container {
     flex-direction: column;
@@ -147,15 +149,29 @@
   .event-slide {
     padding: 10px;
   }
+
   .image-gallery {
     grid-template-columns: 1fr; /* Stack images vertically on smaller screens */
   }
 
   .large-image-container {
     width: 100%;
+    height: 200px;
   }
 
   .small-images-container {
     width: 100%;
+  }
+
+  /* Smaller arrows for mobile */
+  .event-swiper-button-next,
+  .event-swiper-button-prev {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  .event-swiper-button-next::after,
+  .event-swiper-button-prev::after {
+    font-size: 16px !important;
   }
 }

@@ -7,11 +7,12 @@ import { Link } from "react-router-dom";
 
 // Utility function to replace markers with HTML tags
 const formatDescription = (text) => {
-  // Replace [strong]...[/strong] with <strong>...</strong>
   return text.replace(/\[strong\](.*?)\[\/strong\]/g, "<strong>$1</strong>");
 };
 
-export default function InPersonSlider({ eventInfo }) {
+const InPersonSlider = ({ eventInfo }) => {
+  const isMobile = window.innerWidth <= 768;
+
   return (
     <div className="event-slide">
       <div className="event-container">
@@ -23,16 +24,18 @@ export default function InPersonSlider({ eventInfo }) {
               className="large-image"
             />
           </div>
-          <div className="small-images-container">
-            {eventInfo.images.slice(1).map((img, index) => (
-              <img
-                key={index}
-                src={img}
-                alt={`Small Event ${index + 1}`}
-                className="small-image"
-              />
-            ))}
-          </div>
+          {!isMobile && (
+            <div className="small-images-container">
+              {eventInfo.images.slice(1).map((img, index) => (
+                <img
+                  key={index}
+                  src={img}
+                  alt={`Small Event ${index + 1}`}
+                  className="small-image"
+                />
+              ))}
+            </div>
+          )}
         </div>
         <div className="event-info-column">
           <h3>Upcoming Event</h3>
@@ -74,10 +77,12 @@ export default function InPersonSlider({ eventInfo }) {
             PRICE: <strong>{eventInfo.price}</strong>
           </p>
           <Link to="/contact">
-            <button className="get-in-touch">BOOK NOW</button>{" "}
+            <button className="get-in-touch">BOOK NOW</button>
           </Link>
         </div>
       </div>
     </div>
   );
-}
+};
+
+export default InPersonSlider;
