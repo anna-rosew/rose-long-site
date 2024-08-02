@@ -41,7 +41,7 @@ export default function BlogArticleTemp() {
               </div>
             </div>
             <div className="button-column">
-              <button className="general-button">COPY LINK</button>
+              <button className="copy-button">COPY LINK</button>
             </div>
           </div>
         </div>

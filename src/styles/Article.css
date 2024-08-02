@@ -52,6 +52,23 @@
   justify-content: flex-end;
 }
 
+.copy-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: transparent;
+  font-family: "Jost", sans-serif;
+  color: white;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.copy-button:hover {
+  background-color: #f0f0f0;
+  color: black;
+}
+
 .article-intro {
   margin-top: 20px;
   padding-top: 20px;
@@ -79,4 +96,13 @@
 .content span {
   display: inline-flex;
   align-items: center;
+}
+
+.article-subheading {
+  font-family: "Jost", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 25px;
+  letter-spacing: 0.3px;
 }
