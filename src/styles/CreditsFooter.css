@@ -1,4 +1,4 @@
-.CreditsFooter {
+.credits-footer {
   padding: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -6,6 +6,11 @@
   margin-top: 30px;
   background-color: #862b0d;
   color: white;
+}
+
+.center {
+  display: block;
+  margin: 0 auto;
 }
 
 .logo-footer {
@@ -20,6 +25,11 @@
   height: 50px;
   display: inline-block;
   margin: 10px;
+}
+
+.social-footer img:hover {
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transform: scale(1.1);
 }
 
 .all-pages {
@@ -50,6 +60,11 @@
   display: inline-block; /* Ensure that the pseudo-element is positioned correctly */
 }
 
+.logo-footer a {
+  color: white;
+  font-weight: 700;
+}
+
 .all-pages a::after {
   content: "";
   position: absolute;
@@ -66,10 +81,11 @@
 }
 
 @media (max-width: 768px) {
-  .CreditsFooter {
-    padding: 5px;
+  .credits-footer {
+    padding: 10px;
     text-align: center;
     width: 100%;
     margin-top: 50px;
+    grid-template-columns: 1fr;
   }
 }

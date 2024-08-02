@@ -7,49 +7,55 @@ import VimeoIcon from "../styles/imgs/icons/footer-vimeo.svg";
 
 export default function CreditsFooter() {
   return (
-    <div className="CreditsFooter">
+    <div className="credits-footer">
       <div className="logo-footer">
-        <a href="/">
-          <img src={Logo} alt="Rose Long Logo" className="site-logo-footer" />
-        </a>
-        <div className="socials">
-          <a
-            href="https://www.instagram.com/lifechangesrose/?hl=en"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-footer"
-          >
-            <img src={InstaIcon} alt="Instagram" />
+        <div className="center">
+          <a href="/" className="logo-link">
+            <img src={Logo} alt="Rose Long Logo" className="site-logo-footer" />
           </a>
-          <a
-            href="https://vimeo.com/roselong"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-footer"
-          >
-            <img src={VimeoIcon} alt="Vimeo" />
-          </a>
+          <div className="socials">
+            <a
+              href="https://www.instagram.com/lifechangesrose/?hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-footer"
+            >
+              <img src={InstaIcon} alt="Instagram" />
+            </a>
+            <a
+              href="https://vimeo.com/roselong"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-footer"
+            >
+              <img src={VimeoIcon} alt="Vimeo" />
+            </a>
+          </div>
+          <p>
+            Website built by{" "}
+            <a
+              href="https://www.sacredintuitiveart.com/about"
+              alt="Anna-Rose Wain | Front-end Developer"
+            >
+              {" "}
+              Anna-Rose Wain{" "}
+            </a>{" "}
+            | Artwork by{" "}
+            <a
+              href="https://www.sacredintuitiveart.com/about"
+              alt="Sacred Intuitive Art"
+            >
+              Lynn Hanford Day - Sacred Intuitive Art
+            </a>
+          </p>
         </div>
       </div>
 
-      <div className="credits">
-        <p>
-          Website built by{" "}
-          <a
-            href="https://www.sacredintuitiveart.com/about"
-            alt="Anna-Rose Wain | Front-end Developer"
-          >
-            {" "}
-            Anna-Rose Wain{" "}
-          </a>{" "}
-          | Artwork by{" "}
-          <a
-            href="https://www.sacredintuitiveart.com/about"
-            alt="Sacred Intuitive Art"
-          >
-            Lynn Hanford Day - Sacred Intuitive Art
-          </a>
-        </p>
+      <div className="book-class">
+        {" "}
+        <Link to="/contact">
+          <button className="general-button">BOOK NOW</button>
+        </Link>
       </div>
       <div className="all-pages">
         <div className="list">
