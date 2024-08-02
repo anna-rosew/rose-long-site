@@ -13,13 +13,7 @@
 }
 
 .site-logo-footer {
-  height: 50px;
-}
-
-.CreditsFooter a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
+  height: 70px;
 }
 
 .social-footer img {
@@ -33,9 +27,42 @@
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.CreditsFooter a:hover {
-  color: black;
-  text-decoration: underline;
+.all-pages h3 {
+  color: white;
+}
+
+.all-pages li {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0.3px;
+  color: white;
+  position: relative; /* Necessary for absolute positioning of pseudo-element */
+  padding: 5px 0; /* Space above and below text */
+}
+
+.all-pages a {
+  color: white;
+  text-decoration: none; /* Remove default underline */
+  position: relative; /* For positioning pseudo-element */
+  display: inline-block; /* Ensure that the pseudo-element is positioned correctly */
+}
+
+.all-pages a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px; /* Position below the text */
+  width: 0;
+  height: 2px; /* Thickness of the sliding line */
+  background: white; /* Color of the sliding line */
+  transition: width 0.3s ease; /* Smooth animation */
+}
+
+.all-pages a:hover::after {
+  width: 100%; /* Expand line to full width on hover */
 }
 
 @media (max-width: 768px) {
