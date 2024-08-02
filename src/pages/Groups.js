@@ -106,8 +106,27 @@ export default function Groups() {
                   </span>
                 </div>
               </div>
+              <div className="retreat-info-mobile">
+                <img src={OverlaySVG} alt="icon" className="overlay-svg" />
+                <h3>Upcoming Workshop:</h3>
+                <h2>Moving Beyond Separation: The Power of The Breath.</h2>
+                <p>
+                  This workshop uses movement and breathwork to experience unity
+                  through conscious breathing. Followed by a{" "}
+                  <strong>shared lunch.</strong>
+                </p>
+                <span>
+                  <img src={Location} alt="icon" className="overlay-svg2" />
+                  <p>Home Studio, Liverpool. UK</p>
+                </span>
+                <span>
+                  <img src={Calender} alt="icon" className="overlay-svg2" />
+                  <p>Mon 26 Aug, 10.00 - 12.30 am</p>
+                </span>
+              </div>
             </Link>
           </div>
+
           <div className="retreat-card">
             <Link to="/workshops" className="card-link">
               <div className="retreat-img-container">
@@ -127,9 +146,26 @@ export default function Groups() {
                   </span>
                   <span>
                     <img src={Calender} alt="icon" className="overlay-svg2" />
-                    <p>Mon 26 August 10.00am - 12.30 pm </p>
+                    <p>Mon 26 August 10.00am - 12.30 pm</p>
                   </span>
                 </div>
+              </div>
+              <div className="retreat-info-mobile">
+                <img src={OverlaySVG} alt="icon" className="overlay-svg" />
+                <h3>Upcoming Workshop:</h3>
+                <h2>Return to the Heart.</h2>
+                <p>
+                  Join us for a morning focused on the heart: a cacao ceremony,
+                  heart-centered breathwork, and yoga nidra. All are welcome.
+                </p>
+                <span>
+                  <img src={Location} alt="icon" className="overlay-svg2" />
+                  <p>Home Studio, Liverpool. UK</p>
+                </span>
+                <span>
+                  <img src={Calender} alt="icon" className="overlay-svg2" />
+                  <p>Mon 26 August 10.00am - 12.30 pm</p>
+                </span>
               </div>
             </Link>
           </div>

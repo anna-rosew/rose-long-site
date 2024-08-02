@@ -187,6 +187,10 @@ button {
   margin-right: 5px;
 }
 
+.retreat-info-mobile {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .retreat-img-container {
     width: 300px; /* Adjusted to 621px */
@@ -226,5 +230,42 @@ button {
     position: absolute;
     top: 50%;
     right: 0;
+  }
+
+  .retreat-img-container {
+    width: 300px;
+    height: 300px;
+  }
+
+  .retreat-image {
+    border-radius: 57px;
+  }
+
+  .retreat-overlay {
+    display: none; /* Hide the overlay on mobile devices */
+  }
+
+  .retreat-info-mobile {
+    display: block; /* Show the new section on mobile devices */
+    background-color: #356d65;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 57px;
+    margin-top: 20px;
+  }
+
+  .retreat-info-mobile img.overlay-svg {
+    height: 80px;
+  }
+
+  .retreat-info-mobile span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .retreat-info-mobile span img.overlay-svg2 {
+    margin-right: 5px;
   }
 }
