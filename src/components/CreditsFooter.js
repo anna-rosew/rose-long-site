@@ -76,7 +76,13 @@ export default function CreditsFooter() {
           <h3>about</h3>
           <ul>
             <li>
-              <Link to="/contact">Contact</Link>
+              <Link to="/approach">Approach</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/qualifications">Qualifications</Link>
             </li>
           </ul>
         </div>
@@ -84,7 +90,16 @@ export default function CreditsFooter() {
           <h3>resources</h3>
           <ul>
             <li>
+              <Link to="/blog">Blog</Link>
+            </li>
+            <li>
               <Link to="/contact">Contact</Link>
+            </li>
+            <li>
+              <Link to="/contact">Newsletter</Link>
+            </li>
+            <li>
+              <Link to="/membership">Membership</Link>
             </li>
           </ul>
         </div>
