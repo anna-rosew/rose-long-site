@@ -74,7 +74,10 @@ export default function FoodArticle() {
                 Introduction
                 <img src={arrow} alt="arrow" className="arrow-nav" />
               </li>
-              {/* Add more list items as needed */}
+              <li className="contents-link" onClick={onClick}>
+                Introduction
+                <img src={arrow} alt="arrow" className="arrow-nav" />
+              </li>
             </ul>
           </div>
           <div className="article-intro-text">
