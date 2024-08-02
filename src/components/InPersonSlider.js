@@ -81,7 +81,7 @@ const InPersonSlider = ({ eventInfo }) => {
             PRICE: <strong>{eventInfo.price}</strong>
           </p>
           <Link to="/contact">
-            <button className="get-in-touch">BOOK NOW</button>
+            <button className="general-button">BOOK NOW</button>
           </Link>
         </div>
       </div>
