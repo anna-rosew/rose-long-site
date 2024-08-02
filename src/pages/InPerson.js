@@ -14,8 +14,8 @@ export default function InPerson() {
     {
       images: [
         require("../styles/imgs/photos/home-studio1.png"),
+        require("../styles/imgs/photos/buddah.png"),
         require("../styles/imgs/photos/home-studio4.png"),
-        require("../styles/imgs/photos/home-studio3.png"),
       ],
       title: "Moving Beyond Separation: The Power of The Breath.",
       location: "Home Studio, Liverpool. UK",

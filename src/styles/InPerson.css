@@ -43,6 +43,7 @@
 .large-image-container {
   border-radius: 15px; /* Optional: rounded corners */
   overflow: hidden;
+  height: 500px;
 }
 
 .large-image {
@@ -60,7 +61,7 @@
 .small-image {
   border-radius: 15px; /* Optional: rounded corners */
   width: 100%; /* Fill the container */
-  height: 50%; /* Adjust height to fit two images in the column */
+  height: 250px; /* Adjust height to fit two images in the column */
   object-fit: cover; /* Ensure image covers its area */
 }
 
@@ -143,6 +144,9 @@
     flex-direction: column;
   }
 
+  .event-slide {
+    padding: 10px;
+  }
   .image-gallery {
     grid-template-columns: 1fr; /* Stack images vertically on smaller screens */
   }
