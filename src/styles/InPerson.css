@@ -15,6 +15,10 @@
   padding: 70px;
   padding-top: 10px;
 }
+.event-swiper .swiper-pagination-bullet-active {
+  background-color: #356d65; /* Active bullet color */
+  opacity: 1;
+}
 
 .details-span {
   display: inline-flex;
@@ -95,33 +99,33 @@
   border: 2px solid #2b578e;
 }
 
-/* Swiper Navigation Styles */
+/* Swiper Navigation Styles (Desktop) */
 .event-swiper {
-  position: relative;
+  position: relative; /* Ensure that navigation buttons can be positioned relative to this container */
+  padding-bottom: 50px; /* Space for navigation arrows on desktop */
 }
 
 .event-swiper-button-next,
 .event-swiper-button-prev {
   color: black !important; /* Arrow color */
-  width: 44px !important; /* Adjust size */
-  height: 44px !important; /* Adjust size */
+  width: 44px !important; /* Default size */
+  height: 44px !important; /* Default size */
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 10; /* Ensure the arrows are on top */
-  position: absolute; /* Absolute positioning to place them correctly */
-  top: 50%; /* Center vertically */
-  transform: translateY(-50%); /* Center vertically */
+  position: absolute; /* Absolute positioning */
+  bottom: 10px; /* Position at the bottom */
   cursor: pointer; /* Pointer cursor to indicate clickable */
 }
 
 .event-swiper-button-next {
-  right: 10px; /* Position for next arrow */
+  right: 10px; /* Position for next arrow on desktop */
 }
 
 .event-swiper-button-prev {
-  left: 10px; /* Position for prev arrow */
+  left: 10px; /* Position for prev arrow on desktop */
 }
 
 .event-swiper-button-next::after,
@@ -129,10 +133,6 @@
   font-family: swiper-icons; /* Ensure correct font family */
   font-size: 20px !important; /* Adjust size */
   color: black !important; /* Arrow color */
-}
-
-.nav-arrow {
-  height: 70px;
 }
 
 .event-swiper .swiper-pagination-bullet-active {
@@ -163,15 +163,30 @@
     width: 100%;
   }
 
-  /* Smaller arrows for mobile */
+  /* Adjust size of arrows */
   .event-swiper-button-next,
   .event-swiper-button-prev {
-    width: 30px !important;
-    height: 30px !important;
+    width: 20px !important;
+    height: 20px !important;
   }
 
-  .event-swiper-button-next::after,
-  .event-swiper-button-prev::after {
-    font-size: 16px !important;
+  /* Position arrows at the bottom and center-align them on mobile */
+  .event-swiper {
+    padding-bottom: 70px; /* Ensure enough space for arrows at the bottom */
+  }
+
+  .event-swiper-button-next {
+    right: 20px; /* Position for next arrow on mobile */
+    left: auto; /* Override left positioning */
+  }
+
+  .event-swiper-button-prev {
+    left: 20px; /* Position for prev arrow on mobile */
+    right: auto; /* Override right positioning */
+  }
+
+  .event-swiper-button-next img,
+  .event-swiper-button-prev img {
+    height: 30px;
   }
 }
