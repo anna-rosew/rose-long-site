@@ -31,7 +31,7 @@ export default function Work() {
         <div className="grid grid-3-columns">
           <div className="card">
             <Link to="/approach" className="card-link">
-              <h2>My Approach</h2>
+              <h2>Approach</h2>
               <h3 className="subtitle">LEARN FROM EXPERIENCE</h3>
               <div className="work-image-container">
                 <BlurryImage
