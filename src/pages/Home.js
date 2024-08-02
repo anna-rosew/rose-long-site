@@ -5,7 +5,7 @@ import "../styles/Home.css";
 import Socials from "../components/Socials";
 import GetInTouch from "../components/GetInTouch";
 import BlogBlock from "../components/BlogBlock";
-import BlurryBackgroundImage from "../components/BlurryBackgroundImg"; // Import the new component
+import BlurryBackgroundImage from "../components/BlurryBackgroundImg"; 
 import "../styles/Blog.css";
 
 export default function Home() {

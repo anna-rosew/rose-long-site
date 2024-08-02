@@ -4,6 +4,7 @@ import Calendar from "../styles/imgs/icons/calender.svg";
 import Time from "../styles/imgs/icons/time.svg";
 import "../styles/InPerson.css";
 import { Link } from "react-router-dom";
+import BlurryImage from "../components/BlurryImage";
 
 // Utility function to replace markers with HTML tags
 const formatDescription = (text) => {
@@ -18,20 +19,20 @@ const InPersonSlider = ({ eventInfo }) => {
       <div className="event-container">
         <div className="image-gallery">
           <div className="large-image-container">
-            <img
+            <BlurryImage
               src={eventInfo.images[0]}
-              alt="Large Event"
               className="large-image"
+              alt="Large Event"
             />
           </div>
           {!isMobile && (
             <div className="small-images-container">
               {eventInfo.images.slice(1).map((img, index) => (
-                <img
+                <BlurryImage
                   key={index}
                   src={img}
-                  alt={`Small Event ${index + 1}`}
                   className="small-image"
+                  alt={`Small Event ${index + 1}`}
                 />
               ))}
             </div>
