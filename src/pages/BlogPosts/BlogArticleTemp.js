@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../styles/App.css";
 import "../../styles/Article.css";
 import BlurryImage from "../../components/BlurryImage";
@@ -6,9 +6,24 @@ import FoodImg from "../../styles/imgs/blog/food_blog.png";
 import arrow from "../../styles/imgs/icons/arrow-next.svg";
 
 export default function BlogArticleTemp() {
+  const [copied, setCopied] = useState(false);
+
   const onClick = () => {
     window.location.href = "#self-awareness";
   };
+
+  const handleCopy = () => {
+    navigator.clipboard
+      .writeText(window.location.href)
+      .then(() => {
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000); // Hide message after 2 seconds
+      })
+      .catch((err) => {
+        console.error("Failed to copy text: ", err);
+      });
+  };
+
   return (
     <div className="container">
       <div className="blog-article">
@@ -44,7 +59,10 @@ export default function BlogArticleTemp() {
               </div>
             </div>
             <div className="button-column">
-              <button className="copy-button">COPY LINK</button>
+              {copied && <p className="copied-message">Copied!</p>}
+              <button className="copy-button" onClick={handleCopy}>
+                COPY LINK
+              </button>
             </div>
           </div>
         </div>
