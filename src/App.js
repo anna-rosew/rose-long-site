@@ -12,7 +12,7 @@ import Retreats from "./pages/Retreats";
 import Membership from "./pages/MembershipLanding";
 import Blog from "./pages/Blog";
 import Qualifications from "./pages/Qualifications";
-import Workshops from "./pages/InPerson";
+import InPerson from "./pages/InPerson";
 import BlogArticle from "./pages/BlogPosts/BlogArticleTemp";
 
 import NavBar from "./components/Nav/NavBar";
@@ -38,7 +38,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/blogarticle" element={<BlogArticle />} />
         <Route path="/qualifications" element={<Qualifications />} />
-        <Route path="/workshops" element={<Workshops />} />
+        <Route path="/inperson" element={<InPerson />} />
         <Route path="*" element={<NotPage />} />
       </Routes>{" "}
       <CreditsFooter />
