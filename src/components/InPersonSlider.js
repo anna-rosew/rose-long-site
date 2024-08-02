@@ -71,7 +71,11 @@ const InPersonSlider = ({ eventInfo }) => {
               __html: formatDescription(eventInfo.description),
             }}
           />
-          <p>{eventInfo.description2}</p>
+          <p
+            dangerouslySetInnerHTML={{
+              __html: formatDescription(eventInfo.description2),
+            }}
+          />
           <p>AVAILABILITY: {eventInfo.maxCapacity}</p>
           <p>
             PRICE: <strong>{eventInfo.price}</strong>
