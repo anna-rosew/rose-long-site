@@ -10,7 +10,7 @@ import InPerson from "../styles/imgs/permanent/in-person-groups.png";
 import Retreat from "../styles/imgs/permanent/retreats.png";
 import Workshop1 from "../styles/imgs/photos/workshop3.png";
 import Workshop2 from "../styles/imgs/photos/home-studio3.png";
-import OverlaySVG from "../styles/imgs/icons/sunshine_white.svg";
+
 import Location from "../styles/imgs/icons/location_line.svg";
 import Calender from "../styles/imgs/icons/calander_white.svg";
 import LocationBlack from "../styles/imgs/icons/location_black.svg";
@@ -94,7 +94,6 @@ export default function Groups() {
                   alt="In-Person Session"
                 />
                 <div className="in-person-overlay">
-                  <img src={OverlaySVG} alt="icon" className="overlay-svg" />
                   <h3>Upcoming Workshop:</h3>
                   <h2>Moving Beyond Separation: The Power of The Breath.</h2>
                   <p>
@@ -149,7 +148,6 @@ export default function Groups() {
                   alt="In-Person Session"
                 />
                 <div className="in-person-overlay">
-                  <img src={OverlaySVG} alt="icon" className="overlay-svg" />
                   <h3>Upcoming Workshop:</h3>
                   <h2>Return to the Heart.</h2>
                   <p>
@@ -168,7 +166,6 @@ export default function Groups() {
                 </div>
               </div>
               <div className="in-person-info-mobile">
-                <img src={OverlaySVG} alt="icon" className="overlay-svg" />
                 <h3>Upcoming Workshop:</h3>
                 <h2>Return to the Heart.</h2>
                 <p>

@@ -245,6 +245,7 @@ button {
 .in-person-overlay p,
 .in-person-overlay span {
   margin: 10px 0;
+  color: white;
 }
 
 .in-person-overlay span {
@@ -284,7 +285,13 @@ button {
   .in-person-info-mobile {
     display: block;
     text-align: center;
-    margin-top: 0px;
+    margin: 20px;
+    text-align: left;
+  }
+
+  .in-person-info-mobile span {
+    display: flex;
+    align-items: center;
   }
 
   .in-person-info-mobile h3 {
@@ -336,5 +343,9 @@ button {
     position: absolute;
     top: 50%;
     right: 0;
+  }
+
+  .retreats {
+    text-align: left;
   }
 }
