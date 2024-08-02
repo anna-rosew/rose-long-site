@@ -3,13 +3,20 @@ import "../../styles/App.css";
 import "../../styles/Article.css";
 import BlurryImage from "../../components/BlurryImage";
 import FoodImg from "../../styles/imgs/blog/food_blog.png";
+import FoodImg2 from "../../styles/imgs/blog/food_blog2.png";
 import arrow from "../../styles/imgs/icons/arrow-next.svg";
 
 export default function BlogArticleTemp() {
   const [copied, setCopied] = useState(false);
 
   const onClick = () => {
+    window.location.href = "#introduction";
+  };
+  const onClick2 = () => {
     window.location.href = "#self-awareness";
+  };
+  const onClick3 = () => {
+    window.location.href = "#inside-out";
   };
 
   const handleCopy = () => {
@@ -74,11 +81,21 @@ export default function BlogArticleTemp() {
                 Introduction
                 <img src={arrow} alt="arrow" className="arrow-nav" />
               </li>
+              <li className="contents-link" onClick={onClick2}>
+                Deepening your Self Awareness
+                <img src={arrow} alt="arrow" className="arrow-nav" />
+              </li>
+              <li className="contents-link" onClick={onClick3}>
+                Introduction
+                <img src={arrow} alt="arrow" className="arrow-nav" />
+              </li>
               {/* Add more list items as needed */}
             </ul>
           </div>
           <div className="article-intro-text">
-            <h2 className="article-subheading">Introduction</h2>
+            <h2 className="article-subheading" id="introduction">
+              Introduction
+            </h2>
             <p>
               Awareness is the key - being aware of your thoughts and emotions,
               being aware of your energy levels, how you feel in your body, all
@@ -176,7 +193,7 @@ export default function BlogArticleTemp() {
         <div className="featured-image">
           <div className="featured-image-container">
             <BlurryImage
-              src={FoodImg}
+              src={FoodImg2}
               className="blog-feature-img"
               alt="Woman doing tree pose outside at sunrise."
             />

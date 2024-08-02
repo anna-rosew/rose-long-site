@@ -3,13 +3,20 @@ import "../../styles/App.css";
 import "../../styles/Article.css";
 import BlurryImage from "../../components/BlurryImage";
 import FoodImg from "../../styles/imgs/blog/food_blog.png";
+import FoodImg2 from "../../styles/imgs/blog/food_blog2.png";
 import arrow from "../../styles/imgs/icons/arrow-next.svg";
 
 export default function FoodArticle() {
   const [copied, setCopied] = useState(false);
 
   const onClick = () => {
+    window.location.href = "#introduction";
+  };
+  const onClick2 = () => {
     window.location.href = "#self-awareness";
+  };
+  const onClick3 = () => {
+    window.location.href = "#inside-out";
   };
 
   const handleCopy = () => {
@@ -66,6 +73,16 @@ export default function FoodArticle() {
             </div>
           </div>
         </div>
+        <p className="image-caption">
+          Image Courtsey of Chad Stembridge via{" "}
+          <a
+            href="https://unsplash.com/photos/green-leafed-plant-in-shallow-focus-photography--8FjF1p-aw0"
+            alt="unsplash"
+            rel="nonreferrer"
+          >
+            Unsplash
+          </a>
+        </p>
         <div className="article-intro">
           <div className="contents">
             <h3>CONTENTS:</h3>
@@ -74,13 +91,17 @@ export default function FoodArticle() {
                 Introduction
                 <img src={arrow} alt="arrow" className="arrow-nav" />
               </li>
-              <li className="contents-link" onClick={onClick}>
-                Introduction
+              <li className="contents-link" onClick={onClick2}>
+                Deepening Self-Awareness
+                <img src={arrow} alt="arrow" className="arrow-nav" />
+              </li>
+              <li className="contents-link" onClick={onClick3}>
+                From Inside Out
                 <img src={arrow} alt="arrow" className="arrow-nav" />
               </li>
             </ul>
           </div>
-          <div className="article-intro-text">
+          <div className="article-intro-text" id="introduction">
             <h2 className="article-subheading">Introduction</h2>
             <p>
               Awareness is the key - being aware of your thoughts and emotions,
@@ -179,15 +200,15 @@ export default function FoodArticle() {
         <div className="featured-image">
           <div className="featured-image-container">
             <BlurryImage
-              src={FoodImg}
+              src={FoodImg2}
               className="blog-feature-img"
               alt="Woman doing tree pose outside at sunrise."
             />
           </div>
           <p className="image-caption">
-            Image Courtsey of Megan via{" "}
+            Image Courtsey of Brooke Larke via{" "}
             <a
-              href="https://dribbble.com/shots/23565113-Minimal-blog-post-Untitled-UI"
+              href="https://unsplash.com/photos/variety-of-sliced-fruits-08bOYnH_r_E"
               alt="unsplash"
               rel="nonreferrer"
             >

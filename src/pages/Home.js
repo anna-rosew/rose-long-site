@@ -5,7 +5,7 @@ import "../styles/Home.css";
 import Socials from "../components/Socials";
 import GetInTouch from "../components/GetInTouch";
 import BlogBlock from "../components/BlogBlock";
-import BlurryBackgroundImage from "../components/BlurryBackgroundImg"; 
+import BlurryBackgroundImage from "../components/BlurryBackgroundImg";
 import "../styles/Blog.css";
 
 export default function Home() {
@@ -75,7 +75,7 @@ export default function Home() {
           <Socials />
           <GetInTouch link="/contact" />
           <div className="home-header">
-            <h1>Tranform from the Inside Out</h1>
+            <h1>Return to the Source</h1>
             <h3>Breath - Mind - Body</h3>
           </div>
           <BlurryBackgroundImage
