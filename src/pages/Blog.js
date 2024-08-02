@@ -26,9 +26,9 @@ export default function Blog() {
         "Discover the power of awareness to transform your health and well-being by understanding your thoughts, emotions, and choices, and embracing conscious practices that connect you to your true self.",
       icon: require("../styles/imgs/icons/article.png"),
       postType: "Article",
-      link: "https://theyogainstitute.org/yogasattva",
+      link: "/blogarticle",
       date: "05/24",
-      img: require("../styles/imgs/photos//buddah.png"),
+      img: require("../styles/imgs/photos/buddah.png"),
     },
   ];
 
@@ -48,7 +48,14 @@ export default function Blog() {
               <h1>Life Changes with Rose Long.</h1>
               <h3 className="date">05/24</h3>
               <div className="bottom-grid">
-                <button className="action-button">LISTEN</button>
+                <button
+                  className="action-button"
+                  href="https://www.youtube.com/watch?v=QdZIW0etTkA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  LISTEN
+                </button>
                 <p className="description">
                   Explore Rose Long's remarkable journey of profound
                   transformation and alignment with the earth's rhythm on the
