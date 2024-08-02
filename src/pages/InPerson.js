@@ -35,8 +35,9 @@ export default function InPerson() {
       date: "15th - 17th August 2024",
       time: "10:00 AM - 04:00 PM",
       description:
-        "Current research is proving that our hearts are not simply pumps as was once believed.  Science is starting to echo what Yogis have been teaching for thousands of years; the heart is what connects us.  Living in a world of fragmentation and division, heart centereness holds the healing we long for.",
-      description2: "hello",
+        "Current research is proving that our hearts are not simply pumps as was once believed.  Science is starting to echo what Yogis have been teaching for thousands of years; [strong]the heart is what connects us[/strong].  Living in a world of fragmentation and division, [strong]heart centeredeness[/strong] holds the [strong]healing we long for.[/strong]",
+      description2:
+        "This morning is dedicated to the [strong]heart[/strong].  We begin with a [strong]cacao ceremony to open our hearts[/strong] and listen for what is moving in the space of our hearts.  Holding a healing intention we move into powerful [strong]heart centred breathwork.[/strong]  Sink into a [strong]yoga nidra[/strong] and experience the [strong]healing power of heart coherence. Open to All.[/strong]",
       maxCapacity: "50 participants",
       price: "£25",
     },
