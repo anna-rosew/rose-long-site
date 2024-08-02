@@ -155,6 +155,25 @@ export default function BlogArticleTemp() {
             at Hampden-Sydney College in Virginia.
           </p>
         </div>
+        <div className="featured-image">
+          <div className="featured-image-container">
+            <BlurryImage
+              src={FoodImg}
+              className="blog-feature-img"
+              alt="Woman doing tree pose outside at sunrise."
+            />
+          </div>
+          <p className="image-caption">
+            Image Courtsey of Megan via{" "}
+            <a
+              href="https://dribbble.com/shots/23565113-Minimal-blog-post-Untitled-UI"
+              alt="unsplash"
+              rel="nonreferrer"
+            >
+              Unsplash
+            </a>
+          </p>
+        </div>
       </div>
     </div>
   );
