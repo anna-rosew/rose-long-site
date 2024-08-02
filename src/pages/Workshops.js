@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import "../styles/InPerson.css";
 import { Pagination, Navigation } from "swiper/modules";
 import WorkshopSlider from "../components/WorkshopSlider";
 import prevArrow from "../styles/imgs/icons/arrow-prev.svg";
@@ -38,8 +39,9 @@ export default function Workshops() {
 
   return (
     <div className="Workshops">
-      <div className="container retreat-page">
-        <h1>Workshops</h1>
+      <div className="container in-person-page">
+        <h1>In-Person Sessions</h1>
+        <h3 className="subtitle">YOGA | COMMUNITY</h3>
         <Swiper
           pagination={{ clickable: true }}
           navigation={{

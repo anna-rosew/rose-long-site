@@ -2,7 +2,7 @@ import React from "react";
 import Location from "../styles/imgs/icons/location.svg";
 import Calendar from "../styles/imgs/icons/calender.svg";
 import Time from "../styles/imgs/icons/time.svg";
-import "../styles/Retreat.css";
+import "../styles/InPerson.css";
 import { Link } from "react-router-dom";
 
 // Utility function to replace markers with HTML tags
