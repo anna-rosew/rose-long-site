@@ -33,17 +33,22 @@
   width: 100%; /* Ensure grid takes full width of its container */
 }
 
-.large-image-container {
+.large-image-container,
+.small-images-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  gap: 10px; /* Space between images */
+}
+
+.large-image-container {
   border-radius: 15px; /* Optional: rounded corners */
   overflow: hidden;
 }
 
 .large-image {
   width: 100%;
-  height: auto; /* Maintain aspect ratio */
+  height: 100%; /* Fill the container */
+  object-fit: cover; /* Ensure image covers its area */
 }
 
 .small-images-container {
@@ -54,8 +59,8 @@
 
 .small-image {
   border-radius: 15px; /* Optional: rounded corners */
-  width: 99%;
-  height: auto; /* Maintain aspect ratio */
+  width: 100%; /* Fill the container */
+  height: 50%; /* Adjust height to fit two images in the column */
   object-fit: cover; /* Ensure image covers its area */
 }
 
@@ -135,12 +140,18 @@
 
 @media (max-width: 768px) {
   .event-container {
-    grid-template-columns: 1fr !important;
-    width: 100% !important;
+    flex-direction: column;
   }
 
-  .slider-container {
-    height: 220px;
-    width: 300px;
+  .image-gallery {
+    grid-template-columns: 1fr; /* Stack images vertically on smaller screens */
+  }
+
+  .large-image-container {
+    width: 100%;
+  }
+
+  .small-images-container {
+    width: 100%;
   }
 }
