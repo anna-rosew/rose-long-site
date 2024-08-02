@@ -29,7 +29,11 @@ export default function InPerson() {
       price: "£25",
     },
     {
-      images: [require("../styles/imgs/photos/workshop1.png")],
+      images: [
+        require("../styles/imgs/photos/home-studio4.png"),
+        require("../styles/imgs/photos/heart2.png"),
+        require("../styles/imgs/photos/home-studio1.png"),
+      ],
       title: "Return to the Heart",
       location: "Home Studio, Liverpool. UK",
       date: "15th - 17th August 2024",
