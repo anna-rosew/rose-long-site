@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Burger from "./Burger";
 import "../../styles/NavBar.css";
-import Logo from "../../styles/imgs/icons/logo3.svg";
+import Logo from "../../styles/imgs/icons/logo2_black.svg";
 
 const Nav = styled.nav`
   width: 1100px;
@@ -13,7 +13,7 @@ const Nav = styled.nav`
   align-items: center;
 
   .site-logo {
-    height: 120px;
+    height: 60px;
     color: black;
   }
 
@@ -24,7 +24,7 @@ const Nav = styled.nav`
     justify-content: center;
 
     .site-logo {
-      height: 100px;
+      height: 60px;
     }
   }
 `;
