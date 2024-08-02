@@ -77,7 +77,7 @@ export default function Groups() {
         </div>
       </div>
 
-      <div className="online-groups" id="onlineGroups">
+      <div className="online-groups-section" id="onlineGroups">
         <h2 className="section-heading hr-lines">Online Groups</h2>
         <OnlineGroupsSlider />
       </div>
