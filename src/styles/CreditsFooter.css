@@ -92,9 +92,10 @@ button:hover {
   color: white;
   text-decoration: none;
   display: inline-block;
+  position: relative; /* Ensure the pseudo-element is positioned relative to the anchor */
 }
 
-.all-pages li::after {
+.all-pages a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -105,7 +106,7 @@ button:hover {
   transition: width 0.3s ease;
 }
 
-.all-pages li:hover::after {
+.all-pages a:hover::after {
   width: 100%;
 }
 
