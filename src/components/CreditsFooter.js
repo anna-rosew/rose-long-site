@@ -54,7 +54,7 @@ export default function CreditsFooter() {
       <div className="book-class">
         {" "}
         <Link to="/contact">
-          <button className="general-button">BOOK NOW</button>
+          <button className="footer-button">GET IN TOUCH</button>
         </Link>
       </div>
       <div className="all-pages">

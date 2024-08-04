@@ -8,6 +8,31 @@
   color: white;
 }
 
+.footer-button {
+  padding: 30px 35px;
+  display: flex;
+  margin: 60px auto;
+  border-radius: 17px;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #ccbb99;
+  background-color: black;
+  border: 2px solid black;
+  transition: color 0.5s, background-color 0.3s, border 0.3s;
+}
+
+.footer-button:hover {
+  color: black;
+  background-color: #ccbb99;
+  border: 2px solid #ccbb99;
+}
+button:hover {
+  cursor: pointer;
+}
+
 .center {
   display: block;
   margin: 0 auto;
@@ -41,6 +66,11 @@
   color: white;
 }
 
+.book-class {
+  display: flex;
+  justify-content: center;
+}
+
 .all-pages li {
   font-family: "Jost", sans-serif;
   font-weight: 400;
@@ -49,15 +79,15 @@
   line-height: 25px;
   letter-spacing: 0.3px;
   color: white;
-  position: relative; 
-  padding: 5px 0; 
+  position: relative;
+  padding: 5px 0;
 }
 
 .all-pages a {
   color: white;
   text-decoration: none;
-  position: relative; 
-  display: inline-block; 
+  position: relative;
+  display: inline-block;
 }
 
 .logo-footer a {
@@ -82,10 +112,17 @@
 
 @media (max-width: 768px) {
   .credits-footer {
-    padding: 10px;
     text-align: center;
-    width: 100%;
-    margin-top: 50px;
+    width: 100vw;
+    margin: 0px;
     grid-template-columns: 1fr;
+  }
+
+  .logo-footer {
+    margin: 10px auto;
+  }
+
+  .all-pages li {
+    font-size: 12px;
   }
 }
