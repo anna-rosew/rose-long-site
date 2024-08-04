@@ -22,12 +22,9 @@ export default function Approach() {
       </div>
 
       <div className="call-to-action">
-        {" "}
-        <div className="button-center">
-          <Link to="/work">
-            <button className="general-button">Start Your Journey</button>
-          </Link>
-        </div>
+        <Link to="/work">
+          <button className="general-button">Start Your Journey</button>
+        </Link>
       </div>
       <div className="approach-text">
         <p>
