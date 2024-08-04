@@ -26,7 +26,7 @@ const Ul = styled.ul`
     width: 100vw;
     margin: 0;
     padding-top: 5rem;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.9s ease-in-out;
 
     li {
       color: white;
