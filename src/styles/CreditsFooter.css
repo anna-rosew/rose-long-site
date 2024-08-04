@@ -1,7 +1,8 @@
 .credits-footer {
-  padding: 20px;
+  padding: 50px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px; /* Adjust the gap value as needed */
   width: 100%;
   margin-top: 30px;
   background-color: #862b0d;
@@ -9,19 +10,17 @@
 }
 
 .footer-button {
-  padding: 30px 35px;
-  display: flex;
-  margin: 60px auto;
+  padding: 10px 20px;
   border-radius: 17px;
   font-family: "Jost", sans-serif;
   font-weight: 400;
-  font-style: normal;
   text-transform: uppercase;
   font-size: 20px;
   color: #ccbb99;
   background-color: black;
   border: 2px solid black;
   transition: color 0.5s, background-color 0.3s, border 0.3s;
+  justify-self: start; /* Align the button to the right */
 }
 
 .footer-button:hover {
@@ -29,6 +28,7 @@
   background-color: #ccbb99;
   border: 2px solid #ccbb99;
 }
+
 button:hover {
   cursor: pointer;
 }
@@ -39,11 +39,19 @@ button:hover {
 }
 
 .logo-footer {
-  margin-left: 100px;
+  display: grid;
+  grid-template-columns: 1fr auto; /* Ensure button is at the end */
+  align-items: center;
+  gap: 20px; /* Adjust the gap value as needed */
 }
 
 .site-logo-footer {
   height: 70px;
+}
+
+.credits {
+  display: block;
+  margin-bottom: 40px;
 }
 
 .social-footer img {
@@ -67,27 +75,38 @@ button:hover {
 }
 
 .book-class {
-  display: flex;
-  justify-content: center;
+  display: block;
 }
 
 .all-pages li {
   font-family: "Jost", sans-serif;
   font-weight: 400;
-  font-style: normal;
   font-size: 15px;
   line-height: 25px;
   letter-spacing: 0.3px;
   color: white;
-  position: relative;
   padding: 5px 0;
 }
 
 .all-pages a {
   color: white;
   text-decoration: none;
-  position: relative;
   display: inline-block;
+}
+
+.all-pages li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Adjust the position as needed */
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width 0.3s ease;
+}
+
+.all-pages li:hover::after {
+  width: 100%;
 }
 
 .logo-footer a {
@@ -95,34 +114,45 @@ button:hover {
   font-weight: 700;
 }
 
-.all-pages a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 0;
-  height: 2px;
-  background: white;
-  transition: width 0.3s ease;
-}
-
-.all-pages a:hover::after {
-  width: 100%;
-}
-
 @media (max-width: 768px) {
   .credits-footer {
     text-align: center;
-    width: 100vw;
-    margin: 0px;
+    width: 90vw;
+    margin: 100px 0px 0px 0px;
     grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .credits {
+    display: none;
   }
 
   .logo-footer {
     margin: 10px auto;
   }
 
+  .all-pages {
+    order: 1;
+  }
+
+  .logo-footer {
+    order: 2;
+  }
+
   .all-pages li {
     font-size: 12px;
+  }
+
+  .footer-button {
+    margin: 20px auto;
+  }
+
+  .credits-mobile {
+    display: block;
+  }
+
+  a {
+    color: white;
   }
 }

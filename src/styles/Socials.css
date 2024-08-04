@@ -1,5 +1,5 @@
 .social-icons-container {
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 50%;
   transform: translateY(-50%);

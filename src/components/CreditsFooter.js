@@ -31,32 +31,50 @@ export default function CreditsFooter() {
               <img src={VimeoIcon} alt="Vimeo" />
             </a>
           </div>
-          <p>
-            Website built by{" "}
-            <a
-              href="https://www.sacredintuitiveart.com/about"
-              alt="Anna-Rose Wain | Front-end Developer"
-            >
-              {" "}
-              Anna-Rose Wain{" "}
-            </a>{" "}
-            | Artwork by{" "}
-            <a
-              href="https://www.sacredintuitiveart.com/about"
-              alt="Sacred Intuitive Art"
-            >
-              Lynn Hanford Day - Sacred Intuitive Art
-            </a>
-          </p>
+          <div className="credits">
+            <p>
+              Website built by{" "}
+              <a
+                href="https://www.sacredintuitiveart.com/about"
+                alt="Anna-Rose Wain | Front-end Developer"
+              >
+                {" "}
+                Anna-Rose Wain{" "}
+              </a>{" "}
+              | Artwork by{" "}
+              <a
+                href="https://www.sacredintuitiveart.com/about"
+                alt="Sacred Intuitive Art"
+              >
+                Lynn Hanford Day - Sacred Intuitive Art
+              </a>
+            </p>
+          </div>{" "}
+          <Link to="/contact">
+            <button className="footer-button">GET IN TOUCH</button>
+          </Link>
+          <div className="credit-mobiles">
+            <p>
+              Website built by{" "}
+              <a
+                href="https://www.sacredintuitiveart.com/about"
+                alt="Anna-Rose Wain | Front-end Developer"
+              >
+                {" "}
+                Anna-Rose Wain{" "}
+              </a>{" "}
+              | Artwork by{" "}
+              <a
+                href="https://www.sacredintuitiveart.com/about"
+                alt="Sacred Intuitive Art"
+              >
+                Lynn Hanford Day - Sacred Intuitive Art
+              </a>
+            </p>
+          </div>{" "}
         </div>
       </div>
 
-      <div className="book-class">
-        {" "}
-        <Link to="/contact">
-          <button className="footer-button">GET IN TOUCH</button>
-        </Link>
-      </div>
       <div className="all-pages">
         <div className="list">
           <h3>services</h3>
