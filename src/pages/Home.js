@@ -47,7 +47,7 @@ export default function Home() {
       {isMobile ? (
         <div className="mobile-home-container">
           <div className="mobile-header">
-            <h1>Return To The Source</h1>
+            <h1>Transform from the Inside Out</h1>
             <h3>Breath - Mind - Body</h3>
           </div>
 
@@ -75,7 +75,7 @@ export default function Home() {
           <Socials />
           <GetInTouch link="/contact" />
           <div className="home-header">
-            <h1>Return to the Source</h1>
+            <h1>Transform from the Inside Out</h1>
             <h3>Breath - Mind - Body</h3>
           </div>
           <BlurryBackgroundImage
