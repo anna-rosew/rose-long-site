@@ -49,15 +49,15 @@
   line-height: 25px;
   letter-spacing: 0.3px;
   color: white;
-  position: relative; /* Necessary for absolute positioning of pseudo-element */
-  padding: 5px 0; /* Space above and below text */
+  position: relative; 
+  padding: 5px 0; 
 }
 
 .all-pages a {
   color: white;
-  text-decoration: none; /* Remove default underline */
-  position: relative; /* For positioning pseudo-element */
-  display: inline-block; /* Ensure that the pseudo-element is positioned correctly */
+  text-decoration: none;
+  position: relative; 
+  display: inline-block; 
 }
 
 .logo-footer a {
@@ -69,15 +69,15 @@
   content: "";
   position: absolute;
   left: 0;
-  bottom: -5px; /* Position below the text */
+  bottom: -5px;
   width: 0;
-  height: 2px; /* Thickness of the sliding line */
-  background: white; /* Color of the sliding line */
-  transition: width 0.3s ease; /* Smooth animation */
+  height: 2px;
+  background: white;
+  transition: width 0.3s ease;
 }
 
 .all-pages a:hover::after {
-  width: 100%; /* Expand line to full width on hover */
+  width: 100%;
 }
 
 @media (max-width: 768px) {
