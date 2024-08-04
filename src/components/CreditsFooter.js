@@ -31,29 +31,10 @@ export default function CreditsFooter() {
               <img src={VimeoIcon} alt="Vimeo" />
             </a>
           </div>
-          <div className="credits">
-            <p>
-              Website built by{" "}
-              <a
-                href="https://www.sacredintuitiveart.com/about"
-                alt="Anna-Rose Wain | Front-end Developer"
-              >
-                {" "}
-                Anna-Rose Wain{" "}
-              </a>{" "}
-              | Artwork by{" "}
-              <a
-                href="https://www.sacredintuitiveart.com/about"
-                alt="Sacred Intuitive Art"
-              >
-                Lynn Hanford Day - Sacred Intuitive Art
-              </a>
-            </p>
-          </div>{" "}
           <Link to="/contact">
             <button className="footer-button">GET IN TOUCH</button>
           </Link>
-          <div className="credit-mobiles">
+          <div className="credits">
             <p>
               Website built by{" "}
               <a
