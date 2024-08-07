@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Burger from "./Burger";
 import "../../styles/NavBar.css";
-import Logo from "../../styles/imgs/icons/logo2_black.svg";
-
+import Logo from "../../styles/imgs/icons/logo3_black.svg";
 const Nav = styled.nav`
   width: 1100px;
   height: 150px;
@@ -13,8 +12,10 @@ const Nav = styled.nav`
   align-items: center;
 
   .site-logo {
-    height: 60px;
+    height: 150px;
     color: black;
+    margin-top: 30px;
+    margin-left: 30px;
   }
 
   @media (max-width: 768px) {
