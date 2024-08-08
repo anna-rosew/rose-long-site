@@ -43,7 +43,7 @@ export default function Home() {
   const heroImageOverlaySrc = require("../styles/imgs/permanent/hero-image-overlay.png");
 
   return (
-    <div className="container Home">
+    <div className="Home">
       {isMobile ? (
         <div className="mobile-home-container">
           <div className="mobile-header">

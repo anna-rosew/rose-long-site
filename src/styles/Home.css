@@ -3,8 +3,7 @@
 }
 
 .home-header {
-  margin: 0;
-  padding-right: 85px;
+  margin: 0 auto;
 }
 
 .home-header h1 {
@@ -22,9 +21,8 @@
 }
 
 .button-center {
-  margin-right: 85px;
-  margin-top: 30px;
-  margin-bottom: 70px;
+  display: block;
+  margin: 50px auto;
 }
 
 .hero-image-container {
@@ -32,10 +30,16 @@
   background-size: cover;
   background-position: center;
   height: 450px;
-  margin: 10px 270px 10px 200px;
+  padding-left: 350px;
+  margin: 10px 350px;
   border-radius: 23px;
   transition: opacity 1.5s ease, transform 3s ease-in-out;
   position: relative;
+}
+
+.desktop {
+  text-align: center;
+  margin: 0 auto;
 }
 
 @media (min-width: 769px) {

@@ -1,13 +1,16 @@
 .credits-footer {
-  padding: 50px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 100px; /* Adjust the gap value as needed */
+  /* Adjust the gap value as needed */
   width: 100%;
-  margin-top: 30px 0px 0px 0px;
-
+  margin-top: 30px;
   background-color: #862b0d;
   color: white;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  padding: 30px;
 }
 
 .credits-footer p {
