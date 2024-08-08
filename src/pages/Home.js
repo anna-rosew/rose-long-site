@@ -47,7 +47,7 @@ export default function Home() {
       {isMobile ? (
         <div className="mobile-home-container">
           <div className="mobile-header">
-            <h3>Breath - Mind - Body</h3>
+            <h1>Breath - Mind - Body</h1>
           </div>
 
           <div className="image-container-mobile">
@@ -57,9 +57,11 @@ export default function Home() {
               className="hero-image-container"
             />
           </div>
-          <Link to="/work">
-            <button className="general-button">Start Your Journey</button>
-          </Link>
+          <div className="button-center">
+            <Link to="/work">
+              <button className="general-button">Start Your Journey</button>
+            </Link>
+          </div>
           <div className="journey-container"></div>
           <div className="blog-home">
             {posts.map((post, index) => (
