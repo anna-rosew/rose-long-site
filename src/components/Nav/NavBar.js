@@ -7,14 +7,14 @@ const Nav = styled.nav`
   height: 150px;
   padding: 0 20px;
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Centers the entire content */
   align-items: center;
   position: relative;
 
   .logo {
     position: absolute;
     top: 0;
-    left: 20px;
+    left: 20px; /* Keeps the logo on the left on desktop */
   }
 
   .site-logo {
@@ -24,16 +24,17 @@ const Nav = styled.nav`
 
   @media (max-width: 768px) {
     height: 100px;
-    justify-content: space-between;
+    justify-content: center; /* Centers everything on mobile */
 
     .logo {
-      position: static;
+      position: relative;
+      margin: 0 auto; /* Centers the logo */
+      left: 0; /* Resets the left position */
     }
 
     .site-logo {
       height: 60px;
-      margin-left: 0;
-      margin-top: 10px;
+      margin-top: 0;
     }
   }
 `;

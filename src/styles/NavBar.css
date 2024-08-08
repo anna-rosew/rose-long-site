@@ -4,6 +4,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  left: 20px; /* Keeps the logo on the left on desktop */
 }
 
 .site-logo {
@@ -30,7 +36,7 @@
   height: 2px;
   width: 0;
   background-color: black;
-  transition: width 0.3s ease; /* This controls the slide animation */
+  transition: width 0.3s ease;
 }
 
 .menu-link:hover::after {
@@ -59,17 +65,22 @@
 
 @media (max-width: 768px) {
   .NavBar {
-    padding: 0px;
-    width: 100%;
+    padding: 0;
     height: 100px;
-    justify-content: space-between;
+    justify-content: center;
+  }
+
+  .logo {
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 
   .site-logo {
     height: 60px;
-    text-align: center;
-    margin-left: 0;
-    margin-top: 10px;
+    margin: 0;
     content: url("./imgs/icons/logo2_black.svg");
   }
 
