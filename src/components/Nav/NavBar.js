@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Burger from "./Burger";
 import "../../styles/NavBar.css";
-import Logo from "../../styles/imgs/icons/logo3_black.svg";
+
 const Nav = styled.nav`
-  width: 1100px;
+  width: 100%;
   height: 150px;
   padding: 0 20px;
   display: flex;
@@ -26,6 +26,9 @@ const Nav = styled.nav`
 
     .site-logo {
       height: 60px;
+      text-align: center;
+      margin-left: 0;
+      margin-top: 10px;
     }
   }
 `;
@@ -46,7 +49,7 @@ export default function NavBar() {
       <Nav>
         <div className="logo">
           <a href="/" className="site-logo">
-            <img src={Logo} alt="Rose Long Logo" className="site-logo" />
+            <img src="" alt="Rose Long Logo" className="site-logo" />
           </a>
         </div>
         <Burger
@@ -57,5 +60,4 @@ export default function NavBar() {
       </Nav>
     </div>
   );
-  
 }

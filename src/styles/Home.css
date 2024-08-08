@@ -18,10 +18,13 @@
 .home-header h3 {
   opacity: 70%;
   margin: 0;
+  font-size: 20px;
 }
 
 .button-center {
   margin-right: 85px;
+  margin-top: 30px;
+  margin-bottom: 70px;
 }
 
 .hero-image-container {

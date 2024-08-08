@@ -4,7 +4,8 @@
   grid-template-columns: 1fr 1fr;
   gap: 100px; /* Adjust the gap value as needed */
   width: 100%;
-  margin-top: 30px;
+  margin-top: 30px 0px 0px 0px;
+
   background-color: #862b0d;
   color: white;
 }
@@ -47,7 +48,7 @@ button:hover {
   display: grid;
   grid-template-columns: 1fr auto; /* Ensure button is at the end */
   align-items: center;
-  gap: 20px; /* Adjust the gap value as needed */
+  gap: 10px; /* Adjust the gap value as needed */
 }
 
 .site-logo-footer {
@@ -122,11 +123,11 @@ button:hover {
 @media (max-width: 768px) {
   .credits-footer {
     text-align: center;
-    width: 90vw;
+    width: 100%;
     margin: 100px 0px 0px 0px;
     grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 20px;
+    gap: 5px;
+    padding: 1px;
   }
 
   .logo-footer {

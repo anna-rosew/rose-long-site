@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../styles/App.css";
 import "../styles/Home.css";
-import Socials from "../components/Socials";
-import GetInTouch from "../components/GetInTouch";
+//import Socials from "../components/Socials";
+//import GetInTouch from "../components/GetInTouch";
 import BlogBlock from "../components/BlogBlock";
 import BlurryBackgroundImage from "../components/BlurryBackgroundImg";
 import "../styles/Blog.css";
@@ -71,8 +71,6 @@ export default function Home() {
         </div>
       ) : (
         <div className="desktop">
-          <Socials />
-          <GetInTouch link="/contact" />
           <div className="home-header">
             <h3>Breath - Mind - Body</h3>
           </div>
@@ -91,3 +89,5 @@ export default function Home() {
     </div>
   );
 }
+
+// <Socials /> <GetInTouch link="/contact" />
