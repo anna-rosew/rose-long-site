@@ -6,7 +6,7 @@ import OnlineGroupsSlider from "../components/OnlineGroupsSlider";
 import "../styles/App.css";
 import "../styles/Groups.css";
 import Online from "../styles/imgs/permanent/online-groups-photo.png";
-import InPerson from "../styles/imgs/permanent/in-person-groups.png";
+import InPerson from "../styles/imgs/permanent/inPersonGroups.png";
 import Retreat from "../styles/imgs/permanent/retreats-photo.png";
 import Workshop1 from "../styles/imgs/photos/workshop3.png";
 import Workshop2 from "../styles/imgs/photos/home-studio3.png";

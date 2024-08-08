@@ -63,27 +63,35 @@ const RightNav = ({ open, closeMenu }) => {
   return (
     <Ul open={open}>
       <li>
-        <Link to="/" className="menu-link" onClick={closeMenu}>
+        <Link to="/" className="menu-link home-link" onClick={closeMenu}>
           Home
         </Link>
       </li>
       <li>
-        <Link to="/work" className="menu-link" onClick={closeMenu}>
+        <Link to="/work" className="menu-link work-link" onClick={closeMenu}>
           Work With Rose
         </Link>
       </li>
       <li>
-        <Link to="/about" className="menu-link" onClick={closeMenu}>
+        <Link to="/about" className="menu-link about-link" onClick={closeMenu}>
           About
         </Link>
       </li>
       <li>
-        <Link to="/contact" className="menu-link" onClick={closeMenu}>
+        <Link
+          to="/contact"
+          className="menu-link contact-link"
+          onClick={closeMenu}
+        >
           Contact
         </Link>
       </li>
       <li>
-        <Link to="/membership" className="menu-link" onClick={closeMenu}>
+        <Link
+          to="/membership"
+          className="menu-link membership-link"
+          onClick={closeMenu}
+        >
           Membership
         </Link>
       </li>

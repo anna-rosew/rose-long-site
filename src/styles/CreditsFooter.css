@@ -9,6 +9,10 @@
   color: white;
 }
 
+.credits-footer p {
+  font-size: 12px;
+}
+
 .footer-button {
   padding: 10px 20px;
   border-radius: 17px;
