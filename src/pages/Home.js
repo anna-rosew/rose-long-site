@@ -72,7 +72,7 @@ export default function Home() {
       ) : (
         <div className="desktop">
           <div className="home-header">
-            <h3>Breath - Mind - Body</h3>
+            <h1>Breath - Mind - Body</h1>
           </div>
           <BlurryBackgroundImage
             src={heroImageSrc}

@@ -9,7 +9,8 @@
 
 .logo {
   position: absolute;
-  left: 20px; /* Keeps the logo on the left on desktop */
+  left: 20px;
+  margin-left: 100px; /* Keeps the logo on the left on desktop */
 }
 
 .site-logo {

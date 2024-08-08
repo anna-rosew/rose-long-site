@@ -7,11 +7,11 @@
 }
 
 .home-header h1 {
-  font-size: 40px;
-  font-family: "neato-serif", sans-serif;
+  font-family: "Jomolhari", serif;
   font-weight: 400;
   font-style: normal;
-  margin: 0;
+  font-size: 40px;
+  margin: 0 auto;
 }
 
 .home-header h3 {
@@ -22,7 +22,7 @@
 
 .button-center {
   display: block;
-  margin: 50px auto;
+  margin: 30px auto;
 }
 
 .hero-image-container {
