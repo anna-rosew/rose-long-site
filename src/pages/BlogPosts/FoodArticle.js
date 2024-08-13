@@ -166,7 +166,7 @@ export default function FoodArticle() {
         </p>
       </div>
       <div className="article-bottom-buttons">
-        <Link to="/blog" className="back-button">
+        <Link to="/SelfArticle" className="back-button">
           MORE CONTENT
         </Link>
         <Link to="/work" className="journey-button">

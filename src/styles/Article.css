@@ -131,6 +131,46 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
+/* CSS for the star bullets in the short article page */
+.article-list {
+  list-style: none; /* Remove default bullets */
+  padding: 0;
+  margin: 0;
+}
+
+.article-list li {
+  position: relative;
+  padding-left: 40px; /* Space for the bullet */
+  margin-bottom: 20px; /* Space between list items */
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0.3px;
+}
+
+.article-list li::before {
+  content: ""; /* Empty content for the custom bullet */
+  position: absolute;
+  left: 0; /* Position the bullet at the start of the sentence */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px; /* Adjust the size as needed */
+  height: 20px; /* Adjust the size as needed */
+  background-image: url("../styles/imgs/icons/star.svg"); /* Path to your custom bullet image */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.article-list li p {
+  margin: 0; /* Remove default margins */
+}
+
+/* Make the first sentence bold */
+.article-list li p:first-of-type {
+  font-weight: 700; /* Bold text */
+}
 
 .article-subheading {
   font-family: "Jost", sans-serif;

@@ -15,6 +15,7 @@ import Blog from "./pages/Blog";
 import Qualifications from "./pages/Qualifications";
 import InPerson from "./pages/InPerson";
 import FoodArticle from "./pages/BlogPosts/FoodArticle";
+import SelfArticle from "./pages/BlogPosts/SelfAwarenessAug";
 
 import NavBar from "./components/Nav/NavBar";
 import CreditsFooter from "./components/CreditsFooter";
@@ -42,6 +43,7 @@ function App() {
 
         <Route path="/blog" element={<Blog />} />
         <Route path="/foodarticle" element={<FoodArticle />} />
+        <Route path="/selfarticle" element={<SelfArticle />} />
       </Routes>{" "}
       <CreditsFooter />
     </div>
