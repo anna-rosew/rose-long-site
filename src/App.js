@@ -14,7 +14,7 @@ import Membership from "./pages/MembershipLanding";
 import Blog from "./pages/Blog";
 import Qualifications from "./pages/Qualifications";
 import InPerson from "./pages/InPerson";
-import FoodArticle from "./pages/BlogPosts/ShortBlogArticleTemp";
+import FoodArticle from "./pages/BlogPosts/FoodArticle";
 
 import NavBar from "./components/Nav/NavBar";
 import CreditsFooter from "./components/CreditsFooter";

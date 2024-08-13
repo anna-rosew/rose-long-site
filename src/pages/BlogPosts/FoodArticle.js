@@ -1,23 +1,12 @@
 import React, { useState } from "react";
 import "../../styles/App.css";
-import "../../styles/ArticleShort.css";
+import "../../styles/Article.css";
 import BlurryImage from "../../components/BlurryImage";
 import FoodImg from "../../styles/imgs/blog/food_blog.png";
 import FoodImg2 from "../../styles/imgs/blog/food_blog2.png";
-import arrow from "../../styles/imgs/icons/arrow-next.svg";
 
 export default function FoodArticle() {
   const [copied, setCopied] = useState(false);
-
-  const onClick = () => {
-    window.location.href = "#introduction";
-  };
-  const onClick2 = () => {
-    window.location.href = "#self-awareness";
-  };
-  const onClick3 = () => {
-    window.location.href = "#inside-out";
-  };
 
   const handleCopy = () => {
     navigator.clipboard
@@ -83,26 +72,8 @@ export default function FoodArticle() {
             Unsplash
           </a>
         </p>
-        <div className="article-intro">
-          <div className="contents">
-            <h3>CONTENTS:</h3>
-            <ul>
-              <li className="contents-link" onClick={onClick}>
-                Introduction
-                <img src={arrow} alt="arrow" className="arrow-nav" />
-              </li>
-              <li className="contents-link" onClick={onClick2}>
-                Deepening Self-Awareness
-                <img src={arrow} alt="arrow" className="arrow-nav" />
-              </li>
-              <li className="contents-link" onClick={onClick3}>
-                From Inside Out
-                <img src={arrow} alt="arrow" className="arrow-nav" />
-              </li>
-            </ul>
-          </div>
+        <div className="article-intro-short">
           <div className="article-intro-text" id="introduction">
-            <h2 className="article-subheading">Introduction</h2>
             <p>
               Awareness is the key - being aware of your thoughts and emotions,
               being aware of your energy levels, how you feel in your body, all
@@ -136,67 +107,28 @@ export default function FoodArticle() {
             breathe.  The breath is your greatest ally in life, experience its
             power for yourself.
           </p>
+        </div>
+        <div className="article-highlight">
           <p>
             When you feel stuck breathe deeply and ask yourself, 'what small
             steps can I take today?’.
           </p>
         </div>
-        <div className="article-section" id="self-awareness">
-          <h2 className="article-subheading">
-            The Challenge of Deepening your Self Awareness
-          </h2>
-          <p>
-            Contrary to popular belief, Lorem Ipsum is not simply random text.
-            It has roots in a piece of classical Latin literature from 45 BC,
-            making it over 2000 years old. Richard McClintock, a Latin professor
-            at Hampden-Sydney College in Virginia, looked up one of the more
-            obscure Latin words, consectetur, from a Lorem Ipsum passage, and
-            going through the cites of the word in classical literature,
-            discovered the undoubtable source. Lorem Ipsum comes from sections
-            1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes
-            of Good and Evil) by Cicero, written in 45 BC. This book is a
-            treatise on the theory of ethics, very popular during the
-            Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit
-            amet..", comes from a line in section 1.10.32. The standard chunk of
-            Lorem Ipsum used since the 1500s is reproduced below for those
-            interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et
-            Malorum" by Cicero are also reproduced in their exact original form,
-            accompanied by English versions from the 1914 translation by H.
-            Rackham.
-          </p>
-        </div>
-        <div className="article-section" id="inside-out">
-          <h2 className="article-subheading">
-            Moving from Outside In to Inside Out
-          </h2>
-          <p>
-            Contrary to popular belief, Lorem Ipsum is not simply random text.
-            It has roots in a piece of classical Latin literature from 45 BC,
-            making it over 2000 years old. Richard McClintock, a Latin professor
-            at Hampden-Sydney College in Virginia, looked up one of the more
-            obscure Latin words, consectetur, from a Lorem Ipsum passage, and
-            going through the cites of the word in classical literature,
-            discovered the undoubtable source. Lorem Ipsum comes from sections
-            1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes
-            of Good and Evil) by Cicero, written in 45 BC. This book is a
-            treatise on the theory of ethics, very popular during the
-            Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit
-            amet..", comes from a line in section 1.10.32. The standard chunk of
-            Lorem Ipsum used since the 1500s is reproduced below for those
-            interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et
-            Malorum" by Cicero are also reproduced in their exact original form,
-            accompanied by English versions from the 1914 translation by H.
-            Rackham.
-          </p>
-        </div>
-        <div className="article-highlight">
-          <p>
-            Contrary to popular belief, Lorem Ipsum is not simply random text.
-            It has roots in a piece of classical Latin literature from 45 BC,
-            making it over 2000 years old. Richard McClintock, a Latin professor
-            at Hampden-Sydney College in Virginia.
-          </p>
-        </div>
+        <p>
+          Choose what works for you. It’s as simple and as challenging as that.
+        </p>
+        <p>
+          The first step is awareness - become aware of what works for you and
+          what doesn't.  And then practice choosing what works.  It is a
+          practice, not a destination.
+        </p>
+        <p>
+          Progress not perfection - we've been told 'practice makes perfect',
+          but does it?  In my experience life is about progress not perfection. 
+          When I'm engaged in the enquiry of how I can progress, I remain open
+          and curious.  When I'm attached to finding perfection I become
+          judgemental and controlling.
+        </p>
         <div className="featured-image">
           <div className="featured-image-container">
             <BlurryImage
@@ -216,6 +148,19 @@ export default function FoodArticle() {
             </a>
           </p>
         </div>
+        <p>
+          Show up and keep it in the day - stay present as much as you can
+          today, and you'll learn what there is for you to learn today.  The
+          breath is the fastest way to step into the present.
+        </p>
+        <p>
+          When you find yourself ruminating on the past or projecting into the
+          future, breathe and come into the here and now... that is where the
+          miracle is happening.
+        </p>
+        <p>
+          <strong>What are you committed to today in your explorations?</strong>
+        </p>
       </div>
     </div>
   );
