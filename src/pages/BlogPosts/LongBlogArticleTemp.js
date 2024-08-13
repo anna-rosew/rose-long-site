@@ -6,7 +6,7 @@ import FoodImg from "../../styles/imgs/blog/food_blog.png";
 import FoodImg2 from "../../styles/imgs/blog/food_blog2.png";
 import arrow from "../../styles/imgs/icons/arrow-next.svg";
 
-export default function BlogArticleTemp() {
+export default function LongArticleTemplate() {
   const [copied, setCopied] = useState(false);
 
   const onClick = () => {
