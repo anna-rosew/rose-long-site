@@ -6,7 +6,7 @@ import FoodImg from "../../styles/imgs/blog/food_blog.png";
 import FoodImg2 from "../../styles/imgs/blog/food_blog2.png";
 import arrow from "../../styles/imgs/icons/arrow-next.svg";
 
-export default function LongArticleTemplate() {
+export default function ShortArticleTemplate() {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
@@ -25,7 +25,7 @@ export default function LongArticleTemplate() {
     <div className="container">
       <div className="blog-article">
         <h3 className="subtitle">
-          <strong>ARTICLE: </strong>LONG READ
+          <strong>ARTICLE: </strong>SHORT READ
         </h3>
         <h1>Learning to Make Healthy Choices Around Food</h1>
         <p className="article-summary">
