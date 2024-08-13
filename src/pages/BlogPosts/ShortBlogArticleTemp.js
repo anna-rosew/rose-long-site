@@ -9,16 +9,6 @@ import arrow from "../../styles/imgs/icons/arrow-next.svg";
 export default function LongArticleTemplate() {
   const [copied, setCopied] = useState(false);
 
-  const onClick = () => {
-    window.location.href = "#introduction";
-  };
-  const onClick2 = () => {
-    window.location.href = "#self-awareness";
-  };
-  const onClick3 = () => {
-    window.location.href = "#inside-out";
-  };
-
   const handleCopy = () => {
     navigator.clipboard
       .writeText(window.location.href)
@@ -77,19 +67,18 @@ export default function LongArticleTemplate() {
           <div className="contents">
             <h3>CONTENTS:</h3>
             <ul>
-              <li className="contents-link" onClick={onClick}>
+              <li className="contents-link">
                 Introduction
                 <img src={arrow} alt="arrow" className="arrow-nav" />
               </li>
-              <li className="contents-link" onClick={onClick2}>
+              <li className="contents-link">
                 Deepening your Self Awareness
                 <img src={arrow} alt="arrow" className="arrow-nav" />
               </li>
-              <li className="contents-link" onClick={onClick3}>
+              <li className="contents-link">
                 Introduction
                 <img src={arrow} alt="arrow" className="arrow-nav" />
               </li>
-              {/* Add more list items as needed */}
             </ul>
           </div>
           <div className="article-intro-text">
