@@ -26,7 +26,7 @@ export default function FoodArticle() {
     <div className="container">
       <div className="blog-article">
         <h3 className="subtitle">
-          <strong>ARTICLE: </strong>LONG READ
+          <strong>ARTICLE: </strong>SHORT READ
         </h3>
         <h1>Learning to Make Healthy Choices Around Food</h1>
         <p className="article-summary">
