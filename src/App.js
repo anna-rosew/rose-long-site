@@ -14,7 +14,7 @@ import Membership from "./pages/MembershipLanding";
 import Blog from "./pages/Blog";
 import Qualifications from "./pages/Qualifications";
 import InPerson from "./pages/InPerson";
-import FoodArticle from "./pages/BlogPosts/FoodArticle";
+import FoodArticle from "./pages/BlogPosts/ShortBlogArticleTemp";
 
 import NavBar from "./components/Nav/NavBar";
 import CreditsFooter from "./components/CreditsFooter";
@@ -36,11 +36,12 @@ function App() {
         <Route path="/onetoone" element={<OneToOne />} />
         <Route path="/retreats" element={<Retreats />} />
         <Route path="/membership" element={<Membership />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/foodarticle" element={<FoodArticle />} />
         <Route path="/qualifications" element={<Qualifications />} />
         <Route path="/inperson" element={<InPerson />} />
         <Route path="*" element={<NotPage />} />
+
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/foodarticle" element={<FoodArticle />} />
       </Routes>{" "}
       <CreditsFooter />
     </div>

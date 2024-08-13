@@ -4,7 +4,6 @@ import "../../styles/Article.css";
 import BlurryImage from "../../components/BlurryImage";
 import FoodImg from "../../styles/imgs/blog/food_blog.png";
 import FoodImg2 from "../../styles/imgs/blog/food_blog2.png";
-import arrow from "../../styles/imgs/icons/arrow-next.svg";
 
 export default function ShortArticleTemplate() {
   const [copied, setCopied] = useState(false);
@@ -63,24 +62,7 @@ export default function ShortArticleTemplate() {
             </div>
           </div>
         </div>
-        <div className="article-intro">
-          <div className="contents">
-            <h3>CONTENTS:</h3>
-            <ul>
-              <li className="contents-link">
-                Introduction
-                <img src={arrow} alt="arrow" className="arrow-nav" />
-              </li>
-              <li className="contents-link">
-                Deepening your Self Awareness
-                <img src={arrow} alt="arrow" className="arrow-nav" />
-              </li>
-              <li className="contents-link">
-                Introduction
-                <img src={arrow} alt="arrow" className="arrow-nav" />
-              </li>
-            </ul>
-          </div>
+        <div className="article-intro-short">
           <div className="article-intro-text">
             <h2 className="article-subheading" id="introduction">
               Introduction

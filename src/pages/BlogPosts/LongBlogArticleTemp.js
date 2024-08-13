@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../../styles/App.css";
-import "../../styles/ArticleLong.css";
+import "../../styles/Article.css";
 import BlurryImage from "../../components/BlurryImage";
 import FoodImg from "../../styles/imgs/blog/food_blog.png";
 import FoodImg2 from "../../styles/imgs/blog/food_blog2.png";
@@ -89,7 +89,6 @@ export default function LongArticleTemplate() {
                 Introduction
                 <img src={arrow} alt="arrow" className="arrow-nav" />
               </li>
-              {/* Add more list items as needed */}
             </ul>
           </div>
           <div className="article-intro-text">
