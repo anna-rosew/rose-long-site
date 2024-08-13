@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../../styles/App.css";
-import "../../styles/Article.css";
+import "../../styles/ArticleLong.css";
 import BlurryImage from "../../components/BlurryImage";
 import FoodImg from "../../styles/imgs/blog/food_blog.png";
 import FoodImg2 from "../../styles/imgs/blog/food_blog2.png";
