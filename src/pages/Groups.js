@@ -8,9 +8,8 @@ import "../styles/Groups.css";
 import Online from "../styles/imgs/permanent/online-groups-photo.png";
 import InPerson from "../styles/imgs/permanent/inPersonGroups.png";
 import Retreat from "../styles/imgs/permanent/retreats-photo.png";
-import Workshop1 from "../styles/imgs/photos/workshop3.png";
+import Workshop1 from "../styles/imgs/photos/workshop2.png";
 import Workshop2 from "../styles/imgs/photos/home-studio3.png";
-
 import Location from "../styles/imgs/icons/location_line.svg";
 import Calender from "../styles/imgs/icons/calander_white.svg";
 import LocationBlack from "../styles/imgs/icons/location_black.svg";
