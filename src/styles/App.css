@@ -101,7 +101,6 @@ button:hover {
   overflow: hidden;
   max-width: 100%;
   background: none;
-  border-radius: 45px;
   z-index: 900;
 }
 

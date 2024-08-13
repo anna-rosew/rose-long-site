@@ -11,7 +11,7 @@ export default function Approach() {
       <h1>Approach</h1>
       <div className="player-wrapper">
         <iframe
-          src="https://player.vimeo.com/video/981928855?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          src="https://player.vimeo.com/video/998274144?h=ac7caa69a3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
           width="960"
           height="540"
           frameborder="0"
