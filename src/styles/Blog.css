@@ -1,6 +1,4 @@
 .blog-page {
-  padding: 20px;
-  margin-left: 50px;
   text-align: left;
 }
 
@@ -13,12 +11,13 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
-  margin-top: 50px;
+  margin: 50px auto;
+  width: 100%;
+  padding: 10px;
 }
 
 .blog-heading {
   text-align: left;
-  padding-left: 70px;
 }
 
 .blog-type-icon {
@@ -29,10 +28,9 @@
 }
 
 .blog-type-icon-block {
-  height: 50px;
-  position: absolute;
-  top: -30px;
-  right: 0;
+  height: 40px;
+  display: inline-block;
+  padding-bottom: 20px; /* Ensure it layers correctly */
 }
 
 .blog-arrow-icon {
@@ -52,7 +50,7 @@
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../styles/imgs/photos/beach-cove.png") center/cover;
   height: 500px;
-  width: 100%;
+  width: 95%;
   border-radius: 20px;
   padding: 30px;
   color: white;
@@ -161,7 +159,7 @@
 }
 
 .block-header {
-  margin: 100px 0 20px 0;
+  margin: 80px 0 20px 0;
   padding-right: 40px;
 }
 
@@ -199,7 +197,7 @@
   }
 
   .blog-block {
-    width: 85%;
+    width: 100%;
     height: 200px;
     padding: 20px;
   }
