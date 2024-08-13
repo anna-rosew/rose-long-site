@@ -4,7 +4,7 @@ import "../../styles/Article.css";
 import BlurryImage from "../../components/BlurryImage";
 import FoodImg from "../../styles/imgs/blog/food_blog.png";
 import FoodImg2 from "../../styles/imgs/blog/food_blog2.png";
-import arrowIcon from "../../styles/imgs/icons/arrow-next.svg";
+
 import { Link } from "react-router-dom";
 
 export default function FoodArticle() {
@@ -167,8 +167,10 @@ export default function FoodArticle() {
       </div>
       <div className="article-bottom-buttons">
         <Link to="/blog" className="back-button">
-          MORE CONTENT{" "}
-          <img src={arrowIcon} className="blog-arrow" alt="Arrow" />
+          MORE CONTENT
+        </Link>
+        <Link to="/work" className="journey-button">
+          START YOUR JOURNEY
         </Link>
       </div>
     </div>

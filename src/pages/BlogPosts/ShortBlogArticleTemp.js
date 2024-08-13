@@ -4,6 +4,7 @@ import "../../styles/Article.css";
 import BlurryImage from "../../components/BlurryImage";
 import FoodImg from "../../styles/imgs/blog/food_blog.png";
 import FoodImg2 from "../../styles/imgs/blog/food_blog2.png";
+import { Link } from "react-router-dom";
 
 export default function ShortArticleTemplate() {
   const [copied, setCopied] = useState(false);
@@ -180,6 +181,14 @@ export default function ShortArticleTemplate() {
             </a>
           </p>
         </div>
+      </div>
+      <div className="article-bottom-buttons">
+        <Link to="/blog" className="back-button">
+          MORE CONTENT
+        </Link>
+        <Link to="/work" className="journey-button">
+          START YOUR JOURNEY
+        </Link>
       </div>
     </div>
   );

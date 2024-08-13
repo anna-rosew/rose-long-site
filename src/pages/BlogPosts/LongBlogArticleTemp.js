@@ -5,6 +5,7 @@ import BlurryImage from "../../components/BlurryImage";
 import FoodImg from "../../styles/imgs/blog/food_blog.png";
 import FoodImg2 from "../../styles/imgs/blog/food_blog2.png";
 import arrow from "../../styles/imgs/icons/arrow-next.svg";
+import { Link } from "react-router-dom";
 
 export default function LongArticleTemp() {
   const [copied, setCopied] = useState(false);
@@ -216,6 +217,14 @@ export default function LongArticleTemp() {
             </a>
           </p>
         </div>
+      </div>
+      <div className="article-bottom-buttons">
+        <Link to="/blog" className="back-button">
+          MORE CONTENT
+        </Link>
+        <Link to="/work" className="journey-button">
+          START YOUR JOURNEY
+        </Link>
       </div>
     </div>
   );
