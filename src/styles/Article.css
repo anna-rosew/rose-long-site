@@ -1,5 +1,7 @@
 .blog-article {
   text-align: left;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+  margin-bottom: 20px;
 }
 
 .article-summary {
@@ -175,6 +177,40 @@
 
 .image-caption a {
   color: black;
+}
+
+.article-bottom-buttons {
+  text-align: left;
+}
+.back-button {
+  display: inline-flex; /* Use inline-flex to size to content and align items */
+  align-items: center; /* Center the text and icon vertically */
+  padding: 10px 15px; /* Adjust padding as needed */
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-align: left;
+  color: black;
+  border: 1px solid black;
+  border-radius: 15px;
+
+  background-color: transparent;
+  text-decoration: none; /* Remove underline */
+}
+
+.back-button:hover {
+  text-decoration: underline; /* Ensure no underline on hover */
+}
+
+.blog-arrow {
+  height: 20px;
+  margin-left: 10px; /* Space between text and arrow */
+  transition: transform 0.3s ease;
+}
+
+.back-button:hover .blog-arrow {
+  transform: scale(1.2); /* Optional: Scale up the arrow slightly on hover */
 }
 
 @media (max-width: 768px) {

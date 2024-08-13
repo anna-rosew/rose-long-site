@@ -4,6 +4,8 @@ import "../../styles/Article.css";
 import BlurryImage from "../../components/BlurryImage";
 import FoodImg from "../../styles/imgs/blog/food_blog.png";
 import FoodImg2 from "../../styles/imgs/blog/food_blog2.png";
+import arrowIcon from "../../styles/imgs/icons/arrow-next.svg";
+import { Link } from "react-router-dom";
 
 export default function FoodArticle() {
   const [copied, setCopied] = useState(false);
@@ -72,6 +74,7 @@ export default function FoodArticle() {
             Unsplash
           </a>
         </p>
+
         <div className="article-intro-short">
           <div className="article-intro-text" id="introduction">
             <p>
@@ -161,6 +164,12 @@ export default function FoodArticle() {
         <p>
           <strong>What are you committed to today in your explorations?</strong>
         </p>
+      </div>
+      <div className="article-bottom-buttons">
+        <Link to="/blog" className="back-button">
+          MORE CONTENT{" "}
+          <img src={arrowIcon} className="blog-arrow" alt="Arrow" />
+        </Link>
       </div>
     </div>
   );
