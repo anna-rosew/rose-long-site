@@ -1,6 +1,6 @@
 .contact h1 {
   text-align: left;
-  margin-left: 50px;
+  margin-left: 25px;
 }
 
 .contact h2 {
@@ -23,7 +23,7 @@
 }
 
 .grid-contact {
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1.5fr 1fr;
 }
 
 .stay-in-touch {
@@ -128,7 +128,7 @@
 
 .contact-image-container {
   display: block;
-  width: 470px;
+  width: 600px;
 }
 
 .contact-image-container img {

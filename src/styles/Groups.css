@@ -16,10 +16,6 @@ button {
   padding: 0;
 }
 
-.group-cards {
-  margin: 0px 100px;
-}
-
 .group-cards h2 {
   margin-bottom: 10px;
 }
@@ -220,7 +216,7 @@ button {
   object-fit: cover;
   height: 100%;
   display: block;
-  border-radius: 127px;
+  border-radius: 23px;
 }
 
 .in-person-overlay {
@@ -240,7 +236,7 @@ button {
   text-align: center;
   padding: 100px;
   box-sizing: border-box;
-  border-radius: 127px;
+  border-radius: 23px;
 }
 
 .in-person-img-container:hover .in-person-overlay {

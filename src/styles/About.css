@@ -1,12 +1,12 @@
 .About h2 {
   margin-bottom: 0px;
   font-size: 30px;
-  padding-left: 50px;
+
   text-align: left;
 }
 
 .About h1 {
-  margin-left: 100px;
+  margin-left: 50px;
   margin-top: 0px;
   font-size: 48px;
   text-align: left;
@@ -14,11 +14,10 @@
 
 .grid-meet-rose {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
 }
 
 .About p {
-  margin-left: 50px;
   text-align: left;
 }
 
@@ -46,7 +45,6 @@
 }
 
 .about-button-container {
-  margin-left: 30px;
   margin-top: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr;

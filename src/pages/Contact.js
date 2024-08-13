@@ -13,12 +13,6 @@ export default function Contact() {
         </div>
 
         <div className="grid grid-contact">
-          <BlurryImage
-            src={ContactImg}
-            className="contact-image-container img-responsive"
-            alt="Woman doing tree pose outside at sunrise."
-          />
-
           <div className="forms-container">
             <div className="contact-form-container">
               <h2>Get-In Touch</h2>
@@ -62,6 +56,11 @@ export default function Contact() {
               </div>
             </div>
           </div>
+          <BlurryImage
+            src={ContactImg}
+            className="contact-image-container img-responsive"
+            alt="Woman doing tree pose outside at sunrise."
+          />
         </div>
       </div>
     </div>
