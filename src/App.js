@@ -22,6 +22,7 @@ import RiskArticle from "./pages/BlogPosts/RiskAug24";
 import VoiceArticle from "./pages/BlogPosts/VoicesArticle";
 import SugarArticle from "./pages/BlogPosts/SugarArticle";
 import InsideOutArticle from "./pages/BlogPosts/InsideOutArticle";
+import HiddenTreasureArticle from "./pages/BlogPosts/HiddenTreasure";
 
 import NavBar from "./components/Nav/NavBar";
 import CreditsFooter from "./components/CreditsFooter";
@@ -54,6 +55,7 @@ function App() {
         <Route path="/voicearticle" element={<VoiceArticle />} />
         <Route path="/sugararticle" element={<SugarArticle />} />
         <Route path="/insidearticle" element={<InsideOutArticle />} />
+        <Route path="/hiddenarticle" element={<HiddenTreasureArticle />} />
       </Routes>{" "}
       <CreditsFooter />
     </div>
