@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "../../styles/App.css";
 import "../../styles/Article.css";
 import BlurryImage from "../../components/BlurryImage";
-import SugarImg from "../../styles/imgs/blog/sugar.png"; // Replace with actual image path
-import SweetenersImg from "../../styles/imgs/blog/sweeteners.png"; // Replace with actual image path
+import SugarImg from "../../styles/imgs/blog/sugar_blog.png"; // Replace with actual image path
+import SweetenersImg from "../../styles/imgs/blog/sugar_blog2.png"; // Replace with actual image path
 import { Link } from "react-router-dom";
 
 export default function SugarArticle() {
@@ -64,9 +64,6 @@ export default function SugarArticle() {
         </div>
         <div className="article-intro-short">
           <div className="article-intro-text">
-            <h2 className="article-subheading" id="introduction">
-              Introduction
-            </h2>
             <p>
               You may be able to take it or leave it, or it may have been your
               first true love. If you have a sweet tooth, sugar is a natural fix
@@ -94,7 +91,7 @@ export default function SugarArticle() {
               Here are some examples to give you a picture of what we're talking
               about here:
             </p>
-            <ul>
+            <ul className="article-list">
               <li>
                 A large single biscuit with 18g of sugar is equal to 4 1/2 cubes
                 of sugar.
@@ -144,7 +141,7 @@ export default function SugarArticle() {
               Glucose solids.
             </p>
             <p>Regardless of how they sound, the following are all sugar:</p>
-            <ul>
+            <ul className="article-list">
               <li>
                 Cane juice, Dehydrated cane juice, Cane juice solids, Cane juice
                 crystals
