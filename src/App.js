@@ -18,6 +18,7 @@ import InPerson from "./pages/InPerson";
 import FoodArticle from "./pages/BlogPosts/FoodArticle";
 import SelfArticle from "./pages/BlogPosts/SelfAwarenessAug";
 import RiskArticle from "./pages/BlogPosts/RiskAug24";
+import VoiceArticle from "./pages/BlogPosts/VoicesArticle";
 
 import NavBar from "./components/Nav/NavBar";
 import CreditsFooter from "./components/CreditsFooter";
@@ -47,6 +48,7 @@ function App() {
         <Route path="/foodarticle" element={<FoodArticle />} />
         <Route path="/selfarticle" element={<SelfArticle />} />
         <Route path="/riskarticle" element={<RiskArticle />} />
+        <Route path="/voicearticle" element={<VoiceArticle />} />
       </Routes>{" "}
       <CreditsFooter />
     </div>
