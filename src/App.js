@@ -15,11 +15,13 @@ import Blog from "./pages/Blog";
 import Qualifications from "./pages/Qualifications";
 import InPerson from "./pages/InPerson";
 
+//blog articles
 import FoodArticle from "./pages/BlogPosts/FoodArticle";
 import SelfArticle from "./pages/BlogPosts/SelfAwarenessAug";
 import RiskArticle from "./pages/BlogPosts/RiskAug24";
 import VoiceArticle from "./pages/BlogPosts/VoicesArticle";
 import SugarArticle from "./pages/BlogPosts/SugarArticle";
+import InsideOutArticle from "./pages/BlogPosts/InsideOutArticle";
 
 import NavBar from "./components/Nav/NavBar";
 import CreditsFooter from "./components/CreditsFooter";
@@ -51,6 +53,7 @@ function App() {
         <Route path="/riskarticle" element={<RiskArticle />} />
         <Route path="/voicearticle" element={<VoiceArticle />} />
         <Route path="/sugararticle" element={<SugarArticle />} />
+        <Route path="/insidearticle" element={<InsideOutArticle />} />
       </Routes>{" "}
       <CreditsFooter />
     </div>
