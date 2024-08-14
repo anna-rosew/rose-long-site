@@ -37,14 +37,14 @@ export default function RiskAug24() {
           <BlurryImage
             src={FoodImg}
             className="blog-cover-img"
-            alt="Conceptual image of a person letting go of balloons into the sky."
+            alt="The silhouette of a woman standing on rock in the dusk looking up into a starry sky."
           />
           <div className="overlay-row">
             <div style={{ display: "flex" }}>
               <div className="column" style={{ marginRight: "20px" }}>
                 <p>Written by</p>
                 <p>
-                  <strong>John Doe</strong>
+                  <strong>Rose Long</strong>
                 </p>
               </div>
               <div className="column">
@@ -62,11 +62,19 @@ export default function RiskAug24() {
             </div>
           </div>
         </div>
+        <p className="image-caption">
+          Image Courtesy of Neom via{" "}
+          <a
+            href="https://unsplash.com/photos/a-person-standing-in-the-middle-of-a-desert-at-night-GCrvnNHJAMo"
+            alt="unsplash"
+            rel="nonreferrer"
+          >
+            Unsplash
+          </a>
+        </p>
+
         <div className="article-intro-short">
           <div className="article-intro-text">
-            <h2 className="article-subheading" id="introduction">
-              Introduction
-            </h2>
             <p>
               It's common that when we commit to something, anything (or
               anyone), we consciously or unconsciously create an expectation.
@@ -85,18 +93,17 @@ export default function RiskAug24() {
         </div>
         <div className="main-article">
           <p>
-            Why? Because life rarely turns out the way I think it'&#39;'s going
-            to. I find if life does turn out the way I thought it would, I&#39;m
-            usually in my critical/shame story, gathering evidence about myself
-            or another and enjoying the satisfaction of being right. Painful and
+            Why? Because life rarely turns out the way I think it's going to. I
+            find if life does turn out the way I thought it would, I'm usually
+            in my critical/shame story, gathering evidence about myself or
+            another and enjoying the satisfaction of being right. Painful and
             yet strangely satisfying!
           </p>
           <p>
             To me, expectations are different from a vision. Where a vision is a
             guiding star, something that I move towards to orientate myself,
             (like a compass), expectations are a quiet fix - if that happens
-            I&#39;ll be happy/successful/attractive/healthy/add your own
-            version.
+            I'll be happy/successful/attractive/healthy/add your own version.
           </p>
         </div>
         <div className="article-section" id="expectations-vision">
@@ -139,9 +146,9 @@ export default function RiskAug24() {
             />
           </div>
           <p className="image-caption">
-            Image Courtesy of Megan via{" "}
+            Image Courtesy of Jan Tenneberg via{" "}
             <a
-              href="https://dribbble.com/shots/23565113-Minimal-blog-post-Untitled-UI"
+              href="https://unsplash.com/photos/blue-wooden-door-tVIv23vcuz4"
               alt="unsplash"
               rel="nonreferrer"
             >
