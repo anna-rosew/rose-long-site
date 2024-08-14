@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "../../styles/App.css";
 import "../../styles/Article.css";
 import BlurryImage from "../../components/BlurryImage";
-import TemptationImg from "../../styles/imgs/blog/temptation.png"; // Replace with actual image path
-import SupportImg from "../../styles/imgs/blog/support.png"; // Replace with actual image path
+import TemptationImg from "../../styles/imgs/blog/voices_blog.png";
+import SupportImg from "../../styles/imgs/blog/voices_blog2.png";
 import { Link } from "react-router-dom";
 
 export default function VoicesArticle() {
@@ -14,7 +14,7 @@ export default function VoicesArticle() {
       .writeText(window.location.href)
       .then(() => {
         setCopied(true);
-        setTimeout(() => setCopied(false), 2000); // Hide message after 2 seconds
+        setTimeout(() => setCopied(false), 2000);
       })
       .catch((err) => {
         console.error("Failed to copy text: ", err);
@@ -43,7 +43,7 @@ export default function VoicesArticle() {
               <div className="column" style={{ marginRight: "20px" }}>
                 <p>Written by</p>
                 <p>
-                  <strong>Jane Doe</strong>
+                  <strong>Rose Long</strong>
                 </p>
               </div>
               <div className="column">
@@ -61,11 +61,18 @@ export default function VoicesArticle() {
             </div>
           </div>
         </div>
+        <p className="image-caption">
+          Image Courtesy of Brandi Redd via{" "}
+          <a
+            href="https://unsplash.com/photos/pile-of-stones-selective-focus-photography-sk3zYkMbySk"
+            alt="unsplash"
+            rel="nonreferrer"
+          >
+            Unsplash
+          </a>
+        </p>
         <div className="article-intro-short">
           <div className="article-intro-text">
-            <h2 className="article-subheading" id="introduction">
-              Introduction
-            </h2>
             <p>
               You’re tired, hungry, and stressed. You walk into the kitchen.
               There’s an open packet of biscuits on the counter (replace
@@ -154,9 +161,9 @@ export default function VoicesArticle() {
             />
           </div>
           <p className="image-caption">
-            Image Courtesy of Megan via{" "}
+            Image Courtesy of Fabrizio Chiaganp via{" "}
             <a
-              href="https://dribbble.com/shots/23565113-Minimal-blog-post-Untitled-UI"
+              href="https://unsplash.com/photos/a-circular-design-made-of-sand-on-a-beach-rDwIXsgb2LY"
               alt="unsplash"
               rel="nonreferrer"
             >
