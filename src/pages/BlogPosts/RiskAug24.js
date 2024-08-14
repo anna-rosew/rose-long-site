@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "../../styles/App.css";
 import "../../styles/Article.css";
 import BlurryImage from "../../components/BlurryImage";
-import FoodImg from "../../styles/imgs/blog/food_blog.png";
-import FoodImg2 from "../../styles/imgs/blog/food_blog2.png";
+import FoodImg from "../../styles/imgs/blog/risk_blog.png";
+import FoodImg2 from "../../styles/imgs/blog/risk_blog2.png";
 import { Link } from "react-router-dom";
 
 export default function RiskAug24() {
@@ -78,8 +78,8 @@ export default function RiskAug24() {
               true.
             </p>
             <p>
-              Projecting an idea of what I'd like to happen in the future
-              sets me up for disappointment, judgment, and resignation.
+              Projecting an idea of what I'd like to happen in the future sets
+              me up for disappointment, judgment, and resignation.
             </p>
           </div>
         </div>
