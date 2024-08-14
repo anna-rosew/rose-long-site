@@ -185,6 +185,14 @@
   margin-top: 50px;
 }
 
+.blog-article a {
+  color: black;
+}
+
+.blog-article a:hover {
+  text-decoration: underline;
+}
+
 .article-highlight {
   color: #862b0e;
   border-left: 2px solid #862b0e;

@@ -44,7 +44,7 @@ export default function SugarArticle() {
               <div className="column" style={{ marginRight: "20px" }}>
                 <p>Written by</p>
                 <p>
-                  <strong>Jane Doe</strong>
+                  <strong>Rose Long</strong>
                 </p>
               </div>
               <div className="column">
@@ -62,6 +62,16 @@ export default function SugarArticle() {
             </div>
           </div>
         </div>
+        <p className="image-caption">
+          Image Courtesy of Daniel Kraus via{" "}
+          <a
+            href="https://unsplash.com/photos/a-pile-of-sugar-cubes-sitting-on-top-of-each-other-TXVntZ190Ao"
+            alt="unsplash"
+            rel="nonreferrer"
+          >
+            Unsplash
+          </a>
+        </p>
         <div className="article-intro-short">
           <div className="article-intro-text">
             <p>
@@ -203,9 +213,9 @@ export default function SugarArticle() {
             />
           </div>
           <p className="image-caption">
-            Image Courtesy of Megan via{" "}
+            Image Courtesy of Towfiqu Barbhuiya via{" "}
             <a
-              href="https://dribbble.com/shots/23565113-Minimal-blog-post-Untitled-UI"
+              href="https://unsplash.com/photos/person-holding-white-ceramic-mug-N2n01mhpbmg"
               alt="unsplash"
               rel="nonreferrer"
             >
