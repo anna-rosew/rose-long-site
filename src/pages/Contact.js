@@ -22,14 +22,11 @@ export default function Contact() {
                 to you within 2 working days. I look forward to hearing from
                 you!
               </p>
-              {/* Mailto Button */}
-              <a href="mailto:info@rose-long.com" className="mailto-button">
-                <p>
-                  <strong>Email: info@rose-long.com</strong>
-                </p>
-              </a>
-            </div>
-            <div className="contact-form-container ">
+              <p>
+                A contact form is currently being created so please contact via
+                email using <strong>button below.</strong>
+              </p>
+
               <h2 className="newsletter-heading">Stay-in-Touch</h2>
               <div className="stay-in-touch">
                 <img
@@ -39,11 +36,17 @@ export default function Contact() {
                 />
                 <div className="newsletter-subscribe">
                   <p>
-                    Send your name and email to Join for news on classes,
-                    workshops, retreats and free resources/offers.
+                    Join for news on classes, workshops, retreats and free
+                    resources/offers. Just add subject{" "}
+                    <strong>"Newletter sign-up"</strong> to your email and
+                    you'll be added to the list.
                   </p>
                 </div>
               </div>
+
+              <a href="mailto:info@rose-long.com">
+                <button className="general-button">SEND AN EMAIL</button>
+              </a>
             </div>
           </div>
           <BlurryImage
