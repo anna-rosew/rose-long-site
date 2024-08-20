@@ -17,26 +17,17 @@ export default function Contact() {
             <div className="contact-form-container">
               <h2>Get-In Touch</h2>
               <p>
-                If you'd like to book a class, workshop or retreat or have any
+                If you'd like to book a class, workshop, or retreat, or have any
                 questions, please don't hesitate to reach out. I will get back
                 to you within 2 working days. I look forward to hearing from
                 you!
               </p>
-              <form className="contact-form">
-                <div className="form-group">
-                  <label htmlFor="name">NAME</label>
-                  <input type="text" id="name" name="name" required />
-                </div>
-                <div className="form-group">
-                  <label htmlFor="email">Email</label>
-                  <input type="email" id="email" name="email" required />
-                </div>
-                <div className="form-group">
-                  <label htmlFor="message">Message</label>
-                  <textarea id="message" name="message" required></textarea>
-                </div>
-                <button className="general-button">SEND</button>
-              </form>
+              {/* Mailto Button */}
+              <a href="mailto:info@rose-long.com" className="mailto-button">
+                <p>
+                  <strong>Email: info@rose-long.com</strong>
+                </p>
+              </a>
             </div>
             <div className="contact-form-container ">
               <h2 className="newsletter-heading">Stay-in-Touch</h2>
@@ -48,10 +39,9 @@ export default function Contact() {
                 />
                 <div className="newsletter-subscribe">
                   <p>
-                    Join for news on classes, workshops, retreats and free
-                    resources/offers.
+                    Send your name and email to Join for news on classes,
+                    workshops, retreats and free resources/offers.
                   </p>
-                  <button className="general-button">SIGN-UP</button>
                 </div>
               </div>
             </div>
