@@ -41,7 +41,7 @@ export default function SelfLoveArticle() {
         </p>
         <div className="article-cover-container">
           <BlurryImage
-            src={FoodImg} // Use appropriate image
+            src={FoodImg} 
             className="blog-cover-img"
             alt="Image related to self-love"
           />

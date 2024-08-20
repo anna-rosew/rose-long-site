@@ -27,8 +27,8 @@ export default function Blog() {
       icon: require("../styles/imgs/icons/article.png"),
       postType: "Article",
       link: "/sugararticle",
-      date: "05/24",
-      img: require("../styles/imgs/photos/buddah.png"),
+      date: "08/24",
+      img: require("../styles/imgs/blog/food_blog3.png"),
     },
   ];
 
