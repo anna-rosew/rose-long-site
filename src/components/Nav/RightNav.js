@@ -95,6 +95,16 @@ const RightNav = ({ open, closeMenu }) => {
           Membership
         </Link>
       </li>
+      <li>
+        <Link
+          to="/blog"
+          className="menu-link membership-link"
+          onClick={closeMenu}
+        >
+          Blog
+        </Link>
+      </li>
+
       {open && (
         <li>
           <BookNowButton href="/contact" onClick={closeMenu}>

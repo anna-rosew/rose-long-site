@@ -39,9 +39,12 @@ export default function Header() {
             <Link to="/contact" className="menu-link" onClick={toggleMenu}>
               Contact
             </Link>
-            <div className="menu-link" onClick={toggleMenu}>
+            <Link to="/membership" className="menu-link" onClick={toggleMenu}>
               Membership
-            </div>
+            </Link>
+            <Link to="/membership" className="menu-link" onClick={toggleMenu}>
+              Membership
+            </Link>
           </div>
         </div>
       </div>
