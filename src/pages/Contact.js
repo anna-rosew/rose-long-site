@@ -38,8 +38,8 @@ export default function Contact() {
                 <button className="general-button">SEND</button>
               </form>
             </div>
-            <div className="contact-form-container">
-              <h2>Stay-in-Touch</h2>
+            <div className="contact-form-container ">
+              <h2 className="newsletter-heading">Stay-in-Touch</h2>
               <div className="stay-in-touch">
                 <img
                   src={newsletterIcon}

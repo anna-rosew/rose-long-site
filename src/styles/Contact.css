@@ -143,6 +143,10 @@
 
     margin-left: 10px;
   }
+
+  .contact h2 {
+    text-align: center;
+  }
   .grid-contact {
     grid-template-columns: 1fr;
     margin: 0;
@@ -163,5 +167,14 @@
   .form-group textarea {
     width: 100%;
     max-width: 100%;
+  }
+  .stay-in-touch {
+    grid-template-columns: 1fr;
+  }
+
+  .newsletter-icon {
+    height: 100px;
+    display: block;
+    margin: 10px auto;
   }
 }
