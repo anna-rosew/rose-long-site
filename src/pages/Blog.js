@@ -26,7 +26,7 @@ export default function Blog() {
         "Discover the power of awareness to transform your health and well-being by understanding your thoughts, emotions, and choices, and embracing conscious practices that connect you to your true self.",
       icon: require("../styles/imgs/icons/article.png"),
       postType: "Article",
-      link: "/sugararticle",
+      link: "/foodarticle",
       date: "08/24",
       img: require("../styles/imgs/blog/food_blog3.png"),
     },
