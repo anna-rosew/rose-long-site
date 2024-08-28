@@ -13,7 +13,7 @@ export default function Blog() {
         "Hosted by Elizabeth Vaughan and Julia Carson - a psychologist and a therapist who walked out of a bar and became good mates in sobriety.",
       icon: require("../styles/imgs/icons/podcast.png"),
       postType: "Podcast",
-      link: "https://podcasts.apple.com/gb/podcast/episode-30-yoga-with-rose-long/id1654177454?i=1000654109809",
+      link: "/foodarticle",
       date: "05/24",
       img: require("../styles/imgs/photos/woman-beach.png"),
     },
@@ -26,7 +26,7 @@ export default function Blog() {
         "Discover how self-awareness can transform your health and relationship with food. Tune into your thoughts, body, and cravings to make nourishing choices. Embrace mindful breathing and focus on progress for lasting change.",
       icon: require("../styles/imgs/icons/article.png"),
       postType: "Article",
-      link: "/foodarticle",
+      link: "/lynninterview",
       date: "08/24",
       img: require("../styles/imgs/blog/food_blog3.png"),
     },
@@ -77,3 +77,4 @@ export default function Blog() {
     </div>
   );
 }
+//      link: "https://podcasts.apple.com/gb/podcast/episode-30-yoga-with-rose-long/id1654177454?i=1000654109809",
