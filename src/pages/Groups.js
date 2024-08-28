@@ -94,19 +94,20 @@ export default function Groups() {
                 />
                 <div className="in-person-overlay">
                   <h3>Upcoming Workshop:</h3>
-                  <h2>Moving Beyond Separation: The Power of The Breath.</h2>
+                  <h2>Breathwork Course</h2>
                   <p>
-                    This workshop uses movement and breathwork to experience
-                    unity through conscious breathing. Followed by a{" "}
-                    <strong>shared lunch.</strong>
+                    Join Rose for an introduction to Breath Work. This five week
+                    course will introduce you to foundational practices that
+                    allow you to{" "}
+                    <strong>access the power of your breath</strong>.
                   </p>
                   <span>
                     <img src={Location} alt="icon" className="overlay-svg2" />
-                    <p>Home Studio, Liverpool. UK</p>
+                    <p>Absolute Yoga, Liverpool. UK</p>
                   </span>
                   <span>
                     <img src={Calender} alt="icon" className="overlay-svg2" />
-                    <p>Mon 26 Aug, 10.00 - 12.30 am</p>
+                    <p>Wed 16 Oct, 18:30 - 19:30pm</p>
                   </span>
                 </div>
               </div>
