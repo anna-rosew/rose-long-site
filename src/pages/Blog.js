@@ -23,7 +23,7 @@ export default function Blog() {
       subtitle: "ARTICLE",
       className: "post-2",
       description:
-        "Discover the power of awareness to transform your health and well-being by understanding your thoughts, emotions, and choices, and embracing conscious practices that connect you to your true self.",
+        "Discover how self-awareness can transform your health and relationship with food. Tune into your thoughts, body, and cravings to make nourishing choices. Embrace mindful breathing and focus on progress for lasting change.",
       icon: require("../styles/imgs/icons/article.png"),
       postType: "Article",
       link: "/foodarticle",

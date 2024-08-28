@@ -4,6 +4,7 @@ import "../../styles/Article.css";
 import BlurryImage from "../../components/BlurryImage";
 import FoodImg from "../../styles/imgs/blog/food_blog.png";
 import FoodImg2 from "../../styles/imgs/blog/food_blog2.png";
+import arrowIcon from "../../styles/imgs/icons/blog-arrow.svg";
 
 import { Link } from "react-router-dom";
 
@@ -30,10 +31,10 @@ export default function FoodArticle() {
         </h3>
         <h1>Learning to Make Healthy Choices Around Food</h1>
         <p className="article-summary">
-          Explore Rose Long's remarkable journey of profound transformation and
-          alignment with the earth's rhythm on the Mind Over Matter Podcast,
-          where her story serves as a beacon of inspiration for all seeking
-          deeper connection and truth.{" "}
+          Discover how self-awareness can transform your health and relationship
+          with food. Tune into your thoughts, body, and cravings to make
+          nourishing choices. Embrace mindful breathing and focus on progress
+          for lasting change.
         </p>
         <div className="article-cover-container">
           <BlurryImage
@@ -168,6 +169,7 @@ export default function FoodArticle() {
       <div className="article-bottom-buttons">
         <Link to="/SelfArticle" className="back-button">
           MORE CONTENT
+          <img src={arrowIcon} className="blog-arrow" alt="Arrow" />
         </Link>
         <Link to="/work" className="journey-button">
           START YOUR JOURNEY

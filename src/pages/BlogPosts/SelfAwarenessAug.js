@@ -5,7 +5,7 @@ import BlurryImage from "../../components/BlurryImage";
 import SelfAwarenessImg from "../../styles/imgs/blog/self_awareness_blog.png"; // Example image path
 import SelfAwarenessImg2 from "../../styles/imgs/blog/self_awareness_blog2.png"; // Example image path
 import { Link } from "react-router-dom";
-import arrowIcon from "../../styles/imgs/icons/blog-arrow.svg"; // Example arrow icon path
+import arrowIcon from "../../styles/imgs/icons/blog-arrow.svg"; 
 
 export default function SelfAwarenessAug() {
   const [copied, setCopied] = useState(false);
