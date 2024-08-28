@@ -28,16 +28,6 @@ export default function Approach() {
       </div>
       <div className="approach-text">
         <p>
-          Most of us learn to live from our minds; focusing on our thoughts as
-          we go through the day.  Your thoughts determine your{" "}
-          <strong>breathing pattern</strong>, and that impacts the health of
-          your body. Stressful, busy thoughts means shallow, busy breath, and
-          that triggers a stress response in the nervous system and endocrine
-          system.   Similarly anxious thoughts result in a rapid breathing
-          pattern, stimulating a <strong>fear response</strong> (fight, flight,
-          freeze, fawn) in the body.
-        </p>
-        <p>
           The ancients knew the power of the{" "}
           <strong>mind, body and the breath</strong>, and modern research is
           proving what they knew; you have the capacity to{" "}

@@ -29,17 +29,13 @@ export default function OneToOne() {
           <strong>develop your inner guidance system.</strong> This requires a
           process of slowing down, breathing and learning to listen and observe
           yourself. It can be uncomfortable and challenging at times. The
-          Coaching space allows you to{" "}
-          <strong>stay in your flow and listen deeply.</strong> Come with
-          curiosity and an open mind.Your life will <strong>transform</strong>{" "}
-          from the inside out.
+          Coaching Sessions offer a space of deep listening where insights
+          arise, answers are revealed and{" "}
+          <strong>potential is unlocked.</strong> For the work to take root you
+          have <strong>daily practices</strong> and activities that embed what
+          you’re learning into your daily life. Come with curiosity and an open
+          mind.Your life will <strong>transform</strong> from the inside out.
         </p>
-        <p>
-          The Coaching Sessions offer a space of deep listening where insights
-          arise, answers are revealed and <strong>potential is unlocked</strong>
-          . For the work to take root you have <strong>daily practices</strong>{" "}
-          and activities that embed what you’re learning into your daily life.{" "}
-        </p>{" "}
         <p>
           <strong>Small steps to lasting change.</strong>
         </p>

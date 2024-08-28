@@ -96,11 +96,7 @@ const RightNav = ({ open, closeMenu }) => {
         </Link>
       </li>
       <li>
-        <Link
-          to="/blog"
-          className="menu-link membership-link"
-          onClick={closeMenu}
-        >
+        <Link to="/blog" className="menu-link blog-link" onClick={closeMenu}>
           Blog
         </Link>
       </li>

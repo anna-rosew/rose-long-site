@@ -64,6 +64,10 @@
   width: 75%;
 }
 
+.blog-link:hover::after {
+  width: 60%;
+}
+
 @media (max-width: 768px) {
   .NavBar {
     padding: 0;

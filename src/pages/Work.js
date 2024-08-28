@@ -15,12 +15,6 @@ export default function Work() {
       <div className="intro">
         <h1>Work With Rose.</h1>
         <p>
-          When you are stuck in unhelpful patterns rooted in the past, it shows
-          up in your daily life. The discomfort within you surfaces in different
-          ways. All these states indicate it’s time for you turn your focus
-          inwards and listen.
-        </p>
-        <p>
           <strong>
             Come and explore how your body, mind and breath work together. Open
             yourself to new dimensions of experience and personal growth.
