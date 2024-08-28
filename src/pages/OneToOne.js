@@ -7,8 +7,7 @@ import IconThree from "../styles/imgs/icons/daily.svg";
 export default function OneToOne() {
   return (
     <div className=" container OneToOne-Page">
-      <h2>One-To-One</h2>
-      <h1>Sessions.</h1>
+      <h1>One-To-One Sessions</h1>
       <h3 className="subtitle">Unlocking the Answers from Within.</h3>
 
       <div className="player-wrapper">

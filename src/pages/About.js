@@ -9,8 +9,7 @@ export default function About() {
     <div className="About">
       <div className="container">
         <div className="heading-container">
-          <h2>Meet</h2>
-          <h1>Rose</h1>
+          <h1>Meet Rose</h1>
         </div>
         <div className="grid grid-meet-rose">
           <div className="about-para">

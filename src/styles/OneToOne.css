@@ -1,16 +1,11 @@
-.OneToOne-Page h2 {
-  margin-bottom: 10px;
-  font-size: 30px;
-}
-
 .OneToOne-Page h1 {
-  margin-left: 130px;
-  margin-top: 0px;
-  font-size: 48px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .OneToOne-Page .subtitle {
   font-size: 20px;
+  text-align: center;
 }
 
 .one-to-one-text {
@@ -30,6 +25,7 @@
 
 .what-to-expect {
   text-align: center;
+  margin-top: 50px;
 }
 
 .what-to-expect .heading {
