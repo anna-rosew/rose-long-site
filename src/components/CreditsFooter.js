@@ -43,7 +43,7 @@ export default function CreditsFooter() {
               <p>
                 Website built by{" "}
                 <a
-                  href="https://www.sacredintuitiveart.com/about"
+                  href="https://annarosewain.com/"
                   alt="Anna-Rose Wain | Front-end Developer"
                 >
                   {" "}

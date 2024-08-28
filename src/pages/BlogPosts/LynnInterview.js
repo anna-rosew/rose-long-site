@@ -4,7 +4,7 @@ import "../../styles/Article.css";
 import arrowIcon from "../../styles/imgs/icons/blog-arrow.svg";
 import { Link } from "react-router-dom";
 
-export default function VideoTemp() {
+export default function LynnInterview() {
   return (
     <div className="VideoTemp">
       <div className="container">
@@ -32,7 +32,17 @@ export default function VideoTemp() {
               title="vimeo player"
             ></iframe>
           </div>
-        </div>
+          <p className="image-caption">
+            You can turn on <strong>live captions</strong> using{" "}
+            <a
+              href="https://support.google.com/chrome/answer/10538231?hl=en-GB"
+              alt="Google Chrome Live Captioning and Translating"
+              rel="nonreferrer"
+            >
+              Google Chrome.
+            </a>{" "}
+          </p>
+        </div>{" "}
         <div className="article-bottom-buttons">
           <Link to="/SelfArticle" className="back-button">
             MORE CONTENT
