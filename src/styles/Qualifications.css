@@ -1,29 +1,27 @@
-.Qualifications h2 {
-  margin-bottom: 0px;
-  font-size: 30px;
-  padding-left: 50px;
-  text-align: left;
-}
-
 .Qualifications h1 {
-  margin-left: 100px;
   margin-top: 0px;
   font-size: 48px;
   text-align: left;
 }
 
+.qualifications-description {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
 .credentials-container {
   text-align: left;
-  margin-left: 100px;
 }
 
 .credentials-container p {
-  line-height: 30px;
+  line-height: 32px;
 }
 
 .institution-icons-grid {
   display: grid;
-  margin-left: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
   width: 50%;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
@@ -32,7 +30,6 @@
 }
 
 .qualification-button-container {
-  margin-left: 30px;
   margin-top: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -74,8 +71,11 @@
   .institution-icons-grid img {
     height: 100px;
   }
+
   .institution-icons-grid {
     display: grid;
+    margin-top: 10px;
+    margin-bottom: 10px;
     margin-left: 10px;
     width: 100%;
     grid-template-columns: 1fr 1fr 1fr;
@@ -87,6 +87,6 @@
   }
   .custom-spacer {
     display: block;
-    margin: 30px auto;
+    margin: 10px auto;
   }
 }

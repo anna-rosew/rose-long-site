@@ -14,8 +14,38 @@ export default function Qualifications() {
     <div className="Qualifications">
       <div className="container">
         <div className="heading-container">
-          <h2>Training/</h2>
-          <h1>Qualifications</h1>
+          <h1>Training/Qualifications</h1>
+        </div>
+        <div className="qualifications-description">
+          <p>
+            I've been teaching and facilitating groups since my mid-twenties.
+            Initially, I trained as a secondary school teacher in Religious
+            Education. However, I quickly realized that I didn’t enjoy the
+            school system any longer as a teacher. This realization prompted me
+            to move into Human Rights Education, where I set up the Education
+            Department at Anti-Slavery International. During my time there, I
+            had the privilege of working with remarkable individuals and
+            community organizations both in the British Isles and beyond.
+          </p>
+          <p>
+            In my early thirties, inspired by the work of Paulo Freire, I
+            co-founded and directed Living Lens, an international social
+            enterprise. Through Living Lens, I ran projects that used video as a
+            tool to facilitate communication and collaboration. In today’s world
+            of mass media, where a limited number of narratives dominate, these
+            projects provided a platform for marginalized voices to cultivate
+            new conversations at local, national, and international levels,
+            ultimately generating positive social change
+          </p>
+          <p>
+            During this period, I also trained as a Self-Expression and
+            Leadership Coach. I became fascinated by the potential for learning,
+            healing, and growth that can be unlocked through embodied coaching
+            conversations. This interest led me to further training in my early
+            forties, where I became a Holistic Health Coach and Yoga Teacher.
+            Despite all my experiences and training, I consider myself a work in
+            progress!
+          </p>
         </div>
         <div className="credentials-container">
           <p>
