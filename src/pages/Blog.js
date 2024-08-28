@@ -6,18 +6,17 @@ import BlogBlock from "../components/BlogBlock";
 export default function Blog() {
   const posts = [
     {
-      title: "Yoga (with Rose Long)",
-      subtitle: "RISE: EPISODE 30",
+      title: "Mandalas, Yantras & Sacred Geometry with Lynn Hanford-Day",
+      subtitle: "INTERVIEW",
       className: "post-1",
       description:
-        "Hosted by Elizabeth Vaughan and Julia Carson - a psychologist and a therapist who walked out of a bar and became good mates in sobriety.",
-      icon: require("../styles/imgs/icons/podcast.png"),
-      postType: "Podcast",
-      link: "/foodarticle",
-      date: "05/24",
-      img: require("../styles/imgs/photos/woman-beach.png"),
+        "Join Rose Long as she delves into the ancient practices and stories behind Lynn Hanford-Day's Sacred Intuitive Art.",
+      icon: require("../styles/imgs/icons/video-icon.png"),
+      postType: "Video",
+      link: "/lynninterview",
+      date: "08/24",
+      img: require("../styles/imgs/blog/lynn_interview_blog.png"),
     },
-
     {
       title: "Learning to Make Healthy Choices Around Food",
       subtitle: "ARTICLE",
@@ -26,9 +25,21 @@ export default function Blog() {
         "Discover how self-awareness can transform your health and relationship with food. Tune into your thoughts, body, and cravings to make nourishing choices. Embrace mindful breathing and focus on progress for lasting change.",
       icon: require("../styles/imgs/icons/article.png"),
       postType: "Article",
-      link: "/lynninterview",
+      link: "/foodarticle",
       date: "08/24",
       img: require("../styles/imgs/blog/food_blog3.png"),
+    },
+    {
+      title: "Yoga (with Rose Long)",
+      subtitle: "RISE: EPISODE 30",
+      className: "post-3",
+      description:
+        "Hosted by Elizabeth Vaughan and Julia Carson - a psychologist and a therapist who walked out of a bar and became good mates in sobriety.",
+      icon: require("../styles/imgs/icons/podcast.png"),
+      postType: "Podcast",
+      link: "/foodarticle",
+      date: "05/24",
+      img: require("../styles/imgs/photos/woman-beach.png"),
     },
   ];
 
