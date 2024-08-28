@@ -1,9 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Location from "../styles/imgs/icons/location.svg";
 import Calendar from "../styles/imgs/icons/calender.svg";
 import Time from "../styles/imgs/icons/time.svg";
 import "../styles/InPerson.css";
-import { Link } from "react-router-dom";
 import BlurryImage from "../components/BlurryImage";
 
 // Utility function to replace markers with HTML tags
@@ -13,6 +13,9 @@ const formatDescription = (text) => {
 
 const InPersonSlider = ({ eventInfo }) => {
   const isMobile = window.innerWidth <= 768;
+
+  // Determine if the URL is internal or external
+  const isExternalUrl = (url) => /^(https?:\/\/)/.test(url);
 
   return (
     <div className="event-slide">
@@ -68,11 +71,13 @@ const InPersonSlider = ({ eventInfo }) => {
             </span>
           </p>
           <p
+            className="description"
             dangerouslySetInnerHTML={{
               __html: formatDescription(eventInfo.description),
             }}
           />
           <p
+            className="description"
             dangerouslySetInnerHTML={{
               __html: formatDescription(eventInfo.description2),
             }}
@@ -81,9 +86,19 @@ const InPersonSlider = ({ eventInfo }) => {
           <p>
             PRICE: <strong>{eventInfo.price}</strong>
           </p>
-          <Link to="/contact">
-            <button className="general-button">BOOK NOW</button>
-          </Link>
+          {isExternalUrl(eventInfo.bookNowUrl) ? (
+            <a
+              href={eventInfo.bookNowUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="general-button">BOOK NOW</button>
+            </a>
+          ) : (
+            <Link to={eventInfo.bookNowUrl}>
+              <button className="general-button">BOOK NOW</button>
+            </Link>
+          )}
         </div>
       </div>
     </div>
