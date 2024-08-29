@@ -9,7 +9,7 @@ import Online from "../styles/imgs/permanent/online-groups-photo.png";
 import InPerson from "../styles/imgs/permanent/inPersonGroups.png";
 import Retreat from "../styles/imgs/permanent/retreats-photo.png";
 import Workshop1 from "../styles/imgs/photos/workshop2.png";
-import Workshop2 from "../styles/imgs/photos/home-studio3.png";
+
 import Location from "../styles/imgs/icons/location_line.svg";
 import Calender from "../styles/imgs/icons/calander_white.svg";
 import LocationBlack from "../styles/imgs/icons/location_black.svg";
@@ -83,7 +83,7 @@ export default function Groups() {
 
       <div className="in-person-sessions" id="inPerson">
         <h2 className="section-heading hr-lines">In-Person Sessions</h2>
-        <div className="grid grid-2-columns section-spacing">
+        <div className="section-spacing">
           <div className="in-person-card">
             <Link to="/inperson" className="card-link">
               <div className="in-person-img-container">
@@ -134,59 +134,6 @@ export default function Groups() {
                     className="overlay-svg2"
                   />
                   <p>Mon 26 Aug, 10.00 - 12.30 am</p>
-                </span>
-              </div>
-            </Link>
-          </div>
-
-          <div className="in-person-card">
-            <Link to="/inperson" className="card-link">
-              <div className="in-person-img-container">
-                <img
-                  src={Workshop2}
-                  className="in-person-image"
-                  alt="In-Person Session"
-                />
-                <div className="in-person-overlay">
-                  <h3>Upcoming Workshop:</h3>
-                  <h2>Return to the Heart.</h2>
-                  <p>
-                    Join us for a morning focused on the heart: a cacao
-                    ceremony, heart-centered breathwork, and yoga nidra. All are
-                    welcome.
-                  </p>
-                  <span>
-                    <img src={Location} alt="icon" className="overlay-svg2" />
-                    <p>Home Studio, Liverpool. UK</p>
-                  </span>
-                  <span>
-                    <img src={Calender} alt="icon" className="overlay-svg2" />
-                    <p>Mon 26 August 10.00am - 12.30 pm</p>
-                  </span>
-                </div>
-              </div>
-              <div className="in-person-info-mobile">
-                <h3>Upcoming Workshop:</h3>
-                <h2>Return to the Heart.</h2>
-                <p>
-                  Join us for a morning focused on the heart: a cacao ceremony,
-                  heart-centered breathwork, and yoga nidra. All are welcome.
-                </p>
-                <span>
-                  <img
-                    src={LocationBlack}
-                    alt="icon"
-                    className="overlay-svg2"
-                  />
-                  <p>Home Studio, Liverpool. UK</p>
-                </span>
-                <span>
-                  <img
-                    src={CalenderBlack}
-                    alt="icon"
-                    className="overlay-svg2"
-                  />
-                  <p>Mon 26 August 10.00am - 12.30 pm</p>
                 </span>
               </div>
             </Link>
