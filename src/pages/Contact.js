@@ -1,31 +1,153 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/Contact.css";
 import ContactImg from "../styles/imgs/permanent/contact.png";
 import newsletterIcon from "../styles/imgs/icons/newsletter.svg";
 import BlurryImage from "../components/BlurryImage";
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const [formErrors, setFormErrors] = useState({});
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  // Handle changes in the input fields
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  // Validate form data
+  const validateForm = () => {
+    let errors = {};
+    let isValid = true;
+
+    if (!formData.name.trim()) {
+      errors.name = "Name is required";
+      isValid = false;
+    }
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!formData.email || !emailPattern.test(formData.email)) {
+      errors.email = "A valid email is required";
+      isValid = false;
+    }
+
+    if (!formData.message.trim()) {
+      errors.message = "Message is required";
+      isValid = false;
+    }
+
+    setFormErrors(errors);
+    return isValid;
+  };
+
+  // Handle form submission
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (validateForm()) {
+      console.log("Form submitted:", formData);
+      setIsSubmitted(true);
+      // Reset the form
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+    }
+  };
   return (
     <div className="contact">
       <div className="container">
         <div className="heading-container">
           <h1>Contact</h1>
         </div>
-
         <div className="grid grid-contact">
           <div className="forms-container">
             <div className="contact-form-container">
               <h2>Get-In Touch</h2>
+
               <p>
                 If you'd like to book a class, workshop, or retreat, or have any
-                questions, please don't hesitate to reach out. I will get back
-                to you within 2 working days. I look forward to hearing from
-                you!
+                questions, please don't hesitate to reach out.
               </p>
-              <p>
-                A contact form is currently being created so please contact via
-                email using <strong>button below.</strong>
-              </p>
+
+              <form onSubmit={handleSubmit}>
+                <div className="form-group">
+                  <div>
+                    <label htmlFor="name">Name</label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
+                    />
+                    {formErrors.name && (
+                      <span className="error">{formErrors.name}</span>
+                    )}
+                  </div>
+
+                  <div>
+                    <label htmlFor="email">Email</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                    />
+                    {formErrors.email && (
+                      <span className="error">{formErrors.email}</span>
+                    )}
+                  </div>
+
+                  <div>
+                    <label htmlFor="subject">Subject</label>
+                    <input
+                      type="text"
+                      id="subject"
+                      name="subject"
+                      value={formData.subject}
+                      onChange={handleChange}
+                    />
+                  </div>
+
+                  <div>
+                    <label htmlFor="message">Message</label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      value={formData.message}
+                      onChange={handleChange}
+                    />
+                    {formErrors.message && (
+                      <span className="error">{formErrors.message}</span>
+                    )}
+                  </div>
+
+                  <button type="submit" className="general-button">
+                    Submit
+                  </button>
+                  {isSubmitted && (
+                    <p className="success-message">
+                      <strong>
+                        Thank you for getting in touch! I aim to get back to you
+                        within 2 working days.
+                      </strong>
+                    </p>
+                  )}
+                </div>
+              </form>
 
               <h2 className="newsletter-heading">Stay-in-Touch</h2>
               <div className="stay-in-touch">
