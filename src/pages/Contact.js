@@ -3,6 +3,7 @@ import "../styles/Contact.css";
 import ContactImg from "../styles/imgs/permanent/contact.png";
 import newsletterIcon from "../styles/imgs/icons/newsletter.svg";
 import BlurryImage from "../components/BlurryImage";
+import axios from "axios";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -37,7 +38,7 @@ export default function Contact() {
 
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!formData.email || !emailPattern.test(formData.email)) {
-      errors.email = "Please provide valid email address.";
+      errors.email = "Please provide a valid email address.";
       isValid = false;
     }
 
@@ -46,27 +47,42 @@ export default function Contact() {
       isValid = false;
     }
 
-    // Log errors for debugging
     setFormErrors(errors);
     console.log(errors);
 
     return isValid;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (validateForm()) {
-      console.log("Form submitted:", formData);
-      setIsSubmitted(true);
-      setFormData({
-        name: "",
-        email: "",
-        subject: "",
-        message: "",
-      });
-    } else {
-      console.log("Form is invalid, errors exist", formErrors);
+      try {
+        const apiKey = "your-brevo-api-key"; // Replace with your Brevo API key
+        const url = "https://api.brevo.com/v3/smtp/email";
+
+        const response = await axios.post(
+          url,
+          {
+            sender: { name: formData.name, email: formData.email },
+            to: [{ email: "your-email@example.com", name: "Your Name" }],
+            subject: formData.subject,
+            htmlContent: `<html><body><p>${formData.message}</p></body></html>`,
+          },
+          {
+            headers: {
+              "Content-Type": "application/json",
+              "api-key": apiKey,
+            },
+          }
+        );
+
+        if (response.status === 200) {
+          setIsSubmitted(true);
+        }
+      } catch (error) {
+        console.error("Error sending data to Brevo API", error);
+      }
     }
   };
 
@@ -163,7 +179,7 @@ export default function Contact() {
                   <p>
                     Join for news on classes, workshops, retreats and free
                     resources/offers. Just add subject{" "}
-                    <strong>"Newletter sign-up"</strong> to your email and
+                    <strong>"Newsletter sign-up"</strong> to your email and
                     you'll be added to the list.
                   </p>
                 </div>
