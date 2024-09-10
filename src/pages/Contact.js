@@ -15,56 +15,61 @@ export default function Contact() {
   const [formErrors, setFormErrors] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  // Handle changes in the input fields
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
       [name]: value,
     });
+
+    // Validate the form on each input change (optional)
+    validateForm();
   };
 
-  // Validate form data
   const validateForm = () => {
     let errors = {};
     let isValid = true;
 
     if (!formData.name.trim()) {
-      errors.name = "Name is required";
+      errors.name = "Please provide name.";
       isValid = false;
     }
 
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!formData.email || !emailPattern.test(formData.email)) {
-      errors.email = "A valid email is required";
+      errors.email = "Please provide valid email address.";
       isValid = false;
     }
 
     if (!formData.message.trim()) {
-      errors.message = "Message is required";
+      errors.message = "Please provide a message.";
       isValid = false;
     }
 
+    // Log errors for debugging
     setFormErrors(errors);
+    console.log(errors);
+
     return isValid;
   };
 
-  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
 
     if (validateForm()) {
       console.log("Form submitted:", formData);
       setIsSubmitted(true);
-      // Reset the form
       setFormData({
         name: "",
         email: "",
         subject: "",
         message: "",
       });
+    } else {
+      console.log("Form is invalid, errors exist", formErrors);
     }
   };
+
   return (
     <div className="contact">
       <div className="container">
@@ -75,12 +80,10 @@ export default function Contact() {
           <div className="forms-container">
             <div className="contact-form-container">
               <h2>Get-In Touch</h2>
-
               <p>
                 If you'd like to book a class, workshop, or retreat, or have any
                 questions, please don't hesitate to reach out.
               </p>
-
               <form onSubmit={handleSubmit}>
                 <div className="form-group">
                   <div>
