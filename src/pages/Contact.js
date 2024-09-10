@@ -14,7 +14,7 @@ export default function Contact() {
   });
 
   const [formErrors, setFormErrors] = useState({});
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [message, setMessage] = useState({ text: "", type: "" }); // { text: string, type: 'success' | 'error' }
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -22,9 +22,6 @@ export default function Contact() {
       ...formData,
       [name]: value,
     });
-
-    // Validate the form on each input change (optional)
-    validateForm();
   };
 
   const validateForm = () => {
@@ -32,7 +29,7 @@ export default function Contact() {
     let isValid = true;
 
     if (!formData.name.trim()) {
-      errors.name = "Please provide name.";
+      errors.name = "Please provide a name.";
       isValid = false;
     }
 
@@ -48,8 +45,6 @@ export default function Contact() {
     }
 
     setFormErrors(errors);
-    console.log(errors);
-
     return isValid;
   };
 
@@ -58,16 +53,27 @@ export default function Contact() {
 
     if (validateForm()) {
       try {
-        const apiKey = "your-brevo-api-key"; // Replace with your Brevo API key
+        const apiKey =
+          "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"; // Replace with your Brevo API key
         const url = "https://api.brevo.com/v3/smtp/email";
 
         const response = await axios.post(
           url,
           {
-            sender: { name: formData.name, email: formData.email },
-            to: [{ email: "your-email@example.com", name: "Your Name" }],
+            sender: { name: formData.name, email: "info@rose-long.com" },
+            to: [{ email: "info@rose-long.com", name: "Rose Long" }],
             subject: formData.subject,
-            htmlContent: `<html><body><p>${formData.message}</p></body></html>`,
+            htmlContent: `
+              <html>
+                <body>
+                  <p><strong>Name:</strong> ${formData.name}</p>
+                  <p><strong>Email:</strong> ${formData.email}</p>
+                  <p><strong>Subject:</strong> ${formData.subject}</p>
+                  <p><strong>Message:</strong></p>
+                  <p>${formData.message}</p>
+                </body>
+              </html>
+            `,
           },
           {
             headers: {
@@ -78,12 +84,35 @@ export default function Contact() {
         );
 
         if (response.status === 200) {
-          setIsSubmitted(true);
+          console.log("Sent!");
+          displayMessage(
+            "Thank you for getting in touch! I aim to get back to you within 2 working days.",
+            "success"
+          );
+          setFormData({
+            name: "",
+            email: "",
+            subject: "",
+            message: "",
+          });
         }
       } catch (error) {
         console.error("Error sending data to Brevo API", error);
+        displayMessage(
+          "There was an error sending your message. Please try again.",
+          "error"
+        );
       }
     }
+  };
+
+  const displayMessage = (text, type) => {
+    console.log(`Displaying message: ${text}`); // Debug log
+    setMessage({ text, type });
+    setTimeout(() => {
+      console.log(`Clearing message: ${text}`); // Debug log
+      setMessage({ text: "", type: "" });
+    }, 5000); // Clear message after 5 seconds
   };
 
   return (
@@ -95,7 +124,7 @@ export default function Contact() {
         <div className="grid grid-contact">
           <div className="forms-container">
             <div className="contact-form-container">
-              <h2>Get-In Touch</h2>
+              <h2>Get In Touch</h2>
               <p>
                 If you'd like to book a class, workshop, or retreat, or have any
                 questions, please don't hesitate to reach out.
@@ -108,6 +137,7 @@ export default function Contact() {
                       type="text"
                       id="name"
                       name="name"
+                      autoComplete="name"
                       value={formData.name}
                       onChange={handleChange}
                     />
@@ -122,6 +152,7 @@ export default function Contact() {
                       type="email"
                       id="email"
                       name="email"
+                      autoComplete="email"
                       value={formData.email}
                       onChange={handleChange}
                     />
@@ -136,6 +167,7 @@ export default function Contact() {
                       type="text"
                       id="subject"
                       name="subject"
+                      autoComplete="subject"
                       value={formData.subject}
                       onChange={handleChange}
                     />
@@ -146,6 +178,7 @@ export default function Contact() {
                     <textarea
                       id="message"
                       name="message"
+                      autoComplete="off"
                       value={formData.message}
                       onChange={handleChange}
                     />
@@ -157,18 +190,22 @@ export default function Contact() {
                   <button type="submit" className="general-button">
                     Submit
                   </button>
-                  {isSubmitted && (
-                    <p className="success-message">
-                      <strong>
-                        Thank you for getting in touch! I aim to get back to you
-                        within 2 working days.
-                      </strong>
+
+                  {message.text && (
+                    <p
+                      className={
+                        message.type === "success"
+                          ? "success-message"
+                          : "error-message"
+                      }
+                    >
+                      <strong>{message.text}</strong>
                     </p>
                   )}
                 </div>
               </form>
 
-              <h2 className="newsletter-heading">Stay-in-Touch</h2>
+              <h2 className="newsletter-heading">Stay In Touch</h2>
               <div className="stay-in-touch">
                 <img
                   src={newsletterIcon}
@@ -177,8 +214,8 @@ export default function Contact() {
                 />
                 <div className="newsletter-subscribe">
                   <p>
-                    Join for news on classes, workshops, retreats and free
-                    resources/offers. Just add subject{" "}
+                    Join for news on classes, workshops, retreats, and free
+                    resources/offers. Just add the subject{" "}
                     <strong>"Newsletter sign-up"</strong> to your email and
                     you'll be added to the list.
                   </p>
@@ -200,3 +237,5 @@ export default function Contact() {
     </div>
   );
 }
+
+//"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"; // Replace with your Brevo API key

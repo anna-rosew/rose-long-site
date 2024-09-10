@@ -44,6 +44,12 @@
   color: black;
 }
 
+.success-message {
+  color: green;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
 .newsletter-icon {
   height: 120px;
 }
