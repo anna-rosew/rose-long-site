@@ -53,7 +53,7 @@ export default function Contact() {
 
     if (validateForm()) {
       try {
- // Replace with your Brevo API key
+        const apiKey = process.env.SENDINBLUE_API_KEY; // Replace with your Brevo API key
         const url = "https://api.brevo.com/v3/smtp/email";
 
         const response = await axios.post(
@@ -236,5 +236,3 @@ export default function Contact() {
     </div>
   );
 }
-
-//"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"; // Replace with your Brevo API key
